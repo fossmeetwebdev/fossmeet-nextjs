@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700,580|Lato:800");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+.ftr-image{
+    width: 9%;
+    height: 40%;
+    padding: 2%;
+  }
+  
+  .ftr-image1{
+    margin-left: 60px;
+    margin-top: 2%;
+    width: 9%;
+    height: 40%;
+    padding: 2%;
+  }
+  
+  .ftr-ctnt{
+    margin-left: 5.23%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+  }
+  
+  .ftr-ctnt1{
+    margin-top: 1%;
+    margin-left: 5.23%;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+  }
+  
+  #icons{
+    margin-left: 4%;
+  }

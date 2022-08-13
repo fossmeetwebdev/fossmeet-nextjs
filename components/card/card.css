@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700,580|Lato:800");
+
+.group-228 {
+ align-items: flex-end;
+ background-image: url(rectangle-212@1x.png);
+ background-position: 58% 58%;
+ background-size: cover;
+ display: flex;
+ height: 280px;
+ width: 500px;
+ padding: 12.5px 15px;
+}
+.overlap-group {
+ align-items: flex-start;
+ background-color: rgba(35,35,37,0.902);
+ box-shadow: 0px 4px 4px 5px #00000040;
+ display: flex;
+ flex-direction: column;
+ min-height: 230px;
+ padding: 25px 13px;
+ width: 587px;
+ }
+.room-3-ssl-lab-1 {
+ letter-spacing: 0;
+ margin-left: 11px;
+ min-height: 20px;
+ }
+.workshop-gentle-intro-to-git-and-foss {
+ align-self: flex-end;
+ letter-spacing: 0;
+ margin-top: 20px;
+ min-height: 64px;
+ width: 470px;
+ }
+ .text-1 {
+ letter-spacing: 0;
+ margin-left: 11px;
+ min-height: 26px;
+ }
+
+ .by-john-doe-1 {
+ letter-spacing: 0;
+ margin-left: 11px;
+ margin-top: 30px;
+ min-height: 20px;
+ }
+ .wednesday-23822823-1 {
+ letter-spacing: 0;
+ margin-left: 11px;
+ margin-top: 4px;
+ min-height: 20px;
+ }
+.jetbrainsmono-normal-alto-15px{
+    color:rgba(219,219,219,1);
+    font-family: "JetBrains Mono";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jetbrainsmono-normal-alto-20px{
+    color:rgba(219,219,219,1);
+    font-family: "JetBrains Mono";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jetbrainsmono-bold-white-24px {
+    color:rgba(255,255,255,1);
+    font-family: "JetBrains Mono";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;    
+}
+
+.jetbrainsmono-normal-white-24px {
+    color:rgba(255,255,255,1);
+    font-family: "JetBrains Mono";
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal; 
+}
