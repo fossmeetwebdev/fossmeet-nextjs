@@ -1,0 +1,39 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 1rem 5rem;
+  border-top: 1px solid black;
+}
+
+.nav-link {
+  font-size: 0.7rem;
+  padding-left: 3vw;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.divider {
+  margin: 10px 0px;
+}

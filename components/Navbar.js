@@ -30,7 +30,7 @@ export default function Navbar({ signOutWallets, walletConnected }) {
             <a className={`${styles["nav-link"]}`}>Code of Conduct</a>
           </Link>
         </div>
-        <div className={`${styles["buttons"]}`}>
+        <div className={`${styles["flex-row"]}`}>
           <Button text="Register" toLink={"/register"} />
           <div className={`${styles["hamburger"]}`}>
             <span className={`${styles["bar"]}`}></span>

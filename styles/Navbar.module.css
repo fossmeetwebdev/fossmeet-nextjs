@@ -19,8 +19,8 @@
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   background-color: #101010;
 }
 
@@ -37,7 +37,7 @@
   font-size: 0.8rem;
   font-weight: 200;
   color: white;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease-in-out;
   padding: 0rem 1rem;
 }
 
@@ -49,6 +49,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
+  transition: all 0.25s ease-in-out;
   font-family: "Poppins", sans-serif;
 }
 
@@ -56,9 +57,14 @@
   color: var(--orange);
 }
 
-.buttons {
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
@@ -74,7 +80,7 @@
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.25s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
