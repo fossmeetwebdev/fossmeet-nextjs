@@ -1,6 +1,6 @@
 export { Spinner };
 
-function Spinner({ color }) {
+export default function Spinner({ color }) {
   return (
     <svg
       className={`animate-spin h-5 w-5 text-${color}`}
@@ -28,5 +28,3 @@ function Spinner({ color }) {
 Spinner.defaultProps = {
   color: "white",
 };
-
-export default Spinner;
