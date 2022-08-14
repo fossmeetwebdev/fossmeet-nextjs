@@ -67,9 +67,9 @@
   color: gray;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer {
-    padding: 0.7rem 1rem;
+@media only screen and (max-width: 900px) {
+  .footer-top {
+    margin-bottom: 8px;
   }
   .nav-menu {
     flex-direction: column;
@@ -80,11 +80,16 @@
     margin-bottom: 3px;
   }
   .footer * p {
-    width: 60%;
+    width: 100%;
     font-size: xx-small;
-    margin-top: 3px;
   }
   .logos {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 1rem 1rem;
   }
 }
