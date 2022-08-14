@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
-import styles from "../styles/faqs.module.css";
+import styles from "../styles/Faqs.module.css";
 
 const questions = [
   {

@@ -1,45 +1,47 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
-
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 export default function Footer() {
   return (
-    <footer className={styles["footer"]} ${styles["flex-col"]}>
-      <div className={styles["flex-row"]}>
-        <div className={styles["flex-row"]}>
-          <Link
-            href="https://fosscell.org/"
-            className={styles["nav-item"]}
-          >
-            <Image
-              className={styles["logo"]}
-              src={"/fosscell-logo.jpg"}
-              alt={"FOSSCell Logo"}
-              width="100%"
-              height="40%"
-              objectFit="contain"
-            />
+    <footer className={`${styles["footer"]} ${styles["flex-col"]}`}>
+      <div className={`${styles["footer-top"]} ${styles["margin-bottom"]}`}>
+        <div className={styles["logos"]}>
+          <Link href="https://fosscell.org/">
+            <a className={styles["nav-link-logo"]}>
+              <Image
+                src={"/fosscell-logo.jpg"}
+                alt={"FOSSCell logo"}
+                width="100%"
+                height="40%"
+                objectFit="contain"
+              />
+            </a>
           </Link>
-          <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
-            <Image
-              className={styles["logo"]}
-              src={"/csea-logo.jpg"}
-              alt={"CSEA Logo"}
-              width="40%"
-              height="40%"
-              objectFit="contain"
-            />
-          </Link>
-          <Link href="http://www.nitc.ac.in">
-            <Image
-              className={styles["logo"]}
-              src={"/nitc-logo.png"}
-              alt={"NITC Logo"}
-              width="40%"
-              height="40%"
-              objectFit="contain"
-            />
-          </Link>
+          <div>
+            <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
+              <a className={styles["nav-link-logo"]}>
+                <Image
+                  src={"/csea-logo.jpg"}
+                  alt={"CSEA logo"}
+                  width="40%"
+                  height="40%"
+                  objectFit="contain"
+                />
+              </a>
+            </Link>
+            <Link href="http://www.nitc.ac.in">
+              <a className={styles["nav-link-logo"]}>
+                <Image
+                  src={"/nitc-logo.png"}
+                  alt={"NITC logo"}
+                  width="40%"
+                  height="40%"
+                  objectFit="contain"
+                />
+              </a>
+            </Link>
+          </div>
         </div>
         <div>
           <div className={styles["nav-menu"]}>
@@ -64,15 +66,25 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <hr className={styles["divider"]}></hr>
-      <div className={styles["flex-row"]}>
-        <div>
-          <p>
-            FOSSMeet’23 - an event conducted by FOSSCell and CSEA of National
-            Institute of Technology, Calicut
-          </p>
+      <div className={`${styles["flex-row"]}`}>
+        <p>
+          FOSSMeet ’22 - an event conducted by FOSSCell and CSEA of National
+          Institute of Technology, Calicut
+        </p>
+        <div className={styles["flex-row"]}>
+          <Link href="#social-media">
+            <BsFacebook className={styles["logo"]} size="20" />
+          </Link>
+          <Link href="#social-media">
+            <BsInstagram className={styles["logo"]} size="20" />
+          </Link>
+          <Link href="#social-media">
+            <BsTwitter className={styles["logo"]} size="20" />
+          </Link>
+          <Link href="#social-media">
+            <BsYoutube className={styles["logo"]} size="20" />
+          </Link>
         </div>
-        <div></div>
       </div>
     </footer>
   );

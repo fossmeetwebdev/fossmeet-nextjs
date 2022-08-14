@@ -11,12 +11,13 @@
   font-family: "JetBrains Mono", sans-serif;
 }
 
-li {
-  list-style: none;
+html,
+body {
+  height: 100%;
 }
 
-a {
-  text-decoration: none;
+li {
+  list-style: none;
 }
 
 a {
@@ -24,10 +25,17 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: auto;
+}
+
 .margin {
   max-width: 1400px;
-  padding: 0 80px;
-  margin: 0 auto;
+  padding: 80px;
+  margin: auto;
 }
 
 @media (max-width: 1279px) {
