@@ -1,8 +1,12 @@
-import '../styles/globals.css'
-import '../assets/fonts/jet-brains-mono/jet-brains-mono.css'
+import "../styles/globals.css";
+import Layout from "../components/Layout.js";
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;
