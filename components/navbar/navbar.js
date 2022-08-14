@@ -3,7 +3,7 @@ import "./navbar.css";
 export default function Navbar() {
   return (
     <section id="first-page">
-  <nav id="heading" className="navbar navbar-expand-lg navbar-light">
+  <nav id="heading" className="navbar navbar-expand-lg navbar-dark">
     <a id="heading1" className="navbar-brand" href="#">
       FOSSMeet'22
     </a>
