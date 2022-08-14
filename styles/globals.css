@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "JetBrains Mono";
+	font-family: 'JetBrains Mono', sans-serif;
 }
 
 li {
@@ -18,3 +18,57 @@ li {
 a {
   text-decoration: none;
 }
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.margin {
+	max-width: 1400px;
+	padding: 0 80px;
+	margin: 0 auto;
+}
+
+button {
+	height: 52px;
+	padding: 0 20px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	color: #fff;
+	background: #fc7600;
+	border: none;
+	border-radius: 8px;
+}
+
+@media (max-width: 1279px) {
+	.margin {
+		padding: 56px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.margin {
+		padding: 32px;
+	}
+}
+
+@media (max-width: 767px) {
+	.margin {
+		padding: 24px;
+	}
+}
+
+@media (max-width: 639px) {
+	.margin {
+		padding: 18px;
+	}
