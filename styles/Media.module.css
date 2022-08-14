@@ -1,0 +1,13 @@
+.media_showcase {
+    background-color: #FC7600;
+    margin: 0;
+    padding: 8.5vh 5vw;
+}
+
+.media_showcase h1 {
+    color: white;
+}
+
+.media_showcase small {
+    color: white;
+}
