@@ -1,66 +1,77 @@
-import { useState } from 'react'
-
-import styles from '../components/faqs/faqs.module.css'
+import { useState } from "react";
+import Button from "../components/Button";
+import styles from "../styles/faqs.module.css";
 
 const questions = [
-	{
-		question: 'How do I register for FOSS Meet 2022-23?',
-		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
-	},
-	{
-		question: 'How do I register for FOSS Meet 2022-23?',
-		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
-	},
-	{
-		question: 'How do I register for FOSS Meet 2022-23?',
-		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
-	},
-	{
-		question: 'How do I register for FOSS Meet 2022-23?',
-		answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
-	},
-]
+  {
+    question: "How do I register for FOSS Meet 2022-23?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+  },
+  {
+    question: "How do I register for FOSS Meet 2022-23?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+  },
+  {
+    question: "How do I register for FOSS Meet 2022-23?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+  },
+  {
+    question: "How do I register for FOSS Meet 2022-23?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+  },
+];
 
 export default function faqs() {
-	return (
-		<div className='margin'>
-			<div className={styles['faqs']}>
-				<div className={styles['content-wrapper']}>
-					<HaveAnyQuestions />
-					<div className={styles['questions-wrapper']}>
-						{questions.map((q, index) => (
-							<Question key={index} question={q.question} answer={q.answer} />
-						))}
-					</div>
-				</div>
-			</div>
-		</div>
-	)
+  return (
+    <div className="margin">
+      <div className={styles["faqs"]}>
+        <div className={styles["content-wrapper"]}>
+          <HaveAnyQuestions />
+          <div className={styles["questions-wrapper"]}>
+            {questions.map((q, index) => (
+              <Question key={index} question={q.question} answer={q.answer} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function HaveAnyQuestions() {
-	return (
-		<div className={styles['have-any-questions']}>
-			<h2>Have Any Questions?</h2>
-			<p>Feel free to reach out to us and we will get back to you immediately</p>
-			<button>Contact us</button>
-		</div>
-	)
+  return (
+    <div className={styles["have-any-questions"]}>
+      <h2>Have Any Questions?</h2>
+      <p>
+        Feel free to reach out to us and we will get back to you immediately
+      </p>
+      <Button text="Contact Us" to="/contact" />
+    </div>
+  );
 }
 
 function Question({ question, answer }) {
-	const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-	return (
-		<div className={styles['question']}>
-			<div className={styles['question-heading-wrapper']} onClick={() => setOpen((curr) => !curr)}>
-				<h4>{question}</h4>
-				<img
-					className={`${styles['faq-drop-icon']} ${open ? styles['up-down'] : ''}`}
-					src='/icons/chevron-down.svg'
-				/>
-			</div>
-			{open && <p>{answer}</p>}
-		</div>
-	)
+  return (
+    <div className={styles["question"]}>
+      <div
+        className={styles["question-heading-wrapper"]}
+        onClick={() => setOpen((curr) => !curr)}
+      >
+        <h4>{question}</h4>
+        <img
+          className={`${styles["faq-drop-icon"]} ${
+            open ? styles["up-down"] : ""
+          }`}
+          src="/icons/chevron-down.svg"
+        />
+      </div>
+      {open && <p>{answer}</p>}
+    </div>
+  );
 }

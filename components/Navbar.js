@@ -20,7 +20,7 @@ export default function Navbar({ signOutWallets, walletConnected }) {
           <Link href="/events" className={`${styles["nav-item"]}`}>
             <a className={`${styles["nav-link"]}`}>Events</a>
           </Link>
-          <Link href="/faq" className={`${styles["nav-item"]}`}>
+          <Link href="/faqs" className={`${styles["nav-item"]}`}>
             <a className={`${styles["nav-link"]}`}>FAQ</a>
           </Link>
           <Link href="/contacts" className={`${styles["nav-item"]}`}>
