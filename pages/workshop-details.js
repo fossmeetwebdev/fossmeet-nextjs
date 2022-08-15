@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/workshop-details/WorkshopDetails.module.css"
 import Description from "../components/workshop-details/Description";
 import Info from "../components/workshop-details/Info";
+import Banner from "../components/Banner";
 
 function WorkshopDetails() {
 
@@ -10,9 +11,10 @@ function WorkshopDetails() {
 
     return (
         <div className={styles['page-container']}>
+            {/* bannner */}
+            <Banner image="workshop-details-banner.png"/>
+            
             <div className={styles.container}>
-                {/* bannner */}
-
                 {/* workshop description */}
                 <div className={styles['description-container']}>
                     <Description />
