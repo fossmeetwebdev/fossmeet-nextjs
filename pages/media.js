@@ -32,7 +32,6 @@ const media = () => {
                 <Card img_name = '14.jpg' />
             </div>
         </div>
-
     </div>
   )
 }

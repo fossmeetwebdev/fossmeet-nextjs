@@ -31,15 +31,15 @@
     margin-bottom: 10px;
 }
 
-.media_gallery img {
+.image_card {
     width: 100%;
     height: auto;
     cursor: pointer;
     transform: scale(1);
-    transition: .3s ease-in-out;
+    transition: all .3s ease-out;
 }  
 
-.media_gallery img:hover {
+.image_card:hover {
     transform: scale(1.2);
     /* filter: grayscale(0.2); */
 }
