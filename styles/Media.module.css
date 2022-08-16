@@ -17,6 +17,7 @@
     line-height:0;
     column-count: 3;
     column-gap:10px;
+    overflow: hidden;
 }
 
 @media (max-width: 1080px) {
@@ -25,9 +26,20 @@
     }
 }
 
+.image_container {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
 .media_gallery img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px; /* to match column gap */
     cursor: pointer;
+    transform: scale(1);
+    transition: .3s ease-in-out;
 }  
+
+.media_gallery img:hover {
+    transform: scale(1.2);
+    /* filter: grayscale(0.2); */
+}
