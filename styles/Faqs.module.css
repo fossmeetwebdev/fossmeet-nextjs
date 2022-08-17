@@ -4,7 +4,6 @@
 .content-wrapper {
   display: flex;
   gap: 80px;
-  /* margin-top: 72px; */
 }
 
 .have-any-questions p {
@@ -46,7 +45,7 @@
 @media (max-width: 1024px) {
   .content-wrapper {
     flex-direction: column-reverse;
-    gap: 56px;
+    gap: 30px;
   }
   .have-any-questions {
     display: flex;
@@ -56,6 +55,6 @@
   }
   .have-any-questions p {
     max-width: 400px;
-    margin: 12px 0 32px 0;
+    margin: 12px 0 px 0;
   }
 }
