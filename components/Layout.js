@@ -5,8 +5,8 @@ import styles from "../styles/Layout.module.css";
 export default function Layout({ children }) {
   return (
     <div>
-      <Navbar className={`${styles.main}`} />
-      <main className={`${styles.main}`}>{children}</main>
+      <Navbar />
+      <main className="wrapper">{children}</main>
       <Footer />
     </div>
   );
