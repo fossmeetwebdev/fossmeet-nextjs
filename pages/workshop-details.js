@@ -11,7 +11,7 @@ function WorkshopDetails() {
   return (
     <div>
       {/* bannner */}
-      <Banner image="workshop-details-banner.png" />
+      <Banner image="workshop-details.png" />
 
       <div className="container margin">
         {/* workshop description */}

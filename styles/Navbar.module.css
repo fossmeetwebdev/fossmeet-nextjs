@@ -1,3 +1,16 @@
+@keyframes slide-in {
+  from {
+    height: 0px;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .header {
   background-color: black;
   position: sticky;
@@ -11,11 +24,8 @@
   align-items: center;
   padding: 0.6rem 5rem;
   color: white;
+  z-index: 69;
   box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
-}
-
-.hamburger {
-  display: none;
 }
 
 .bar {
@@ -65,6 +75,7 @@
 .flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .flex-col {
@@ -72,9 +83,17 @@
   flex-direction: column;
 }
 
-@media only screen and (max-width: 768px) {
+.hamburger {
+  display: none;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
   .navbar {
-    padding: 1rem;
+    padding: 0.75rem 1.5rem;
   }
   .nav-menu {
     position: fixed;
@@ -98,19 +117,35 @@
   }
 
   .hamburger {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--orange);
     cursor: pointer;
   }
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: black;
+    animation-name: slide-in;
+    animation-duration: 300ms;
   }
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  .nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
   }
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  .nav-link-mobile {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .nav-link-mobile:hover {
+    color: var(--orange);
   }
 }

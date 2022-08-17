@@ -34,3 +34,10 @@
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
 }
+
+@media (max-width: 1024px) {
+  .button {
+    padding: 0 12px;
+    height: 35px;
+  }
+}
