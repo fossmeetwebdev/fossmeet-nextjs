@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import styles from "../styles/Media.module.css";
 import Card from "../components/Card"
+import Modal from "../components/Modal"
+import { useRouter } from 'next/router'
 
 const media = () => {
+  let router = useRouter();
+
   return (
     <div>
         <Head>
@@ -13,6 +17,10 @@ const media = () => {
             <small>FOSSmeet in Pictures</small>
             <h1>Gallery</h1>
         </div>
+
+        {router.query.image && (
+            <Modal img_name = {router.query.image} />
+        )}
 
         <div className = {styles.media_body}>
             <div className = {styles.media_gallery}>
@@ -37,3 +45,7 @@ const media = () => {
 }
 
 export default media
+
+
+// Ideas: If I cannot use an image modal, we create separate page for image, and add CSS to it.
+// https://www.youtube.com/watch?v=P4W_LaotmNI
