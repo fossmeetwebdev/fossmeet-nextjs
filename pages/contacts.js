@@ -7,7 +7,7 @@ function Contacts() {
     <div>
       {/* bannner */}
       <Banner
-        image="workshop-details-banner.png"
+        image="contacts.webp"
         title="Get in Touch"
         subtitle="Send us a message"
       />
