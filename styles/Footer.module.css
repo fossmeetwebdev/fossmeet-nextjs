@@ -13,6 +13,7 @@
 .footer {
   padding: 1rem 5rem;
   box-shadow: 0 -5px 10px 0px rgba(50, 50, 50, 0.1);
+  background-color: white;
 }
 .flex-row,
 .nav-menu,

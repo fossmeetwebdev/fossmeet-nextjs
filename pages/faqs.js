@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import styles from "../styles/Faqs.module.css";
+import Banner from "../components/Banner";
 
 const questions = [
   {
@@ -27,8 +28,13 @@ const questions = [
 
 export default function faqs() {
   return (
-    <div className="margin">
-      <div className={styles["faqs"]}>
+    <div>
+      <Banner
+        image="workshop-details-banner.png"
+        title="Frequently Asked Questions"
+        subtitle="Quick Support"
+      />
+      <div className="margin">
         <div className={styles["content-wrapper"]}>
           <HaveAnyQuestions />
           <div className={styles["questions-wrapper"]}>

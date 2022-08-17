@@ -1,0 +1,12 @@
+.description-container {
+  flex: 2;
+  min-width: 450px;
+}
+
+.info-container {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

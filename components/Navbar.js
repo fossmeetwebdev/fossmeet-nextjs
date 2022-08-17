@@ -13,10 +13,6 @@ export default function Navbar({ signOutWallets, walletConnected }) {
     setToggle(!toggle);
   };
 
-  console.log(router.pathname);
-
-  // setCurrPath(router.)
-
   return (
     <header className={styles["header"]}>
       <nav className={styles["navbar"]}>
