@@ -54,7 +54,7 @@
     z-index: 10;
 }
 
-.modal_container p{
+.modal_container p {
     color: white;
     font-size: 1.2rem;
     position: absolute;
@@ -63,10 +63,33 @@
     transform: translate(-50%, -5%);
 }
 
+@media (max-width: 1080px) {
+    .modal_container p {
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+}
+
 .modal_image {
     position: absolute;
     height: 80%;
+    width: auto;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -60%);
+}
+
+@media (max-width: 1080px) {
+    .modal_image {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
 }

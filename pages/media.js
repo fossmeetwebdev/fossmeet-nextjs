@@ -18,10 +18,6 @@ const media = () => {
             <h1>Gallery</h1>
         </div>
 
-        {router.query.image && (
-            <Modal img_name = {router.query.image} />
-        )}
-
         <div className = {styles.media_body}>
             <div className = {styles.media_gallery}>
                 <Card img_name = '1.jpg' />
@@ -40,6 +36,10 @@ const media = () => {
                 <Card img_name = '14.jpg' />
             </div>
         </div>
+
+        {router.query.image && (
+            <Modal img_name = {router.query.image} />
+        )}
     </div>
   )
 }
