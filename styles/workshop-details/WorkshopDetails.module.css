@@ -1,6 +1,5 @@
 .description-container {
   flex: 2;
-  min-width: 450px;
 }
 
 .info-container {
@@ -9,4 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 420px){
+  .info-container{
+    padding: 1.5rem 0;
+  }
 }
