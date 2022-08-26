@@ -24,30 +24,28 @@ export default function Footer() {
               />
             </a>
           </Link>
-          <div>
-            <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
-              <a className={styles["nav-link-logo"]}>
-                <Image
-                  src={"/csea-logo.jpg"}
-                  alt={"CSEA logo"}
-                  width="40%"
-                  height="40%"
-                  objectFit="contain"
-                />
-              </a>
-            </Link>
-            <Link href="http://www.nitc.ac.in">
-              <a className={styles["nav-link-logo"]}>
-                <Image
-                  src={"/nitc-logo.png"}
-                  alt={"NITC logo"}
-                  width="40%"
-                  height="40%"
-                  objectFit="contain"
-                />
-              </a>
-            </Link>
-          </div>
+          <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
+            <a className={styles["nav-link-logo"]}>
+              <Image
+                src={"/csea-logo.jpg"}
+                alt={"CSEA logo"}
+                width="40%"
+                height="40%"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
+          <Link href="http://www.nitc.ac.in">
+            <a className={styles["nav-link-logo"]}>
+              <Image
+                src={"/nitc-logo.png"}
+                alt={"NITC logo"}
+                width="40%"
+                height="40%"
+                objectFit="contain"
+              />
+            </a>
+          </Link>
         </div>
         <div>
           <div className={styles["nav-menu"]}>

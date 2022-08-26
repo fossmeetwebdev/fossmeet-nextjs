@@ -2,6 +2,7 @@
 
 :root {
   --orange: #ff7700;
+  --gray: #f8f9fa;
 }
 
 * {
@@ -15,6 +16,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 li {
@@ -34,7 +42,7 @@ a {
 }
 
 .margin {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   padding: 30px 80px;
   margin: auto;
 }
@@ -48,7 +56,7 @@ a {
   position: absolute;
 }
 
-@media (max-width: 1279px) {
+/* @media (max-width: 1279px) {
   .margin {
     padding: 56px;
   }
@@ -58,16 +66,10 @@ a {
   .margin {
     padding: 32px;
   }
-}
+} */
 
 @media (max-width: 767px) {
   .margin {
     padding: 24px;
-  }
-}
-
-@media (max-width: 639px) {
-  .margin {
-    padding: 18px;
   }
 }

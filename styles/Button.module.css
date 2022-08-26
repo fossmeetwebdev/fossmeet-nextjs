@@ -2,7 +2,7 @@
   align-items: center;
   background-clip: padding-box;
   background-color: var(--orange);
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   color: white;
   cursor: pointer;
