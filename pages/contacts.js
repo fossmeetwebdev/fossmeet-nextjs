@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
 import Banner from "../components/Banner";
-import styles from "../styles/workshop-details/WorkshopDetails.module.css";
+import styles from "../styles/Contacts.module.css";
+import ContactForm from "../components/ContactForm";
+import ContactInfo from "../components/ContactInfo";
 
 function Contacts() {
   return (
     <div>
-      {/* bannner */}
       <Banner
         image="contacts.webp"
         title="Get in Touch"
@@ -13,15 +13,13 @@ function Contacts() {
       />
 
       <div className={`${styles.container} margin`}>
-        {/* workshop description */}
-        {/* <div className={styles["description-container"]}>
-          <Description />
-        </div> */}
+        <div className={styles["description-container"]}>
+          <ContactForm />
+        </div>
 
-        {/* workshop info */}
-        {/* <div className={styles["info-container"]}>
-          <Info />
-        </div> */}
+        <div>
+          <ContactInfo />
+        </div>
       </div>
     </div>
   );
