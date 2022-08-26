@@ -73,6 +73,10 @@
   color: var(--orange);
 }
 
+.nav-link-logo {
+  margin: -10px 0px;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
