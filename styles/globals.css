@@ -2,6 +2,7 @@
 
 :root {
   --orange: #ff7700;
+  --gray: #f8f9fa;
 }
 
 * {
@@ -15,6 +16,13 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 li {

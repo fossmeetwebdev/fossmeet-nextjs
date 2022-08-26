@@ -3,8 +3,17 @@ import Link from "next/dist/client/link";
 
 export default function Button({ text, toLink, onClickFunction }) {
   return (
-    <Link href={`/${toLink}`}>
-      <button className={styles.button} role="button">
+    <Link href={toLink && `/${toLink}`}>
+      <button
+        className={styles.button}
+        role="button"
+        onClick={() => {
+          if (onClickFunction) {
+            onClickFunction();
+          }
+          console.log(onClickFunction);
+        }}
+      >
         {text}
       </button>
     </Link>
@@ -13,6 +22,6 @@ export default function Button({ text, toLink, onClickFunction }) {
 
 Button.defaultProps = {
   text: "Button",
-  toLink: "#",
-  onClickFunction: () => {},
+  toLink: "",
+  onClickFunction: false,
 };

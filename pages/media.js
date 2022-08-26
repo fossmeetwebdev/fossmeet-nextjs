@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import { useRouter } from "next/router";
 import Banner from "../components/Banner";
 
-const media = () => {
+const Media = () => {
   let router = useRouter();
 
   return (
@@ -35,7 +35,7 @@ const media = () => {
   );
 };
 
-export default media;
+export default Media;
 
 // Ideas: If I cannot use an image modal, we create separate page for image, and add CSS to it.
 // https://www.youtube.com/watch?v=P4W_LaotmNI

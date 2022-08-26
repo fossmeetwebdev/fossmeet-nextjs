@@ -13,13 +13,9 @@ function Contacts() {
       />
 
       <div className={`${styles.container} margin`}>
-        <div className={styles["description-container"]}>
-          <ContactForm />
-        </div>
+        <ContactForm />
 
-        <div>
-          <ContactInfo />
-        </div>
+        <ContactInfo />
       </div>
     </div>
   );
