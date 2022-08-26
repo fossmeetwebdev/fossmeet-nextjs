@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "../styles/Media.module.css";
 import Card from "../components/Card";
 import Modal from "../components/Modal";
