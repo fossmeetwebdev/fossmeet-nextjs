@@ -1,8 +1,8 @@
-import "./card.css";
+
 
 export default function Card() {
   return (
-    <div className="group-228">
+    <div className="group-2281">
   <div className="overlap-group">
     <div className="wednesday-23822823-1 jetbrainsmono-normal-alto-15px">
       Wednesday 23/02/2023

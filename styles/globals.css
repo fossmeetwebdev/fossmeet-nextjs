@@ -14,3 +14,120 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media (min-width: 1500px) {
+  #crd2 {
+  margin-top: 20px;
+  margin-left: 140px;   
+  }
+
+  #crd3{
+    margin-top: 20px;  
+  }
+
+  #crd1{
+      position: relative;
+      margin-top: 20px;
+      margin-left: 615px;
+      top: -320px;
+  }
+  #crd5{
+      position: relative;
+      margin-top: 20px;
+      margin-left: 140px;
+      top: -320px;
+  }
+  #crd7{
+      position: relative;
+      top: -250px;
+      margin-left: 140px;
+  
+  }
+  #crd6{
+      position: relative;
+      top: -250px;
+      margin-left: 30px;
+  
+  }
+  #crd9{
+      position: relative;
+      top: -210px;
+      margin-left: 140px;
+  
+  }
+  #crd8{
+      position: relative;
+      top: -210px;
+      margin-left: 30px;
+  
+  }
+  #day2{
+      font-family: "JetBrains Mono";
+      font-weight: bold;
+      font-size: 48px;
+      margin-left: 30px;
+      position: relative;
+      top: -250px;
+  }
+  #fnl-crd {
+      position: relative;
+      margin-left: 120px;
+      top: -555px;
+  }
+  .fttr{
+      position: relative;
+      top: -100px;
+  }
+}  
+
+@media (max-width: 1028px) {
+  #crd2 {
+  padding: 3%;   
+  margin-left: 20px;
+  }
+
+  #crd3{
+    padding: 3%; 
+    margin-left: 20px;
+  }
+
+  #crd1{
+      padding: 3%;
+      margin-left: 20px;
+  }
+  #crd5{
+      padding: 3%;
+      margin-left: 20px;
+  }
+  #day2{
+      font-family: "JetBrains Mono";
+      font-weight: bold;
+      font-size: 48px;
+      margin-left: 30px;
+      position: relative;
+  }
+  #crd7{
+      padding: 3%;
+      margin-left: 20px;
+  
+  }
+  #crd6{
+      padding: 3%;
+      margin-left: 20px;
+} 
+#crd9{
+  padding: 3%;
+  margin-left: 20px;
+
+}
+  #crd8{
+      padding: 3%;
+      margin-left: 20px;
+
+  }
+  #fnl-crd {
+      position: relative;
+      margin-top: 30px;
+      margin-left: 25px;
+  }
+} 

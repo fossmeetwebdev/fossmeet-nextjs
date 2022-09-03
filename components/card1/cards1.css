@@ -6,8 +6,8 @@
  background-position: 58% 58%;
  background-size: cover;
  display: flex;
- height: 539px;
- width: 500px;
+ height: 650px;
+ width: 540px;
  padding: 12.5px 15px;
 }
 .overlap-group {
@@ -81,3 +81,17 @@
     font-weight: 400;
     font-style: normal; 
 }
+.group-2281 {
+    align-items: flex-end;
+    background-image: url(../card/rectangle-212@1x.png);
+    background-position: 58% 58%;
+    background-size: cover;
+    display: flex;
+    height: 300px;
+    width: 540px;
+    padding: 12.5px 15px;
+   }
+
+  /* style={{fontFamily: '"JetBrains Mono", monospace', fontWeight: "bold", fontSize:48 , marginLeft:30, position:"relative",top:-50}} */
+
+  /* style={{position:"relative",marginLeft:120, top:-555}} */

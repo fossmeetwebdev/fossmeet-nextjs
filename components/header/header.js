@@ -1,16 +1,7 @@
-
-
+import Rectangleimage from "./rectangle-212@1x.png";
 export default function Header() {
   return (
-    <div>
-  <img
-    style={{
-      filter:
-        "invert(43%) sepia(61%) saturate(1400%) hue-rotate(2deg) brightness(90%) contrast(104%) opacity(4)"
-    }}
-    src="rectangle-212@1x.png"
-    alt=""
-  />
+    <div className="bck-img">
   <p
     style={{
       fontFamily: '"JetBrains Mono", monospace',
@@ -18,7 +9,7 @@ export default function Header() {
       color: "white",
       fontSize: 24,
       position: "absolute",
-      top: 100,
+      top: 180,
       left: 50
     }}
   >
@@ -31,7 +22,7 @@ export default function Header() {
       color: "white",
       fontSize: 64,
       position: "absolute",
-      top: 160,
+      top: 210,
       left: 50
     }}
   >

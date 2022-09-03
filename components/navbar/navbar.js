@@ -1,9 +1,11 @@
-import "./navbar.css";
-
+import Script from 'next/script';
+import React from 'react'
+import { Nav, Button } from 'react-bootstrap';
 export default function Navbar() {
   return (
+    <>
     <section id="first-page">
-  <nav id="heading" className="navbar navbar-expand-lg navbar-dark">
+  <Nav id="heading" className="navbar navbar-expand-lg navbar-dark">
     <a id="heading1" className="navbar-brand" href="#">
       FOSSMeet'22
     </a>
@@ -16,13 +18,13 @@ export default function Navbar() {
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span className="navbar-toggler-icon" />
+      <span className="navbar-toggler-icon" ></span>
     </button>
     <div id="headeroptions">
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div id="headeroptions" className="navbar-nav">
           <a className="top-hdr1" id="top-header" href="#">
-            About <span className="sr-only">(current)</span>
+            About <span className="sr-only"></span>
           </a>
           <a id="top-header" className="nav-item nav-link" href="#">
             FAQ
@@ -45,9 +47,10 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-  </nav>
+  </Nav>
   <section></section>
 </section>
+</>
 
   );
 }
