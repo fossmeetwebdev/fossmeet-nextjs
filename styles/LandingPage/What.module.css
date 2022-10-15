@@ -35,7 +35,7 @@
 @media(max-width:1000px){
     .what_heading h1{
         font-size:22px;
-        padding:0 25px;
+        padding:0 10px;
     }
     .what_img{
     display: flex;

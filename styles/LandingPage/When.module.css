@@ -1,0 +1,55 @@
+.when {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.when_heading {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 50px 0;
+}
+
+.when_heading h1 {
+    width: 75%;
+}
+
+.when_heading h3 {
+    width: 75%;
+}
+
+.when_button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.when_image {
+    width: 50%;
+}
+
+@media(max-width:1000px) {
+    .when_heading {
+        width: 100%;
+    }
+
+    .when_heading h1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .when_heading h3 {
+        width: 100%;
+        padding:0 10px;
+    }
+
+    .when_image {
+        width: 100%;
+    }
+}
