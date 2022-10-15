@@ -13,6 +13,10 @@
     align-items:center;
     margin:25px 0;
 }
+.who_heading p{
+    font-size:28px;
+    font-weight: 400;
+}
 .who_content{
     display:flex;
     flex-direction:row;
@@ -45,6 +49,7 @@
     }
     .details p{
         width:80%;
+        padding:0 10px;
     }
     .details Image{
         width:100px;
