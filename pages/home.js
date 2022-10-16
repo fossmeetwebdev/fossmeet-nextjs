@@ -6,7 +6,7 @@ import Who from '../components/LandingPage/whoseFoss'
 import When from '../components/LandingPage/whenFoss'
 import Sponsors from '../components/LandingPage/sponsors'
 import Testimonials from '../components/LandingPage/Testimonials'
-import Gallery from '../pages/media'
+import Gallery from '../components/LandingPage/Gallery'
 
 function Home() {
   return (
