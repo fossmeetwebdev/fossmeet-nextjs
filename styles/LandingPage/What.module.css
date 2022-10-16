@@ -13,11 +13,9 @@
 }
 .what_heading p{
     font-size:28px;
-    font-weight: 700;
+    font-weight: 400;
 }
 .what_heading h1{
-    font-style: normal;
-    font-weight: 500;
     font-size:36px;
     line-height:1.2;
     padding:0 100px;
@@ -37,7 +35,7 @@
 @media(max-width:1000px){
     .what_heading h1{
         font-size:22px;
-        padding:0 25px;
+        padding:0 10px;
     }
     .what_img{
     display: flex;

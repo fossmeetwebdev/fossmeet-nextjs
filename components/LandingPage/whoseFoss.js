@@ -8,9 +8,9 @@ function whoseFoss() {
   return (
     <div className={styles.who_container}>
       <div className={styles.who_heading}>
-        <h1>
+        <p>
           Who is it for?
-        </h1>
+        </p>
       </div>
       <div className={styles.who_content}>
         <div className={styles.details}>
