@@ -8,6 +8,7 @@
 .sponsors_heading{
     display:flex;
     flex-direction:column;
+    text-align:center;
     padding:40px 110px;
     width:100%;
 
@@ -55,6 +56,13 @@ justify-content: center;
         text-align: center;
         gap:25px;
     }
+    .sponsors_heading p{
+        font-size:18px;
+    }
+    .sponsors_heading h1{
+        font-size:22px;
+    }
+
 }
 @media(max-width:600px){
     .sponsors_heading{
@@ -66,5 +74,11 @@ justify-content: center;
     }
 .sponsors_image{
         width:80%;
+    }
+    .sponsors_heading h1{
+        font-size:18px;
+    }
+    .sponsors_heading p{
+        font-size:14px;
     }
 }

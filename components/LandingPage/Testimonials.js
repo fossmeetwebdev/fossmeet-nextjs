@@ -6,7 +6,9 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import styles from "../../styles/LandingPage/Testimonials.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from '../../public/images/dropdown-arrow2-512-1@2x.png'
+import img1 from '../../public/icons/istockphoto-1007763808-612x612.jpg'
+// import img1 from '../../public/images/dropdown-arrow2-512-1@2x.png'
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -65,7 +67,8 @@ function Testimonials() {
                     src={img1}
                     alt="image"
                     width="65"
-                    height="65" />
+                    height="65"
+                    className={styles.Image} />
                 </div>
                 <div className={styles.testimonials_testimony_author_name}>
                   Sem imperdiet
@@ -91,7 +94,8 @@ function Testimonials() {
                     src={img1}
                     alt="image"
                     width="65"
-                    height="65" />
+                    height="65"
+                    className={styles.Image} />
                 </div>
                 <div className={styles.testimonials_testimony_author_name}>
                   Sem imperdiet
@@ -116,7 +120,8 @@ function Testimonials() {
                     src={img1}
                     alt="image"
                     width="65"
-                    height="65" />
+                    height="65" 
+                    className={styles.Image}/>
                 </div>
                 <div className={styles.testimonials_testimony_author_name}>
                   Sem imperdiet
@@ -141,7 +146,8 @@ function Testimonials() {
                     src={img1}
                     alt="image"
                     width="65"
-                    height="65" />
+                    height="65"
+                    className={styles.Image} />
                 </div>
                 <div className={styles.testimonials_testimony_author_name}>
                   <div>
@@ -174,7 +180,8 @@ function Testimonials() {
                 src={img1}
                 alt="image"
                 width="39"
-                height="39" />
+                height="39"
+                className={styles.Image} />
             </div>
             <div className={styles.mob_testimony_author_name}>
               <div>
@@ -199,7 +206,8 @@ function Testimonials() {
                 src={img1}
                 alt="image"
                 width="39"
-                height="39" />
+                height="39"
+                className={styles.Image} />
             </div>
             <div className={styles.mob_testimony_author_name}>
               <div>
@@ -250,7 +258,8 @@ function Testimonials() {
                 src={img1}
                 alt="image"
                 width="39"
-                height="39" />
+                height="39"
+                className={styles.Image} />
             </div>
             <div className={styles.mob_testimony_author_name}>
               <div>

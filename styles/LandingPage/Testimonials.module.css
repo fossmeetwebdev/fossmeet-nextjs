@@ -23,7 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding:50px 110px;
+    padding:50px 0px;
+    text-align: center;
 }
 
 .swiperstyles {
@@ -51,6 +52,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    z-index:-1;
     /* background-color:violet; */
     /* padding-left:20px; */
 }
@@ -87,10 +89,9 @@ margin-right:5px; */
     margin-right: 34px;
     margin-top: 28px;
 
-    font-family: 'SourceSansPro';
+    /* font-family: 'SourceSansPro'; */
     font-style: normal;
     font-weight: 400;
-
     color: #000000;
 }
 
@@ -123,11 +124,15 @@ margin-right:5px; */
     text-align: center;
     width: 65px;
     height: 65px;
-    border-radius: 5%;
+    border-radius: 50%;
     margin-left: 34px;
     margin-right: 16px;
 }
 
+
+.testimonials_testimony_author_image .Image{
+    border-radius: 50%;
+}
 .testimonials_testimony_author_name {
     /* background-color:violet; */
     width: 335px;
@@ -136,10 +141,10 @@ margin-right:5px; */
     flex-direction: column;
     justify-content: flex-start;
     text-align: start;
-    font-family: 'SourceSansPro';
+    /* font-family: 'SourceSansPro'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.25;
 
     color: #917c7c;
@@ -173,12 +178,13 @@ margin-right:5px; */
         padding:0;
         justify-content:center;
         text-align: center;
+        gap:25px;
     }
     .testimonials_heading p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .testimonials_heading h1{
-        font-size:18px;
+        font-size:22px;
     }
     .testimonials_testimony_para {
         height: 128px;
@@ -265,7 +271,7 @@ margin-right:5px; */
         /* background-color:magenta; */
         /* width: 276.64px; */
         /* height: 100px; */
-        font-family: 'Open Sans';
+        /* font-family: 'Open Sans'; */
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -293,10 +299,12 @@ margin-right:5px; */
         align-items: center;
         margin-right: 16px;
     }
-
+.mob_testimony_author_image .Image{
+    border-radius: 50%;
+}
     .mob_testimony_author_name {
         /* background-color:palegreen; */
-        font-family: 'Open Sans';
+        /* font-family: 'Open Sans'; */
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -398,7 +406,7 @@ margin-right:5px; */
 
     .mob_testimony_para {
         /* height: 64px; */
-        font-family: 'SourceSansPro';
+        /* font-family: 'SourceSansPro'; */
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -417,7 +425,7 @@ margin-right:5px; */
         width: 238.85px;
         height: 30px;
 
-        font-family: 'SourceSansPro';
+        /* font-family: 'SourceSansPro'; */
         font-style: normal;
         font-weight: 400;
         font-size: 11.408px;
