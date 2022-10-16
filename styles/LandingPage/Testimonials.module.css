@@ -6,6 +6,7 @@
     justify-content: space-around;
     /* height: 60vh; */
     width: 100%;
+    z-index:-1;
     margin-bottom: 110px;
 }
 
@@ -52,7 +53,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    z-index:-1;
+    z-index:0;
     /* background-color:violet; */
     /* padding-left:20px; */
 }
