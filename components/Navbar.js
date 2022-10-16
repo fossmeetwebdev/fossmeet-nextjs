@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className={styles["header"]}>
       <nav className={styles["navbar"]}>
         <Link href="/">
-          <a className={styles["nav-logo"]}>FOSSMeet '22</a>
+          <a className={styles["nav-logo"]}>FOSSMeet &apos;22</a>
         </Link>
         <div className={styles["nav-menu"]}>
           <Link href="/events">
@@ -56,27 +56,48 @@ export default function Navbar() {
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
-            <Link href="/events">
-              <a className={styles["nav-link-mobile"]}>Events</a>
+            <Link href="/events" >
+              <a className={styles["nav-link-mobile"]} 
+              onClick={()=>{
+              toggleButton()
+              }}>Events</a>
             </Link>
-            <Link href="/speakers">
-              <a className={styles["nav-link-mobile"]}>Speakers</a>
+            <Link href="/speakers" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Speakers</a>
             </Link>
-            <Link href="/faqs">
-              <a className={styles["nav-link-mobile"]}>FAQ</a>
+            <Link href="/faqs" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>FAQ</a>
             </Link>
-            <Link href="/media">
-              <a className={styles["nav-link-mobile"]}>Media</a>
+            <Link href="/media" >
+              <a className={styles["nav-link-mobile"]} 
+              onClick={()=>{
+              toggleButton()
+              }}>Media</a>
             </Link>
-            <Link href="code-of-conduct">
-              <a className={styles["nav-link-mobile"]}>Code of Conduct</a>
+            <Link href="code-of-conduct" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Code of Conduct</a>
             </Link>
-            <Link href="/contacts">
-              <a className={styles["nav-link-mobile"]}>Contact Us</a>
+            <Link href="/contacts" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Contact Us</a>
             </Link>
           </div>
-          <Link href="https://fosscell.org/">
-            <a className={styles["nav-link-logo"]}>
+          <Link href="https://fosscell.org/" >
+            <a className={styles["nav-link-logo"]}
+            onClick={()=>{
+            toggleButton()
+            }}>
               <Image
                 src={"/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HomePage from './home'
 
 export default function Home() {
 	return (
@@ -8,7 +9,7 @@ export default function Home() {
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<h1>FOSS Meet 2022-23</h1>
+			<HomePage/>
 		</>
 	)
 }
