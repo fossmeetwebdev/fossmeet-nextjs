@@ -46,12 +46,12 @@ return (
     >
       <div className={styles.subtitle}>
         <p>
-          {props.subtitle}
+        {props.title}
         </p>
           </div>
       <div className={styles.title}>
         <h1>
-        {props.title}
+          {props.subtitle}
           </h1>
         </div>
     </div>

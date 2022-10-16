@@ -54,7 +54,7 @@ justify-content: center;
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap:25px;
+        /* gap:25px; */
     }
     .sponsors_heading p{
         font-size:18px;

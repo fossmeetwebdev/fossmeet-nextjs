@@ -33,9 +33,13 @@
     }
 }
 @media(max-width:1000px){
+    .what_heading {
+        gap:0px;
+    }
     .what_heading h1{
         font-size:22px;
         padding:0 10px;
+        gap:0px;
     }
     
     .what_heading p{

@@ -116,7 +116,7 @@ font-size:36px;
   .container {
     padding: 15px;
     text-align: center;
-    gap:25px;
+    /* gap:25px; */
   }
   .title h1{
     font-size:22px;

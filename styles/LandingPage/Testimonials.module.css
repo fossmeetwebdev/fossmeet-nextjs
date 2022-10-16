@@ -179,7 +179,7 @@ margin-right:5px; */
         padding:0;
         justify-content:center;
         text-align: center;
-        gap:25px;
+        /* gap:25px; */
     }
     .testimonials_heading p{
         font-size: 18px;
