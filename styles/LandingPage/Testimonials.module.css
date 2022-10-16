@@ -23,7 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding:50px 110px;
+    padding:50px 0px;
+    text-align: center;
 }
 
 .swiperstyles {
@@ -177,10 +178,10 @@ margin-right:5px; */
         gap:25px;
     }
     .testimonials_heading p{
-        font-size: 14px;
+        font-size: 18px;
     }
     .testimonials_heading h1{
-        font-size:18px;
+        font-size:22px;
     }
     .testimonials_testimony_para {
         height: 128px;

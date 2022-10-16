@@ -37,6 +37,10 @@
         font-size:22px;
         padding:0 10px;
     }
+    
+    .what_heading p{
+        font-size:18px;
+    }
     .what_img{
     display: flex;
     flex-direction: row;
@@ -49,5 +53,8 @@
     .what_heading h1{
         font-size:18px;
         line-height:1.5;
+    }
+    .what_heading p{
+        font-size:14px;
     }
 }
