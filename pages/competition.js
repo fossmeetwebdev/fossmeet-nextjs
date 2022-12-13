@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../../styles/competition/Competetition.module.css";
-import Banner from "../../components/Banner";
+import styles from "../styles/competition/Competetition.module.css";
+import Banner from "../components/Banner";
 
 function index() {
   return (

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700,580|Lato:800");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+
 @keyframes slide-in {
   from {
     height: 0px;
@@ -16,6 +20,7 @@
   position: sticky;
   top: 0px;
   z-index: 1;
+
 }
 
 .navbar {
@@ -153,4 +158,43 @@
   .nav-link-mobile:hover {
     color: var(--orange);
   }
+}
+
+#heading{
+ height: 100px;
+ background-color: black;
+ }
+ 
+ #heading1{
+ color: white;    
+ font-family:'Lato', sans-serif;
+ font-size: 40px;
+ margin-left: 60px;
+ }
+ 
+ #headeroptions{
+ width: 100%;
+ margin-left: 6.25%; 
+ }
+ 
+ #top-header{
+ color: white;    
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 20px;
+ font-weight: 600; 
+ }
+
+ #rndbtn{ 
+    color: black;
+    background-color: #FF7700;
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 999em;
+    font-size: 20px;
+  }
+
+@media (max-width: 1028px) {
+
+  #top-header{
+    color: black;    
+    }
 }
