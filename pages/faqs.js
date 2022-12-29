@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 import styles from "../styles/Faqs.module.css";
 import Banner from "../components/Banner";
-
+import Head from 'next/head'
 const questions = [
   {
     question: "How do I register for FOSS Meet 2022-23?",
@@ -29,7 +29,16 @@ const questions = [
 export default function faqs() {
   return (
     <div>
-      <Banner
+      
+			<Head>
+				<title>FOSS Meet 2022-23</title>
+				<meta name='description' content='FOSS Meet 2022-23' />
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
+      <div className="error">
+        
+      </div>
+      {/* <Banner
         image="workshop-details-banner.png"
         title="Frequently Asked Questions"
         subtitle="Quick Support"
@@ -43,7 +52,7 @@ export default function faqs() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

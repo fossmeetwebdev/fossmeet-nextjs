@@ -3,12 +3,18 @@ import Card from "../components/Card";
 import Modal from "../components/Modal";
 import { useRouter } from "next/router";
 import Banner from "../components/Banner";
-
+import Head from 'next/head'
 const Media = () => {
   let router = useRouter();
 
   return (
     <div>
+      
+			<Head>
+				<title>FOSS Meet 2022-23</title>
+				<meta name='description' content='FOSS Meet 2022-23' />
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
       <Banner title="Gallery" subtitle="FOSSMeet in Pictures" image="" />
 
       <div className={`{styles.media_body} margin`}>

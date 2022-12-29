@@ -10,20 +10,24 @@ function WorkshopDetails() {
 
   return (
     <div>
+      
+      <div className="error">
+        
+      </div>
       {/* bannner */}
-      <Banner image="workshop-details.png" />
+      {/* <Banner image="workshop-details.png" /> */}
 
-      <div className="container margin">
+      {/* <div className="container margin"> */}
         {/* workshop description */}
-        <div className={styles["description-container"]}>
+        {/* <div className={styles["description-container"]}>
           <Description />
-        </div>
+        </div> */}
 
         {/* workshop info */}
-        <div className={styles["info-container"]}>
+        {/* <div className={styles["info-container"]}>
           <Info />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
