@@ -15,17 +15,23 @@ function whoseFoss() {
       <div className={styles.who_content}>
         <div className={styles.details}>
           {/* <div className={styles.details_heading}> */}
-            <h2>
-              Students
-            </h2>
+          <h2>
+            Students
+          </h2>
           {/* </div> */}
           {/* <div className={styles.details_image}> */}
-            <Image src={student} alt="Student" />
+          <Image src={student} alt="Student" />
           {/* </div> */}
           {/* <div className={styles.para}> */}
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus.
-            </p>
+          <p>
+            <br />
+            {/* <br /> */}
+            If you are a humble newbie to the world of open source, then this is the most suitable platform to introduce you to the culture of
+            code transparency.
+            <br />
+            Additionally, it will prepare you with the skillset you need to get started in the field.
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          </p>
           {/* </div> */}
         </div>
         <div className={styles.details}>
@@ -34,7 +40,11 @@ function whoseFoss() {
           </h2>
           <Image src={teacher} alt="teacher" />
           <p>
-            Lorem ipsum dolor sit ame, consectetur adipiscing elit. Ut dapibus.
+            {/* <br /> */}
+            <br />
+            As for educators, the FOSSMeet platform will provide a portal to interact with developers, academicians, and researchers. It will enable
+            you to expand your network in your field of expertise. You will find opportunities to
+            develop new tools and to pass along your knowledge to others who share your passion.
           </p>
         </div>
         <div className={styles.details}>
@@ -43,7 +53,12 @@ function whoseFoss() {
           </h2>
           <Image src={coding} alt="Coding Enthusiasts" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus.
+            <br />
+            {/* <br /> */}
+            If you are a coding enthusiast, you do not need to look any further to find people who share similar interests. Getting together with
+            other developers at FOSSMeet is a great way to interact, brainstorm, and build new projects.
+            <br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           </p>
         </div>
       </div>

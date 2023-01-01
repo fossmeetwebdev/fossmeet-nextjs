@@ -15,10 +15,10 @@ export default function CodeOfConduct() {
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-      <div className="error">
+      {/* <div className="error">
 
-      </div>
-      {/* <Banner
+      </div> */}
+      <Banner
         image="code-of-conduct.jpeg"
         title="Code of Conduct"
         subtitle="Our Ethics and Values"
@@ -47,7 +47,7 @@ export default function CodeOfConduct() {
         <hr></hr>
         <br></br>
         <p>{license}</p>
-      </div> */}
+      </div>
     </div>
   );
 }
