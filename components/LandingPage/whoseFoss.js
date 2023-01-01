@@ -28,9 +28,9 @@ function whoseFoss() {
             {/* <br /> */}
             If you are a humble newbie to the world of open source, then this is the most suitable platform to introduce you to the culture of
             code transparency.
-            <br />
+          
             Additionally, it will prepare you with the skillset you need to get started in the field.
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+           {/* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*/}
           </p>
           {/* </div> */}
         </div>
@@ -57,8 +57,8 @@ function whoseFoss() {
             {/* <br /> */}
             If you are a coding enthusiast, you do not need to look any further to find people who share similar interests. Getting together with
             other developers at FOSSMeet is a great way to interact, brainstorm, and build new projects.
-            <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            
+           {/* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*/}
           </p>
         </div>
       </div>
