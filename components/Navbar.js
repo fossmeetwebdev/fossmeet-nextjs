@@ -68,6 +68,12 @@ export default function Navbar() {
               toggleButton()
               }}>Speakers</a>
             </Link>
+            <Link href="/competition" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Competition</a>
+            </Link>
             <Link href="/faqs" >
               <a className={styles["nav-link-mobile"]}
               onClick={()=>{
