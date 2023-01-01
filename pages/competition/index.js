@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../../styles/competition/Competetition.module.css'
 import Head from 'next/head'
+import Coming from '../../components/LandingPage/Coming'
 function index() {
     return (
         <div className={styles.competition}>
@@ -10,10 +11,7 @@ function index() {
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
-            <div className="error">
-
-            </div>
+            <Coming/>
 {/* 
             <div className={styles.competition_heading}>
                 <div className={styles.heading_css}>

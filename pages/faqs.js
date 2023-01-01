@@ -3,6 +3,8 @@ import Button from "../components/Button";
 import styles from "../styles/Faqs.module.css";
 import Banner from "../components/Banner";
 import Head from 'next/head'
+import Coming from '../components/LandingPage/Coming'
+
 const questions = [
   {
     question: "How do I register for FOSS Meet 2022-23?",
@@ -35,9 +37,7 @@ export default function faqs() {
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-      <div className="error">
-        
-      </div>
+      <Coming/>
       {/* <Banner
         image="workshop-details-banner.png"
         title="Frequently Asked Questions"

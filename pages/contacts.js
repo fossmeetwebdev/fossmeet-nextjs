@@ -12,10 +12,10 @@ function Contacts() {
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-      <div className="error">
+      {/* <div className="error">
         
-      </div>
-      {/* <Banner
+      </div> */}
+      <Banner
         image="contacts.webp"
         title="Get in Touch"
         subtitle="Send us a message"
@@ -23,9 +23,8 @@ function Contacts() {
 
       <div className={`${styles.container} margin`}>
         <ContactForm />
-
         <ContactInfo />
-      </div> */}
+      </div>
     </div>
   );
 }
