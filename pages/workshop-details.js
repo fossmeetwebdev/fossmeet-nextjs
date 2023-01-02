@@ -12,24 +12,18 @@ function WorkshopDetails() {
 
   return (
     <div>
-      
-			<Head>
-				<title>FOSS Meet 2022-23</title>
-				<meta name='description' content='FOSS Meet 2022-23' />
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
-            <Coming/>
+      <Coming />
       {/* bannner */}
       {/* <Banner image="workshop-details.png" /> */}
 
       {/* <div className="container margin"> */}
-        {/* workshop description */}
-        {/* <div className={styles["description-container"]}>
+      {/* workshop description */}
+      {/* <div className={styles["description-container"]}>
           <Description />
         </div> */}
 
-        {/* workshop info */}
-        {/* <div className={styles["info-container"]}>
+      {/* workshop info */}
+      {/* <div className={styles["info-container"]}>
           <Info />
         </div>
       </div> */}
