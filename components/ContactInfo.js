@@ -1,5 +1,5 @@
 import styles from "../styles/Contacts.module.css";
-
+import contact_image from '../public/Email_PNG.png'
 import { BsPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import Image from "next/image";
@@ -48,7 +48,7 @@ const ContactInfo = () => {
 
         <div className={styles["contact-info__main__picture"]}>
           <Image
-            src="/../public/Email_PNG.png"
+            src={contact_image}
             alt="Contact Us Image"
             width={200}
             height={200}
