@@ -35,6 +35,7 @@ function whoseFoss() {
           {/* </div> */}
         </div>
         <div className={styles.details}>
+          <br/>
           <h2>
             Teachers
           </h2>

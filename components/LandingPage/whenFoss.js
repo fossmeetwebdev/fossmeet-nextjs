@@ -12,7 +12,7 @@ function whenFoss() {
           And finally,<br/> when and where is it?
         </p>
         <h1>
-          23/02/2023
+          10/02/2023
         </h1>
         <h1>
           at 
