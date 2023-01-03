@@ -3,14 +3,14 @@ import HomePage from './home'
 
 export default function Home() {
 	return (
-		<>
-			<Head>
+		<div>
+			{/* <Head>
 				<title>FOSS Meet 2022-23</title>
 				<meta name='description' content='FOSSMeet is an annual gathering to celebrate the freedom in 
 				FOSS featuring exciting events, workshops, and brilliant speakers.' />
-				<link rel="jpg"  href="/favicon.jpg" />
-			</Head>
+				<link rel="ico"  href="/favicon.ico" />
+			</Head> */}
 			<HomePage/>
-		</>
+		</div>
 	)
 }
