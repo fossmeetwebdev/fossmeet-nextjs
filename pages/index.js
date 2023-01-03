@@ -6,8 +6,9 @@ export default function Home() {
 		<>
 			<Head>
 				<title>FOSS Meet 2022-23</title>
-				<meta name='description' content='FOSS Meet 2022-23' />
-				<link rel='icon' href='/favicon.ico' />
+				<meta name='description' content='FOSSMeet is an annual gathering to celebrate the freedom in 
+				FOSS featuring exciting events, workshops, and brilliant speakers.' />
+				<link rel="jpg"  href="/favicon.jpg" />
 			</Head>
 			<HomePage/>
 		</>
