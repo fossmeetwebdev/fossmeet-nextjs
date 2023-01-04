@@ -23,10 +23,10 @@ function whenFoss() {
         <h3>
           Save the date for the exciting 3 day event. See y’all there 
         </h3>
-        <div className={styles.when_button}>
+        {/* <div className={styles.when_button}>
           <Button text="Get Tickets" toLink={"/"} />
           <Button text="Location" toLink={"/"} />
-        </div>
+        </div> */}
       </div>
       <div className={styles.when_image}>
         <Image src={NITC} alt="NITC" width="1500"/>
