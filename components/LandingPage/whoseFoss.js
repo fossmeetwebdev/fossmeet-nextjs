@@ -55,9 +55,10 @@ function whoseFoss() {
           <Image src={coding} alt="Coding Enthusiasts" />
           <p>
             <br />
-            {/* <br /> */}
             If you are a coding enthusiast, you do not need to look any further to find people who share similar interests. Getting together with
             other developers at FOSSMeet is a great way to interact, brainstorm, and build new projects.
+            <br />
+            <br />
             
            {/* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*/}
           </p>

@@ -1,10 +1,8 @@
 .coming_soon_showcase {
     background-color: #ff7700b7;
     margin: 0;
-    width:100%;
-    height:75vh;
-    /* padding: 8.5vh 5vw; */
-    /* padding-bottom: 18.5vh; */
+    padding: 8.5vh 5vw;
+    padding-bottom: 18.5vh;
 }
 
 .coming_soon_showcase h1 {
@@ -17,13 +15,8 @@
 }
 
 .centered_div {
-    height:75vh;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
     text-align: center;
-    /* margin: 10vh 15vw; */
+    margin: 10vh 15vw;
 }
 
 .contact_form {
