@@ -15,6 +15,7 @@ export default function Layout({ children }) {
         freedom in FOSS featuring exciting events,
         workshops, and brilliant speakers.' />
         {/* <link rel="icon" href={icon} />  */}
+        
       </Head>
       <Navbar />
       <main className="wrapper">{children}</main>
