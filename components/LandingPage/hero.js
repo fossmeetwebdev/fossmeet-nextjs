@@ -13,10 +13,8 @@ function Hero() {
           Nope, not like free beer at an open bar. It&apos;s much more than that.
         </p>
       </div>
-      <div className={styles.image}>
-        <div>
-          <Image src={logo} alt="FOSS Cell NITC" width="700" height="500"/>
-        </div>
+      <div className={styles['image-container']}>
+          <Image src={logo} alt="FOSS Cell NITC" className={styles.img} height="700px" width="1000px"/ >
       </div>
     </div>
   )
