@@ -50,7 +50,7 @@
 }
 
 .nav-link {
-  font-size: 0.8rem;
+  font-size: 1.15rem;
   font-weight: 200;
   color: white;
   transition: all 0.25s ease-in-out;
@@ -62,8 +62,8 @@
 }
 
 .nav-logo {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 750;
   color: white;
   transition: all 0.25s ease-in-out;
   font-family: "Poppins", sans-serif;
@@ -94,6 +94,15 @@
 
 .navbar-mobile {
   display: none;
+}
+
+@media (max-width: 1000px){
+  .nav-logo{
+    font-size: 1.1rem;
+  }
+  .nav-link{
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
