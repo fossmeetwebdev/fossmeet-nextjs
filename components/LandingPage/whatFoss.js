@@ -7,18 +7,16 @@ export default function whatFoss() {
   return (
     <div className={styles.what_container}>
       <div className={styles.what_heading}>
-        <p>
-          What is FossMeet? 
-        </p>
         <h1>
+          What is FossMeet? 
+        </h1>
+        <p>
            An annual gathering to celebrate the freedom in FOSS 
            featuring exciting events, workshops, and brilliant speakers.
-        </h1>
+        </p>
       </div>
       <div className={styles.what_img}>
-        <div>
-        <Image src={img} alt="FOSS Meet" width="1200" height="600"/>
-        </div>
+        <Image src={img} className={styles.img} alt="FOSS Meet" width="1700" height="700"/>
       </div>
     </div>
   )

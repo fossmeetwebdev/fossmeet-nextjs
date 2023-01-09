@@ -1,9 +1,14 @@
 .why{
     display:flex;
     flex-direction:column;
+    justify-content: space-evenly;
     align-items:center;
     width:100%;
     gap:25px;
+
+    background-color: #F8F9FA;
+    min-height: 100vh;
+    overflow: hidden;
 }
 .heading_why{
     display:flex;
@@ -11,14 +16,19 @@
     text-align:center;
     align-items:center;
     justify-content: center;
-    width:80%;
+    width:70%;
     /* gap:25px; */
-}
-.heading_why p{
-    font-size:28px;
+
+    padding: 25px;
 }
 .heading_why h1{
-    font-size:36px;
+    font-size:32px;
+    font-weight: 200;
+    padding: 40px;
+}
+.heading_why p{
+    font-size:48px;
+    font-weight: 600;
     line-height:1.4;
 }
 .why_quotes{
@@ -27,7 +37,10 @@
     flex-direction:column;
     flex-wrap: wrap;
     align-items:center;
-    gap:25px;
+    gap:75px;
+
+    padding: 15px 0;
+    font-size: 30px;
 }
 .why_quotes1{
     width:75%;
@@ -51,7 +64,78 @@
 .why_quotes2 p{
     margin:25px 0;
 }
-@media(max-width:1000px){
+
+.img{
+    object-fit: cover;
+}
+
+@media(max-width: 1550px){
+    .why{
+        justify-content: center;
+    }
+    .heading_why{
+        width: 70%;
+    }
+    .heading_why h1{
+        font-size: 35px;
+    }
+    .heading_why p{
+        width: 80%;
+        font-size: 40px;
+    }
+    .why_quotes{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 1200px){
+    .heading_why h1{
+        font-size: 28px;
+    }
+    .heading_why p{
+        width: 100%;
+        font-size: 38px;
+    }
+    .why_quotes{
+        width: 100%;
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 750px){
+    .heading_why{
+        width: 85%;
+    }
+    .heading_why h1{
+        font-size: 23px;
+    }
+    .heading_why p{
+        width: 80%;
+        font-size: 28px;
+    }
+    .why_quotes{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 450px){
+    .heading_why{
+        padding: 10px;
+        width: 92.5%;
+    }
+    .heading_why h1{
+        font-size: 20px;
+    }
+    .heading_why p{
+        width: 100%;
+        font-size: 22px;
+    }
+    .why_quotes{
+        padding-top: 0;
+        font-size: 15px;
+    }
+}
+/* @media(max-width:1000px){
     .heading_why{
         width:100%;
     }
@@ -84,4 +168,4 @@
 .heading_why p{
     font-size:14px;
 }
-}
+} */

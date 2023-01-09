@@ -20,7 +20,7 @@ function whoseFoss() {
           </h2>
           {/* </div> */}
           {/* <div className={styles.details_image}> */}
-          <Image src={student} alt="Student" />
+          <Image src={student} alt="Student" className={styles.student}/>
           {/* </div> */}
           {/* <div className={styles.para}> */}
           <p>

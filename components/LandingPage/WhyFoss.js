@@ -7,12 +7,12 @@ function WhyFoss() {
   return (
     <div className={styles.why}>
       <div className={styles.heading_why}>
-        <p>
-          Why are we conducting it?
-        </p>
         <h1>
-          We believe in collaboration for the growth of technology and society.
+          Why are we conducting it?
         </h1>
+        <p>
+          We believe in collaboration for the growth of technology and society.
+        </p>
       </div>
       <div className={styles.why_quotes}>
         <div className={styles.why_quotes1}>
@@ -34,8 +34,8 @@ function WhyFoss() {
              -Richard Stallman, founder of the Free Software Movement
           </h4>
         </div>
-        {/* <Image src={image1} alt="Images"/> */}
       </div>
+      {/* <Image src={image1} class={styles.img} alt="Images" width="3000"/> */}
     </div>
   )
 }
