@@ -38,6 +38,10 @@
     width: 50%;
 }
 
+.img{
+    object-fit: cover;
+}
+
 @media(max-width:1000px) {
     .when_heading {
         width: 100%;

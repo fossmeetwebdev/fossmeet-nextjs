@@ -20,7 +20,9 @@ function whoseFoss() {
           </h2>
           {/* </div> */}
           {/* <div className={styles.details_image}> */}
-          <Image src={student} alt="Student" className={styles.student}/>
+          <div className={styles.img_container}>
+            <Image src={student} alt="Student" className={styles.img}/>
+          </div>
           {/* </div> */}
           {/* <div className={styles.para}> */}
           <p>
@@ -39,7 +41,9 @@ function whoseFoss() {
           <h2>
             Teachers
           </h2>
-          <Image src={teacher} alt="teacher" />
+          <div className={styles.img_container}>
+            <Image src={teacher} alt="teacher" className={styles.img} />
+          </div>
           <p>
             {/* <br /> */}
             <br />
@@ -52,7 +56,9 @@ function whoseFoss() {
           <h2>
             Coding Enthusiasts
           </h2>
-          <Image src={coding} alt="Coding Enthusiasts" />
+          <div className={styles.img_container}>
+            <Image src={coding} alt="Coding Enthusiasts" className={styles.img}/>
+          </div>
           <p>
             <br />
             If you are a coding enthusiast, you do not need to look any further to find people who share similar interests. Getting together with

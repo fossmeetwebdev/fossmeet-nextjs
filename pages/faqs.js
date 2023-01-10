@@ -9,27 +9,52 @@ const questions = [
   {
     question: "How do I register for FOSS Meet 2022-23?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "Registrations are scheduled to start on or before 10-02-2023. Registration link will be available in this website.Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us.The registration fee will be ₹800 for students and ₹1200 for professionals.",
   },
   {
-    question: "How do I register for FOSS Meet 2022-23?",
+    question: "Will accommodation be provided?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "Yes, different accomodation facilities will be provided for the students and the professionals from Friday night till Sunday night, for the entire duration of FOSSMeet. Accomodation charges (for the entire FOSSMeet event)+:Students: ₹200* Professionals: ₹300*",
+},
+  {
+    question: "Is food provided during the event?",
+    answer:
+      "Yes, food will be provided. The registration fee is inclusive of dinner on Friday, breakfast, lunch and dinner on Saturday and, breakfast and lunch on Sunday.*",
   },
   {
-    question: "How do I register for FOSS Meet 2022-23?",
+    question: "Are there any separate fees for talks/workshops?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "No separate fee for talks/workshops.",
   },
   {
-    question: "How do I register for FOSS Meet 2022-23?",
+    question: "Can I register for specific workshops/talks?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "No, there is no separate registration for specific talks/workshops. However, since workshops run in parallel, you may be asked to indicate your preferred workshop while reporting for the event. Admittance to workshops will be on this preference in first come first served order.",
   },
   {
-    question: "How do I register for FOSS Meet 2022-23?",
+    question: "Is it necessary for each participant to register?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "Yes, each participant has to register seperately in the website. This it to keep track of your workshop/talk preference, food preference and hostel accommodation.",
+  },
+  {
+    question: "Do we get T-shirts for FOSSMeet '23?",
+    answer:
+      "Yes, all participants of FOSSMeet '23 get free T-shirts!* :)",
+  },
+  {
+    question: "Do you provide participation certificates?",
+    answer:
+      "Yes, each participant shall receive a participation certificate on completion of the event. We request participants, not to register for the event merely for the certificate. You might be denying the opportunity of a genuinely interested candidate :)",
+  },
+  {
+    question: "How do I reach NIT Calicut?",
+    answer:
+      "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station(CLT). The Kozhikode International Airport(CCJ) provides daily flights to and from major cities in India.From Airport:Take a cab directly to NIT Calicut.From Railway Station:Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
+  },
+  {
+    question: "What is your refund policy?",
+    answer:
+      "Refund unless for genuine reasons will not be entertained. However, we will refund 50% of the amount paid, excluding service charges. To initiate a refund, send a mail to info@fossmeet.in and we will contact you.",
   },
 ];
 

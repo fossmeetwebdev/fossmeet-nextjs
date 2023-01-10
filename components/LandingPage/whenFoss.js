@@ -29,7 +29,7 @@ function whenFoss() {
         </div> */}
       </div>
       <div className={styles.when_image}>
-        <Image src={NITC} alt="NITC" width="1500"/>
+        <Image src={NITC} alt="NITC" width="1500" className={styles.img}/>
       </div>
     </div>
   )
