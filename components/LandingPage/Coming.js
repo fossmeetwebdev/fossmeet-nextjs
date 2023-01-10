@@ -9,12 +9,6 @@ function Coming() {
     return (
         <div className="error">
 
-            <Head>
-                <title>FOSS Meet 2022-23</title>
-                <meta name='description' content='FOSS Meet 2022-23' />
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
-
             <div className={styles.coming_soon_showcase}>
                 <div className={styles.centered_div}>
                     <h1>Coming Soon.....</h1>
