@@ -36,8 +36,8 @@ const questions = [
 export default function faqs() {
   return (
     <div>
-      <Coming/>
-      {/* <Banner
+      {/* <Coming/> */}
+      <Banner
         image="workshop-details-banner.png"
         title="Frequently Asked Questions"
         subtitle="Quick Support"
@@ -51,7 +51,7 @@ export default function faqs() {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
