@@ -5,7 +5,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <link rel="icon" type="image/x-icon" href="/favicon.jpg"></link>
+                    <link rel="icon" type="image/x-icon" href="/fossmeet favicon.png"></link>
                 </Head>
                 <body>
                     <Main />
