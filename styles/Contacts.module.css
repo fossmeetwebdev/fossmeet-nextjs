@@ -4,6 +4,7 @@
   justify-content: space-between;
 
   width: 100%;
+  gap: 5%
 }
 
 .form {
@@ -122,5 +123,15 @@
   }
   .contact-info__main__picture {
     width: 150px;
+  }
+}
+
+@media(max-width: 500px){
+  .contact-info{
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-info__main__picture {
+    display: none;
   }
 }
