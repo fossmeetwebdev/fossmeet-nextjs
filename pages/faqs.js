@@ -88,7 +88,7 @@ function HaveAnyQuestions() {
       <p>
         Feel free to reach out to us and we will get back to you immediately
       </p>
-      <Button text="Contact Us" toLink="/contact" />
+      <Button text="Contact Us" toLink="/contacts" />
     </div>
   );
 }
