@@ -7,14 +7,14 @@ import Coming from '../components/LandingPage/Coming'
 
 const questions = [
   {
-    question: "How do I register for FOSS Meet 2022-23?",
+    question: "How do I register for FOSSMeet'23?",
     answer:
-      "Registrations are scheduled to start on or before 10-02-2023. Registration link will be available in this website.Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us.The registration fee will be ₹800 for students and ₹1200 for professionals.",
+      "Registrations are scheduled to start in the last week of January. Registration link will be available in this website. Registered participants will receive an email with the ticket info.",
   },
   {
     question: "Will accommodation be provided?",
     answer:
-      "Yes, different accomodation facilities will be provided for the students and the professionals from Friday night till Sunday night, for the entire duration of FOSSMeet. Accomodation charges (for the entire FOSSMeet event)+:Students: ₹200* Professionals: ₹300*",
+      "Yes, different accomodation facilities will be provided for the students and the professionals from Friday night till Sunday night, for the entire duration of FOSSMeet.",
 },
   {
     question: "Is food provided during the event?",
@@ -37,9 +37,9 @@ const questions = [
       "Yes, each participant has to register seperately in the website. This it to keep track of your workshop/talk preference, food preference and hostel accommodation.",
   },
   {
-    question: "Do we get T-shirts for FOSSMeet '23?",
+    question: "Do we get T-shirts for FOSSMeet'23?",
     answer:
-      "Yes, all participants of FOSSMeet '23 get free T-shirts!* :)",
+      "Yes, all participants of FOSSMeet'23 get free T-shirts! :)",
   },
   {
     question: "Do you provide participation certificates?",
@@ -51,11 +51,11 @@ const questions = [
     answer:
       "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station(CLT). The Kozhikode International Airport(CCJ) provides daily flights to and from major cities in India.From Airport:Take a cab directly to NIT Calicut.From Railway Station:Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
   },
-  {
-    question: "What is your refund policy?",
-    answer:
-      "Refund unless for genuine reasons will not be entertained. However, we will refund 50% of the amount paid, excluding service charges. To initiate a refund, send a mail to info@fossmeet.in and we will contact you.",
-  },
+  // {
+  //   question: "What is your refund policy?",
+  //   answer:
+  //     "Refund unless for genuine reasons will not be entertained. However, we will refund 50% of the amount paid, excluding service charges. To initiate a refund, send a mail to info@fossmeet.in and we will contact you.",
+  // },
 ];
 
 export default function faqs() {
