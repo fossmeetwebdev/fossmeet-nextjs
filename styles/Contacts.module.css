@@ -100,6 +100,40 @@
   flex-direction: column;
 }
 
+.submit-button{
+  background-color: var(--orange);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: white;
+
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.submit-button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+}
+
+
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;

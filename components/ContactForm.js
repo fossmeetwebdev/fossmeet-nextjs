@@ -1,6 +1,10 @@
 import styles from "../styles/Contacts.module.css";
 import { useState } from "react";
-import Button from "../components/Button";
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://jqltzdpmkmeifkbxgcmz.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxbHR6ZHBta21laWZrYnhnY216Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzM3NjY2ODcsImV4cCI6MTk4OTM0MjY4N30.QvRMaPXEmO-s3zq0qZpqOID38tujl1qsXWmVhzllXPo"
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 const ContactForm = () => {
   const [fullName, setFullName] = useState("");
@@ -9,16 +13,22 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [toast, setToast] = useState("");
 
-  const sendMessage = () => {
-    // setFullName("");
-    // setEmail("");
-    // setPhone("");
-    // setMessage("");
+  const sendMessage = async (event) => {
+    event.preventDefault()
+    
+    setFullName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
     setToast("✅ Your Message has been sent");
+    setTimeout(() => setToast(""), 3000);
+    
+    const { data, error } = await supabase.from('Messages').insert([{ 'full name': fullName, 'email': email,  'phone number': phone, 'message': message},])
+
   };
 
   return (
-    <form className={styles.form}>
+    <form onSubmit={sendMessage} className={styles.form}>
       <input
         placeholder="Full Name"
         type="text"
@@ -28,6 +38,7 @@ const ContactForm = () => {
           setToast("");
         }}
         className={styles["form-control"]}
+        required
       ></input>
       <input
         placeholder="Email Address"
@@ -38,6 +49,7 @@ const ContactForm = () => {
           setToast("");
         }}
         className={styles["form-control"]}
+        required
       ></input>
       <input
         placeholder="Phone Number"
@@ -58,9 +70,10 @@ const ContactForm = () => {
         }}
         rows={5}
         className={styles["form-control"]}
+        required
       ></textarea>
       <div className={styles["form-button"]}>
-        <Button text="Send" onClickFunction={sendMessage} />
+        <button type="submit" className={styles['submit-button']}>Submit</button>
         {toast && <p className={styles.toast}>{toast}</p>}
       </div>
     </form>
