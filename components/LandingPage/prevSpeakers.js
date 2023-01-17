@@ -1,8 +1,8 @@
 import styles from "../../styles/LandingPage/PrevSpeakers.module.css";
-import img1 from "../../public/images/Bradley.jpg";
-import img2 from "../../public/images/sasikumar.png";
-import img3 from "../../public/images/Amol Kahat.jpg";
-import img4 from "../../public/images/marco.jpg";
+import imgBradley from "../../public/images/Bradley.jpg";
+import imgSasikumar from "../../public/images/sasikumar.png";
+import imagAmol from "../../public/images/Amol Kahat.jpg";
+import imgMarco from "../../public/images/marco.jpg";
 // import img1 from '../../public/images/dropdown-arrow2-512-1@2x.png'
 import Image from "next/image";
 
@@ -11,15 +11,23 @@ function prevSpeakers() {
     {
       name: "Bradley M Kuhn",
       description: "Free software Activist",
-      img: img1,
+      img: imgBradley,
     },
-    { name: "Dr. Sasi Kumar", description: "Director, FSF India", img: img2 },
+    {
+      name: "Dr. Sasi Kumar",
+      description: "Director, FSF India",
+      img: imgSasikumar,
+    },
     {
       name: "Amol Kahat",
       description: "Red Hatter, Open source enthusiast",
-      img: img3,
+      img: imagAmol,
     },
-    { name: "Marco Fioretti", description: "Author and Researcher", img: img4 },
+    {
+      name: "Marco Fioretti",
+      description: "Author and Researcher",
+      img: imgMarco,
+    },
   ];
 
   return (
