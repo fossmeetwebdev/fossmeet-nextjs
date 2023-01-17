@@ -85,6 +85,7 @@
 .contact-info__main__info__box {
   display: flex;
   flex-direction: row;
+  white-space: nowrap;
 }
 
 .contact-info__main__info__box__image {
