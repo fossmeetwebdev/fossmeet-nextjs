@@ -19,10 +19,10 @@ export default function Navbar() {
           <a className={styles["nav-logo"]}>FOSSMeet&apos;23</a>
         </Link>
         <div className={styles["nav-menu"]}>
-          <Link href="/events">
+          <Link href="/speakers">
             <a className={styles["nav-link"]}>Speakers</a>
           </Link>
-          <Link href="/speakers">
+          <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
           </Link>
           <Link href="code-of-conduct">
