@@ -46,21 +46,21 @@ function speakers() {
         linkedin: "https://www.linkedin.com/in/prasadkhake/",
       },
     },
-    {
-      name: "Akshay S Dinesh",
-      description: "Fossmeet 2020 invitee.",
-      img: imgDeepika,
-      events: [
-        { name: "Enough of javascript build tools. Solving real world problems collaboratively through FOSS. " }
-      ],
-      links: {
-        facebook: "",
-        instagram: "",
-        web: "https://asd.learnlearn.in/about/",
-        twitter: "",
-        youtube: "",
-      },
-    },
+    // {
+    //   name: "Akshay S Dinesh",
+    //   description: "Fossmeet 2020 invitee.",
+    //   img: imgDeepika,
+    //   events: [
+    //     { name: "Enough of javascript build tools. Solving real world problems collaboratively through FOSS. " }
+    //   ],
+    //   links: {
+    //     facebook: "",
+    //     instagram: "",
+    //     web: "https://asd.learnlearn.in/about/",
+    //     twitter: "",
+    //     youtube: "",
+    //   },
+    // },
     // {
     //   name: "Gopikrishna Sashikumar",
     //   description: "Product engineer at entri.app",
@@ -79,7 +79,7 @@ function speakers() {
   return (
     <div>
       <Banner image="mic.jpg" title="Speakers" subtitle="Meet our" />
-      <div className="margin">
+      <div className={styles.container}>
         {speakersData &&
           speakersData.map((speaker) => {
             return (
@@ -88,13 +88,13 @@ function speakers() {
                   <Image
                     src={speaker.img}
                     alt={`Photo of ${speaker.name}`}
-                    width="200"
-                    height="200"
+                    width="400"
+                    height="400"
                     className={styles.Image}
                   />
                 </div>
                 <div className={styles.details}>
-                  <div>
+                  <div className={styles['personal-info']}>
                     <h2 className={styles.name}>{speaker.name}</h2>
                     <p>{speaker.description}</p>
                   </div>
