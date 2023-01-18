@@ -3,7 +3,7 @@
     flex-direction:column;
     flex-wrap:wrap;
     gap:25px;
-    padding:3% 0;
+    padding:5% 0;
 }
 .sponsors_heading{
     display:flex;

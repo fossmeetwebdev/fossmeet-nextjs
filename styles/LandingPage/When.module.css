@@ -24,8 +24,8 @@
     width: 75%;
 }
 
-.when_heading h3 {
-    width: 75%;
+.when_heading h4 {
+    width: 70%;
 }
 
 .when_button {
@@ -43,13 +43,16 @@
 }
 
 @media(max-width:1000px) {
+    .when{
+        padding-bottom: 0;
+    }
     .when_heading {
         width: 100%;
     }
 
     .when_heading h1 {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 25px;
     }
 
     .when_heading h3 {
@@ -59,5 +62,11 @@
 
     .when_image {
         width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .when_heading h1{
+        font-size: 1.5rem;
     }
 }

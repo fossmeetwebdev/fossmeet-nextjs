@@ -12,17 +12,12 @@ function whenFoss() {
           And finally,<br/> when and where is it?
         </p>
         <h1>
-          10/02/2023
+          10-12 February,<br/>
+          National Institute of Technology Calicut
         </h1>
-        <h1>
-          at 
-        </h1>
-        <h1>
-          National Institute of Technology, Calicut
-        </h1>
-        <h3>
+        <h4>
           Save the date for the exciting 3 day event. See y’all there 
-        </h3>
+        </h4>
         {/* <div className={styles.when_button}>
           <Button text="Get Tickets" toLink={"/"} />
           <Button text="Location" toLink={"/"} />
