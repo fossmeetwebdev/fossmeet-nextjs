@@ -101,21 +101,19 @@ function Speaker(speaker_data){
   let speaker = speaker_data.data
   
 
-  let [width, setWidth] = useState(0)
+  // let [width, setWidth] = useState(0)
   let [open, setOpen] = useState(true);
   
   // Something wrong here, needs fixing
-  const handleWindowResize = () => {
-    setWidth(window.innerWidth);
-    width < 660 ? setOpen(true): setOpen(false);
-  }
+  // const handleWindowResize = () => {
+  //   setWidth(window.innerWidth);
+  //   width < 660 ? setOpen(true): setOpen(false);
+  // }
   
-  useEffect(() => {
-    // component is mounted and window is available
-    handleWindowResize();
-    window.addEventListener('resize', handleWindowResize);
-  }, []);
-
+  // useEffect(() => {
+  //   // component is mounted and window is available
+  //   setWidth(window.innerWidth)
+  // }, []);
 
   return(
     <div className={styles.card}>
