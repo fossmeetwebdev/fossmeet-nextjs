@@ -49,9 +49,9 @@ export default function Footer() {
         </div>
         <div>
           <div className={styles["nav-menu"]}>
-            <Link href="/competition" className={styles["nav-item"]}>
+            {/* <Link href="/competition" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Competition</a>
-            </Link>
+            </Link> */}
             <Link href="/events" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Events</a>
             </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
       </div>
       <div className={`${styles["flex-row"]}`}>
         <p>
-          FOSSMeet ’23 - an event conducted by FOSSCell and CSEA of National
+          FOSSMeet’23 - an event conducted by FOSSCell and CSEA of National
           Institute of Technology, Calicut
         </p>
         <div className={styles["flex-row"]}>

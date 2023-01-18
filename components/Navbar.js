@@ -16,20 +16,20 @@ export default function Navbar() {
     <header className={styles["header"]}>
       <nav className={styles["navbar"]}>
         <Link href="/">
-          <a className={styles["nav-logo"]}>FOSSMeet &apos;23</a>
+          <a className={styles["nav-logo"]}>FOSSMeet&apos;23</a>
         </Link>
         <div className={styles["nav-menu"]}>
           <Link href="/events">
-            <a className={styles["nav-link"]}>Events</a>
+            <a className={styles["nav-link"]}>Speakers</a>
           </Link>
-          <Link href="/faqs">
+          <Link href="/speakers">
             <a className={styles["nav-link"]}>FAQ</a>
-          </Link>
-          <Link href="/contacts">
-            <a className={styles["nav-link"]}>Contacts</a>
           </Link>
           <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
+          </Link>
+          <Link href="/contacts">
+            <a className={styles["nav-link"]}>Contact US</a>
           </Link>
         </div>
         <div className={styles["flex-row"]}>
