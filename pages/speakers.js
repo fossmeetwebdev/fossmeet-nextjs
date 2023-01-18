@@ -51,8 +51,7 @@ function speakers() {
       description: "Fossmeet 2020 invitee.",
       img: imgDeepika,
       events: [
-        { name: "Enough of javascript build tools." },
-        { name: "Solving real world problems collaboratively through FOSS." },
+        { name: "Enough of javascript build tools. Solving real world problems collaboratively through FOSS. " }
       ],
       links: {
         facebook: "",
@@ -62,19 +61,19 @@ function speakers() {
         youtube: "",
       },
     },
-    {
-      name: "Gopikrishna Sashikumar",
-      description: "Product engineer at entri.app",
-      img: imgDeepika,
-      events: [{ name: "AI / ML" }],
-      links: {
-        facebook: "",
-        instagram: "",
-        web: "https://rvce.edu.in/mca-faculty-dk",
-        twitter: "",
-        youtube: "",
-      },
-    },
+    // {
+    //   name: "Gopikrishna Sashikumar",
+    //   description: "Product engineer at entri.app",
+    //   img: imgDeepika,
+    //   events: [{ name: "AI / ML" }],
+    //   links: {
+    //     facebook: "",
+    //     instagram: "",
+    //     web: "https://rvce.edu.in/mca-faculty-dk",
+    //     twitter: "",
+    //     youtube: "",
+    //   },
+    // },
   ];
 
   return (
@@ -160,6 +159,10 @@ function speakers() {
               </div>
             );
           })}
+
+        <div className={styles['stay-tuned']}>
+          <h4>Stay tuned for more speakers!</h4>
+        </div>
       </div>
     </div>
   );
