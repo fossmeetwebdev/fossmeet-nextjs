@@ -24,6 +24,7 @@
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
 }
 .question p {
+  padding-top: .75rem;
   color: #2b303f;
 }
 .question-heading-wrapper {
