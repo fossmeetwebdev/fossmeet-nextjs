@@ -6,6 +6,7 @@ import imgASD from "../public/images/asd.jpg"
 import Image from "next/image";
 import Banner from "../components/Banner";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import {
   BsFacebook,
   BsGlobe,
@@ -15,7 +16,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 
-function speakers() {
+function Speakers() {
   const speakersData = [
     {
       name: "Deepika K",
@@ -80,82 +81,9 @@ function speakers() {
       <Banner image="speaker.png" title="Speakers" subtitle="Meet our" />
       <div className={styles.container}>
         {speakersData &&
-          speakersData.map((speaker) => {
+          speakersData.map((speaker, index) => {
             return (
-              <div key={speaker.name} className={styles.card}>
-                <div className={styles.image_container}>
-                  <Image
-                    src={speaker.img}
-                    alt={`Photo of ${speaker.name}`}
-                    width="400"
-                    height="400"
-                    className={styles.Image}
-                  />
-                </div>
-                <div className={styles.details}>
-                  <div className={styles['personal-info']}>
-                    <h2 className={styles.name}>{speaker.name}</h2>
-                    <p>{speaker.description}</p>
-                  </div>
-                  <div className={styles.links}>
-                    {speaker.links.web && (
-                      <Link href={speaker.links.web} className={styles.link}>
-                        <BsGlobe size={20} />
-                      </Link>
-                    )}
-                    {speaker.links.facebook && (
-                      <Link
-                        href={speaker.links.facebook}
-                        className={styles.link}
-                      >
-                        <BsFacebook size={20} />
-                      </Link>
-                    )}
-                    {speaker.links.instagram && (
-                      <Link
-                        href={speaker.links.instagram}
-                        className={styles.link}
-                      >
-                        <BsInstagram size={20} />
-                      </Link>
-                    )}
-                    {speaker.links.twitter && (
-                      <Link
-                        href={speaker.links.twitter}
-                        className={styles.link}
-                      >
-                        <BsTwitter size={20} />
-                      </Link>
-                    )}
-                    {speaker.links.youtube && (
-                      <Link
-                        href={speaker.links.youtube}
-                        className={styles.link}
-                      >
-                        <BsYoutube size={20} />
-                      </Link>
-                    )}
-                    {speaker.links.linkedin && (
-                      <Link
-                        href={speaker.links.linkedin}
-                        className={styles.link}
-                      >
-                        <BsLinkedin size={20} />
-                      </Link>
-                    )}
-                  </div>
-                </div>
-                <div className={styles.events}>
-                  <h3 className={styles.name}>Talk</h3>
-                  <ul>
-                    {speaker.events.map((speakerEvent) => {
-                      return (
-                        <li key={speakerEvent.name}>{speakerEvent.name}</li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Speaker key={index} data={speaker} />
             );
           })}
 
@@ -167,4 +95,113 @@ function speakers() {
   );
 }
 
-export default speakers;
+function Speaker(speaker_data){
+
+  
+  let speaker = speaker_data.data
+  
+
+  let [width, setWidth] = useState(0)
+  let [open, setOpen] = useState(true);
+  
+  // Something wrong here, needs fixing
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+    width < 660 ? setOpen(true): setOpen(false);
+  }
+  
+  useEffect(() => {
+    // component is mounted and window is available
+    handleWindowResize();
+    window.addEventListener('resize', handleWindowResize);
+  }, []);
+
+
+  return(
+    <div className={styles.card}>
+      <div className={styles.image_container}>
+        <Image
+          src={speaker.img}
+          alt={`Photo of ${speaker.name}`}
+          width="400"
+          height="400"
+          className={styles.Image}
+        />
+      </div>
+      <div className={styles.details}>
+        <div className={styles['personal-info']}>
+          <div className={styles['name-arrow']}>
+            <h2 className={styles.name}>{speaker.name}</h2>
+            <img
+              className={`${styles["description-drop-icon"]} ${
+                open ? styles["up-down"] : ""
+              }`}
+              onClick={() => setOpen((curr) => !curr)}
+              src="/icons/chevron-down.svg"
+            />
+          </div>
+          {open &&  <p className={styles.description}>{speaker.description}</p>}
+        </div>
+        <div className={styles.links}>
+          {speaker.links.web && (
+            <Link href={speaker.links.web} className={styles.link}>
+              <BsGlobe size={20} />
+            </Link>
+          )}
+          {speaker.links.facebook && (
+            <Link
+              href={speaker.links.facebook}
+              className={styles.link}
+            >
+              <BsFacebook size={20} />
+            </Link>
+          )}
+          {speaker.links.instagram && (
+            <Link
+              href={speaker.links.instagram}
+              className={styles.link}
+            >
+              <BsInstagram size={20} />
+            </Link>
+          )}
+          {speaker.links.twitter && (
+            <Link
+              href={speaker.links.twitter}
+              className={styles.link}
+            >
+              <BsTwitter size={20} />
+            </Link>
+          )}
+          {speaker.links.youtube && (
+            <Link
+              href={speaker.links.youtube}
+              className={styles.link}
+            >
+              <BsYoutube size={20} />
+            </Link>
+          )}
+          {speaker.links.linkedin && (
+            <Link
+              href={speaker.links.linkedin}
+              className={styles.link}
+            >
+              <BsLinkedin size={20} />
+            </Link>
+          )}
+        </div>
+      </div>
+      <div className={styles.events}>
+        <h3 className={styles.name}>Talk</h3>
+        <ul>
+          {speaker.events.map((speakerEvent) => {
+            return (
+              <li key={speakerEvent.name}>{speakerEvent.name}</li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export default Speakers;
