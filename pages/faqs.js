@@ -63,7 +63,7 @@ export default function faqs() {
     <div>
       {/* <Coming/> */}
       <Banner
-        image="question.png"
+        // image="question.png"
         title="Frequently Asked Questions"
         subtitle="Quick Support"
       />
