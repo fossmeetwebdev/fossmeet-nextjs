@@ -17,10 +17,7 @@ function sponsors() {
       </div>
       <div className={styles.sponsors_images}>
         <div className={styles.sponsors_image}>
-          <Image src={img1} className={styles.img} alt="Nilenso"/>
-        </div>
-        <div className={styles.sponsors_image}>
-          <Image src={img2} className={styles.img} alt="StickerMule"/>
+          <Image src={img1} width={200} className={styles.img} alt="Nilenso"/>
         </div>
       </div>
     </div>

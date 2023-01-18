@@ -56,23 +56,11 @@ export default function Navbar() {
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
-            <Link href="/events" >
-              <a className={styles["nav-link-mobile"]} 
-              onClick={()=>{
-              toggleButton()
-              }}>Events</a>
-            </Link>
             <Link href="/speakers" >
               <a className={styles["nav-link-mobile"]}
               onClick={()=>{
               toggleButton()
               }}>Speakers</a>
-            </Link>
-            <Link href="/competition" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Competition</a>
             </Link>
             <Link href="/faqs" >
               <a className={styles["nav-link-mobile"]}

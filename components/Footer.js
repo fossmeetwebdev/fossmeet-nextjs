@@ -51,10 +51,10 @@ export default function Footer() {
           <div className={styles["nav-menu"]}>
             {/* <Link href="/competition" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Competition</a>
-            </Link> */}
+            </Link> 
             <Link href="/events" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Events</a>
-            </Link>
+            </Link> */}
             <Link href="/speakers" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Speakers</a>
             </Link>
