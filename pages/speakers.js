@@ -3,6 +3,7 @@ import styles from "../styles/Speakers.module.css";
 import imgDeepika from "../public/images/Deepika.jpg";
 import imgPrasad from "../public/images/Prasad.jpg";
 import imgASD from "../public/images/asd.jpg"
+import imgGopi from "../public/images/Gopi.jpg"
 import Image from "next/image";
 import Banner from "../components/Banner";
 import Link from "next/link";
@@ -36,7 +37,7 @@ function Speakers() {
       name: "Prasad Khake",
       description: "He is the co-founder of paperd.ink, an open-source e-paper development board developed in India, that can also be programmed in Arduino IDE. Mr.Khake hails from Chennai, Tamil Nadu. After earning his B.Tech from MIT Pune, he currently works as a Marketing Manager at Inaza full-time. Furthermore, he has published some outstanding articles in the field of global economics and spectrum sensing techniques.",
       img: imgPrasad,
-      events: [{ name: "paperd.ink's journey" }],
+      events: [{ name: "Paperd.ink's journey" }],
       links: {
         facebook: "",
         instagram: "",
@@ -47,7 +48,7 @@ function Speakers() {
       },
     },
     {
-      name: "Akshay S Dinesh",
+      name: "Dr. Akshay S Dinesh",
       description: "Known for his passion for free software, Dr. Akshay S Dinesh challenges the principle of personifying people based on their educational or professional backgrounds. Interestingly, he is an MBBS graduate and has done his postgraduate coursework in Medical Law and Ethics, a subject that deals with medico-legal issues. His accomplishments as a programmer include working in a non-profit organization and contributing to many open-source projects, such as Debian and Mozilla. Besides these, he is also a blogger and writes in three different domains: medicine, technology, and social commentary.",
       img: imgASD,
       events: [
@@ -63,8 +64,8 @@ function Speakers() {
     },
     // {
     //   name: "Gopikrishna Sashikumar",
-    //   description: "Product engineer at entri.app",
-    //   img: imgDeepika,
+    //   description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
+    //   img: imgGopi,
     //   events: [{ name: "AI / ML" }],
     //   links: {
     //     facebook: "",
@@ -88,7 +89,7 @@ function Speakers() {
           })}
 
         <div className={styles['stay-tuned']}>
-          <h3>More speakers coming soon</h3>
+          <h3>More speakers coming soon...</h3>
         </div>
       </div>
     </div>
@@ -102,7 +103,7 @@ function Speaker(speaker_data){
   
 
   // let [width, setWidth] = useState(0)
-  let [open, setOpen] = useState(true);
+  let [open, setOpen] = useState(false);
   
   // Something wrong here, needs fixing
   // const handleWindowResize = () => {
@@ -111,9 +112,25 @@ function Speaker(speaker_data){
   // }
   
   // useEffect(() => {
-  //   // component is mounted and window is available
+  // component is mounted and window is available
   //   setWidth(window.innerWidth)
   // }, []);
+
+  // useEffect(()=>{
+  //   console.log(width);
+  // },[width])
+
+  function rotateIcon(e){
+    let icon = document.getElementById('accordion');
+    console.log(icon)
+    if (open) {
+      icon.classList.remove('up-down')
+      setOpen(false)
+    }else{
+      icon.classList.add('up-down')
+      setOpen(true)
+    }
+  }
 
   return(
     <div className={styles.card}>
@@ -127,76 +144,96 @@ function Speaker(speaker_data){
         />
       </div>
       <div className={styles.details}>
-        <div className={styles['personal-info']}>
-          <div className={styles['name-arrow']}>
-            <h2 className={styles.name}>{speaker.name}</h2>
-            <img
-              className={`${styles["description-drop-icon"]} ${
-                open ? styles["up-down"] : ""
-              }`}
-              onClick={() => setOpen((curr) => !curr)}
-              src="/icons/chevron-down.svg"
-            />
-          </div>
-          {open &&  <p className={styles.description}>{speaker.description}</p>}
+        <div className={styles['personal-info-mob']}>
+          <details>
+            <summary className={styles['summary-name']} onClick={rotateIcon}>
+              <h3>{speaker.name}</h3>
+              <img
+                id="accordion"
+                className={`${styles["description-drop-icon"]} ${
+                  open ? styles["up-down"] : ""}`}
+                src="/icons/chevron-down.svg"/>
+            </summary>
+            <p className={styles.description}>{speaker.description}</p>
+          </details> 
+        </div>
+
+        <div className={styles['personal-info-web']}>
+          <h2 className={styles.name}>{speaker.name}</h2>
+          <p className={styles.description}>{speaker.description}</p>
+        </div>
+          
+          {/* {open &&  <p className={styles.description}>{speaker.description}</p>} */}
+        
+      </div>
+      <div className={styles.events}>
+        <div>
+          <h3 className={styles.name}>Talk</h3>
+          <ul>
+            {speaker.events.map((speakerEvent) => {
+              return (
+                <li key={speakerEvent.name}>{speakerEvent.name}</li>
+              );
+            })}
+          </ul>
         </div>
         <div className={styles.links}>
           {speaker.links.web && (
-            <Link href={speaker.links.web} className={styles.link}>
+            <a href={speaker.links.web} className={styles.link} target="_blank" rel="noopener noreferrer">
               <BsGlobe size={20} />
-            </Link>
+            </a>
           )}
           {speaker.links.facebook && (
-            <Link
+            <a
               href={speaker.links.facebook}
               className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <BsFacebook size={20} />
-            </Link>
+            </a>
           )}
           {speaker.links.instagram && (
-            <Link
+            <a
               href={speaker.links.instagram}
               className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <BsInstagram size={20} />
-            </Link>
+            </a>
           )}
           {speaker.links.twitter && (
-            <Link
+            <a
               href={speaker.links.twitter}
               className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <BsTwitter size={20} />
-            </Link>
+            </a>
           )}
           {speaker.links.youtube && (
-            <Link
+            <a
               href={speaker.links.youtube}
               className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <BsYoutube size={20} />
-            </Link>
+            </a>
           )}
           {speaker.links.linkedin && (
-            <Link
+            <a
               href={speaker.links.linkedin}
               className={styles.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <BsLinkedin size={20} />
-            </Link>
+            </a>
           )}
         </div>
-      </div>
-      <div className={styles.events}>
-        <h3 className={styles.name}>Talk</h3>
-        <ul>
-          {speaker.events.map((speakerEvent) => {
-            return (
-              <li key={speakerEvent.name}>{speakerEvent.name}</li>
-            );
-          })}
-        </ul>
       </div>
     </div>
   )
