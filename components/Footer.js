@@ -21,10 +21,21 @@ export default function Footer() {
                 width="100%"
                 height="40%"
                 objectFit="contain"
-              />
+                />
             </a>
           </Link>
-          <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
+          <Link href="/">
+            <a className={styles["nav-link-logo"]}>
+              <Image
+                src={"/fossmeet favicon.png"}
+                alt={"FOSSCell logo"}
+                width="40"
+                height="40"
+                objectFit="contain"
+                />
+            </a>
+          </Link>
+          {/* <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
             <a className={styles["nav-link-logo"]}>
               <Image
                 src={"/csea-logo.jpg"}
@@ -34,7 +45,7 @@ export default function Footer() {
                 objectFit="contain"
               />
             </a>
-          </Link>
+          </Link> */}
           <Link href="http://www.nitc.ac.in">
             <a className={styles["nav-link-logo"]}>
               <Image
@@ -75,8 +86,8 @@ export default function Footer() {
       </div>
       <div className={`${styles["flex-row"]}`}>
         <p>
-          FOSSMeet’23 - an event conducted by FOSSCell and CSEA of National
-          Institute of Technology, Calicut
+          FOSSMeet’23 - an event conducted by FOSSCell of National
+          Institute of Technology Calicut
         </p>
         <div className={styles["flex-row"]}>
           <Link href="https://facebook.com/profile.php?id=333141540396903">
