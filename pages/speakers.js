@@ -88,7 +88,7 @@ function Speakers() {
           })}
 
         <div className={styles['stay-tuned']}>
-          <h4>Stay tuned for more speakers!</h4>
+          <h3>More speakers coming soon</h3>
         </div>
       </div>
     </div>

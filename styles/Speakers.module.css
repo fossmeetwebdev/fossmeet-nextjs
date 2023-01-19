@@ -40,7 +40,7 @@
   text-align: justify;
 
   /* height: 370px; */
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .events {
@@ -88,7 +88,7 @@
 .stay-tuned{
   margin: 20px 0;
 }
-.stay-tuned h4{
+.stay-tuned h3{
   color: var(--orange);
   text-align: center;
 }
