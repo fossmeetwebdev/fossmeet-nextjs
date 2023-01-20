@@ -16,6 +16,7 @@
 .sponsors_heading p{
     font-size:20px;
     width:100%;
+    margin-bottom: 8px;
 }
 .sponsors_heading h1{
     font-style: normal;
@@ -37,17 +38,22 @@
     background: #FFFFFF;
     box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding:30px;
+    padding:25px;
     display:flex;
     flex-direction: row;
     justify-content: center;
 
     width: 20%;
-    max-height: 150px;
+    max-height: 180px;
+    transition: all .2s ease-in-out;
+}
+
+.sponsors_image:hover{
+    transform: scale(1.02);
 }
 
 .img{
-    object-fit: cover;
+    object-fit: contain;
 }
 @media(max-width:1000px){
     
@@ -67,11 +73,14 @@
         font-size:18px;
     }
     .sponsors_heading h1{
-        font-size:22px;
+        font-size:23px;
     }
 
 }
 @media(max-width:600px){
+    .sponsors{
+        padding: 50px 0;
+    }
     .sponsors_heading{
         padding: 0;
         display: flex;
@@ -81,9 +90,10 @@
     }
     .sponsors_image{
         width:80%;
+        height: 150px;
     }
     .sponsors_heading h1{
-        font-size:18px;
+        font-size:25px;
     }
     .sponsors_heading p{
         font-size:14px;
