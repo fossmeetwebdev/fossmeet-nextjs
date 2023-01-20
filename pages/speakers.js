@@ -20,14 +20,14 @@ import {
 function Speakers() {
   const speakersData = [
     {
-      name: "Deepika K",
-      description: "Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Ms.Kripanithi has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
+      name: "Dr. Deepika K",
+      description: "Dr. Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Ms.Kripanithi has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
       img: imgDeepika,
       events: [{ name: "Oxygenate your systems with FOSS" }],
       links: {
         facebook: "",
         instagram: "",
-        web: "https://rvce.edu.in/mca-faculty-dk",
+        web: "https://deepikak.in",
         twitter: "",
         youtube: "",
         linkedin: "",
