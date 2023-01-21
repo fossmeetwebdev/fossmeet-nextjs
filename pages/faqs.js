@@ -14,7 +14,7 @@ const questions = [
   {
     question: "Will accommodation be provided?",
     answer:
-      "Yes, different accomodation facilities are available for the students and professionals. Working professionals will have to pay an add-on fee of ₹300 for availing accommodation. Accommodation fee is covered for students in their registration fee.",
+      "Yes, different accomodation facilities are available for the students and professionals. Working professionals will have to pay an add-on fee of ₹250 for availing accommodation. Accommodation fee is covered for students in their registration fee.",
 },
   {
     question: "Is food provided during the event?",
