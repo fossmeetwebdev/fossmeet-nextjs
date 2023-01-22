@@ -62,19 +62,19 @@ function Speakers() {
         youtube: "",
       },
     },
-    // {
-    //   name: "Gopikrishna Sashikumar",
-    //   description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
-    //   img: imgGopi,
-    //   events: [{ name: "AI / ML" }],
-    //   links: {
-    //     facebook: "",
-    //     instagram: "",
-    //     web: "https://rvce.edu.in/mca-faculty-dk",
-    //     twitter: "",
-    //     youtube: "",
-    //   },
-    // },
+     {
+     name: "Gopikrishna Sashikumar",
+     description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
+       img: imgGopi,
+     events: [{ name: "AI for solving regional problems" }],
+      links: {
+        facebook: "",
+         instagram: "",
+      web: "https://rvce.edu.in/mca-faculty-dk",
+       twitter: "",
+       youtube: "",
+      },
+     },
   ];
 
   return (
