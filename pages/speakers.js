@@ -60,6 +60,7 @@ function Speakers() {
         web: "https://asd.learnlearn.in/about/",
         twitter: "",
         youtube: "",
+        linkedin: "https://in.linkedin.com/in/asdofindia",
       },
     },
      {
@@ -69,10 +70,11 @@ function Speakers() {
      events: [{ name: "AI for solving regional problems" }],
       links: {
         facebook: "",
-         instagram: "",
-      web: "https://rvce.edu.in/mca-faculty-dk",
-       twitter: "",
+         instagram: "https://www.instagram.com/gksoriginals/?hl=en`",
+          web: "",
+       twitter: "https://mobile.twitter.com/gksoriginals",
        youtube: "",
+        linkedin: "https://in.linkedin.com/in/gopikrishnan-sasikumar",
       },
      },
   ];
