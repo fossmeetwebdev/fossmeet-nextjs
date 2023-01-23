@@ -55,6 +55,11 @@
 .img{
     object-fit: contain;
 }
+
+.img[alt="Nilenso"]{
+    object-fit: cover;
+}
+
 @media(max-width:1000px){
     
     .sponsors_image{
