@@ -9,7 +9,7 @@ const questions = [
   {
     question: "How do I register for FOSSMeet'23?",
     answer:
-      "Registrations are scheduled to start in the last week of January. Registration link will be available in this website. Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us.The registration fee will be ₹849 for students and ₹999 for professionals.",
+      "Registrations are scheduled to start in the last week of January. Registration link will be available in this website. Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us. The registration fee will be ₹849 for students and ₹999 for professionals.",
   },
   {
     question: "Will accommodation be provided?",
@@ -19,7 +19,7 @@ const questions = [
   {
     question: "Is food provided during the event?",
     answer:
-      "Yes, food will be provided. The registration fee is inclusive of dinner on Friday, breakfast, lunch and dinner on Saturday and, breakfast and lunch on Sunday.*",
+      "Yes, food will be provided. The registration fee is inclusive of dinner on Friday, breakfast, lunch and dinner on Saturday and, breakfast and lunch on Sunday.",
   },
   {
     question: "Are there any separate fees for talks/workshops?",
@@ -44,12 +44,12 @@ const questions = [
   {
     question: "Do you provide participation certificates?",
     answer:
-      "Yes, each participant shall receive a participation certificate on completion of the event. We request participants, not to register for the event merely for the certificate. You might be denying the opportunity of a genuinely interested candidate :)",
+      "Yes, each participant shall receive a participation certificate on completion of the event. We request participants not to register for the event merely for the certificate. You might be denying the opportunity of a genuinely interested candidate :)",
   },
   {
     question: "How do I reach NIT Calicut?",
     answer:
-      "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station(CLT). The Kozhikode International Airport(CCJ) provides daily flights to and from major cities in India.From Airport:Take a cab directly to NIT Calicut.From Railway Station:Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
+      "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station(CLT). The Kozhikode International Airport(CCJ) provides daily flights to and from major cities in India. From Airport: Take a cab directly to NIT Calicut. From Railway Station: Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
   },
   // {
   //   question: "What is your refund policy?",

@@ -29,7 +29,7 @@ export default function Navbar() {
             <a className={styles["nav-link"]}>Code of Conduct</a>
           </Link>
           <Link href="/contacts">
-            <a className={styles["nav-link"]}>Contact US</a>
+            <a className={styles["nav-link"]}>Contact Us</a>
           </Link>
         </div>
         <div className={styles["flex-row"]}>

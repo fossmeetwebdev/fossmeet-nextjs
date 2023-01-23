@@ -8,7 +8,7 @@ export default function whatFoss() {
     <div className={styles.what_container}>
       <div className={styles.what_heading}>
         <h1>
-          What is FossMeet? 
+          What is FOSSMeet? 
         </h1>
         <p>
            An annual gathering to celebrate the freedom in FOSS 
