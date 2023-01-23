@@ -70,7 +70,7 @@ function Speakers() {
       links: {
         facebook: "",
          instagram: "",
-      web: "https://rvce.edu.in/mca-faculty-dk",
+      web: "https://github.com/GopikrishnanSasikumar",
        twitter: "",
        youtube: "",
       },
