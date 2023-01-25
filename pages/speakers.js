@@ -84,7 +84,7 @@ function Speakers() {
         {speakersData &&
           speakersData.map((speaker, index) => {
             return (
-              <Speaker key={index} data={speaker} />
+              <Speaker data={speaker} key={index} id={index} />
             );
           })}
 
@@ -98,10 +98,8 @@ function Speakers() {
 
 function Speaker(speaker_data){
 
-  
   let speaker = speaker_data.data
-  
-
+  let key = speaker_data.id
   // let [width, setWidth] = useState(0)
   let [open, setOpen] = useState(false);
   
@@ -120,9 +118,21 @@ function Speaker(speaker_data){
   //   console.log(width);
   // },[width])
 
-  function rotateIcon(e){
-    let icon = document.getElementById('accordion');
-    console.log(icon)
+  function revealDescription(e){ 
+    let key = e.target.id
+
+    let icon = document.getElementById(key);
+    let description = document.getElementById(`description-${key}`);
+    let display = window.getComputedStyle(description).display;
+    console.log("Key: ",key)
+    console.log(`description-${key}`)
+    console.log('description:', description)
+    console.log(display)
+    if(display === 'none')
+      description.style.display = 'block';
+    else
+      description.style.display = 'none';
+
     if (open) {
       icon.classList.remove('up-down')
       setOpen(false)
@@ -144,19 +154,6 @@ function Speaker(speaker_data){
         />
       </div>
       <div className={styles.details}>
-        <div className={styles['personal-info-mob']}>
-          <details>
-            <summary className={styles['summary-name']} onClick={rotateIcon}>
-              <h3>{speaker.name}</h3>
-              <img
-                id="accordion"
-                className={`${styles["description-drop-icon"]} ${
-                  open ? styles["up-down"] : ""}`}
-                src="/icons/chevron-down.svg"/>
-            </summary>
-            <p className={styles.description}>{speaker.description}</p>
-          </details> 
-        </div>
 
         <div className={styles['personal-info-web']}>
           <h2 className={styles.name}>{speaker.name}</h2>
@@ -168,7 +165,20 @@ function Speaker(speaker_data){
       </div>
       <div className={styles.events}>
         <div>
-          <h3 className={styles.name}>Talk</h3>
+            <summary className={styles['summary-name']}>
+              <h3>{speaker.name}</h3>
+              <img
+                width={20}
+                height={20}
+                onClick={revealDescription}
+                id={`${key}`}
+                className={`${styles["description-drop-icon"]} ${
+                  open ? styles["up-down"] : ""}`}
+                src="/icons/chevron-down.svg"/>
+            </summary>
+          <h3 className={ `${styles.talk} ${styles.name}` } >Talk</h3>
+          
+          {/* Events */}
           <ul>
             {speaker.events.map((speakerEvent) => {
               return (
@@ -177,10 +187,12 @@ function Speaker(speaker_data){
             })}
           </ul>
         </div>
+
+        {/* Links */}
         <div className={styles.links}>
           {speaker.links.web && (
             <a href={speaker.links.web} className={styles.link} target="_blank" rel="noopener noreferrer">
-              <BsGlobe size={20} />
+              <BsGlobe size={20} sizes="(max-width: 820px) 10px, 20vw" />
             </a>
           )}
           {speaker.links.facebook && (
@@ -235,6 +247,9 @@ function Speaker(speaker_data){
           )}
         </div>
       </div>
+
+      {/* Mobile description */}
+      <p id={`description-${key}`} className={styles['description-mob']}>{speaker.description}</p>
     </div>
   )
 }
