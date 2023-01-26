@@ -174,7 +174,7 @@ function Speaker(speaker_data){
                 id={`${key}`}
                 className={`${styles["description-drop-icon"]} ${
                   open ? styles["up-down"] : ""}`}
-                src="/icons/chevron-down.svg"/>
+                src="/images/assets/chevron-down.svg"/>
             </summary>
           <h3 className={ `${styles.talk} ${styles.name}` } >Talk</h3>
           

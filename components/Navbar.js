@@ -93,7 +93,7 @@ export default function Navbar() {
             toggleButton()
             }}>
               <Image
-                src={"/fosscell-logo.jpg"}
+                src={"/images/logos/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}
                 width="150%"
                 height="90%"
