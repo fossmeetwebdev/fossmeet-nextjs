@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import NITC from '/public/images/rectangle.png'
+import NITC from '/public/images/assets/rectangle.png'
 import Button from "../Button";
 import styles from '../../styles/LandingPage/When.module.css'
 

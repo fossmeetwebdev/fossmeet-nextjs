@@ -107,7 +107,7 @@ function Question({ question, answer }) {
           className={`${styles["faq-drop-icon"]} ${
             open ? styles["up-down"] : ""
           }`}
-          src="/icons/chevron-down.svg"
+          src="/images/assets/chevron-down.svg"
         />
       </div>
       {open && <p>{answer}</p>}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/LandingPage/What.module.css'
 import Image from 'next/image'
-import img from '../../public/images/foss-meet-expo-final.svg'
+import img from '../../public/images/assets/foss-meet-expo-final.svg'
 
 export default function whatFoss() {
   return (

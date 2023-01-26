@@ -1,5 +1,5 @@
 import styles from "../styles/Contacts.module.css";
-import contact_image from '../public/Email_PNG.png'
+import contact_image from '../public/images/assets/Email_PNG.png'
 import { BsPinMapFill, BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import Image from "next/image";
@@ -22,7 +22,7 @@ const ContactInfo = () => {
             </div>
             <div className={styles["contact-info__main__info__box__text"]}>
               <p>First Floor</p>
-              <p>Mini Canteen</p>
+              <p>Student Amenity Center</p>
               <p>NITC</p>
             </div>
           </div>

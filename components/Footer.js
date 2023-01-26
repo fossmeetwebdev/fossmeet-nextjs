@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="https://fosscell.org/">
             <a className={styles["nav-link-logo"]}>
               <Image
-                src={"/fosscell-logo.jpg"}
+                src={"/images/logos/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}
                 width="100%"
                 height="40%"
@@ -49,7 +49,7 @@ export default function Footer() {
           <Link href="http://www.nitc.ac.in">
             <a className={styles["nav-link-logo"]}>
               <Image
-                src={"/nitc-logo.png"}
+                src={"/images/logos/nitc-logo.png"}
                 alt={"NITC logo"}
                 width="40%"
                 height="40%"

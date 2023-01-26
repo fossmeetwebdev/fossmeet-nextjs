@@ -1,8 +1,8 @@
 import styles from "../../styles/LandingPage/PrevSpeakers.module.css";
-import imgBradley from "../../public/images/Bradley.jpg";
-import imgSasikumar from "../../public/images/sasikumar.png";
-import imagAmol from "../../public/images/Amol Kahat.jpg";
-import imgMarco from "../../public/images/marco.jpg";
+import imgBradley from "../../public/images/prevSpeakers/Bradley.jpg";
+import imgSasikumar from "../../public/images/prevSpeakers/sasikumar.png";
+import imagAmol from "../../public/images/prevSpeakers/Amol Kahat.jpg";
+import imgMarco from "../../public/images/prevSpeakers/marco.jpg";
 // import img1 from '../../public/images/dropdown-arrow2-512-1@2x.png'
 import Image from "next/image";
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/LandingPage/Why.module.css'
-import img1 from '/public/images/linus.png'
-import img2 from '/public/images/rms.png'
+import img1 from '/public/images/assets/linus.png'
+import img2 from '/public/images/assets/rms.png'
 import Image from 'next/image'
 
 function WhyFoss() {

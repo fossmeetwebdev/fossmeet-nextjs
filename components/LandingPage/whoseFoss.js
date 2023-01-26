@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../../styles/LandingPage/Who.module.css'
-import student from '../../public/images/img_student1.svg'
-import teacher from '../../public/images/img_teacher1.svg'
-import coding from '../../public/images/img_coders1.svg'
+import student from '../../public/images/assets/img_student1.svg'
+import teacher from '../../public/images/assets/img_teacher1.svg'
+import coding from '../../public/images/assets/img_coders1.svg'
 function whoseFoss() {
   return (
     <div className={styles.who_container}>

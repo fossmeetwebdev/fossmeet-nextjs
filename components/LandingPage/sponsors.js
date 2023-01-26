@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '../../styles/LandingPage/Sponsor.module.css'
 import Image from 'next/image'
-import img1 from '../../public/images/nilenso1.png'
-import img2 from '/public/images/FOSS United.svg'
-import img3 from '/public/images/ICFOSS.png'
-import img4 from '/public/images/FSF.png'
+import img1 from '../../public/images/sponsors/nilenso1.png'
+import img2 from '/public/images/sponsors/FOSS United.svg'
+import img3 from '/public/images/sponsors/ICFOSS.png'
+import img4 from '/public/images/sponsors/FSF.png'
 import Link from 'next/link'
 
 function sponsors() {
@@ -25,9 +25,9 @@ function sponsors() {
         <a href={"http://fossunited.org"} className={styles.sponsors_image} target="_blank" rel='noreferrer' >
           <Image src={img2} width={150} height={120} className={styles.img} alt="FOSS United"/>
         </a>
-        <a href={"http://icfoss.in"} className={styles.sponsors_image} target="_blank" rel='noreferrer' >
+        {/* <a href={"http://icfoss.in"} className={styles.sponsors_image} target="_blank" rel='noreferrer' >
           <Image src={img3} width={200} height={180} className={styles.img} alt="ICFOSS"/>
-        </a>
+        </a> */}
         <a href={"https://fsf.org"} className={styles.sponsors_image} target="_blank" rel='noreferrer' >
           <Image src={img4} width={200} height={180} className={styles.img} alt="FSF"/>
         </a>
