@@ -4,6 +4,10 @@ import imgDeepika from "../public/images/speakers/Deepika.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
 import imgGopi from "../public/images/speakers/Gopi.jpg"
+import imgNand from "../public/images/speakers/Nandakishor.png"
+import imgSubin from "../public/images/speakers/Subin.png"
+import imgArya from "../public/images/speakers/Arya.jpg"
+
 import Image from "next/image";
 import Banner from "../components/Banner";
 import Link from "next/link";
@@ -63,18 +67,58 @@ function Speakers() {
       },
     },
      {
-     name: "Gopikrishna Sashikumar",
-     description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
-       img: imgGopi,
-     events: [{ name: "AI for solving regional problems" }],
+      name: "Gopikrishna Sashikumar",
+      description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
+      img: imgGopi,
+      events: [{ name: "AI for solving regional problems" }],
       links: {
         facebook: "",
-         instagram: "",
-      web: "https://github.com/GopikrishnanSasikumar",
-       twitter: "",
-       youtube: "",
+        instagram: "",
+        web: "https://github.com/GopikrishnanSasikumar",
+        twitter: "",
+        youtube: "",
       },
      },
+     {
+      name: "Subin Siby",
+      description: "Subin Siby is a tech lead at Big Binary, a company that has a track record of building high-quality web and mobile software with proven results. His foray into the world of programming started at a very young age. The first project that he worked on, a social network called Open was also his first encounter with open source software. A curious learner by nature who is also very passionate about sharing the knowledge he's acquired, Subin runs a blog with over 300 tutorials that shed light on topics that aren't covered extensively on the internet. He also plays an instrumental role in the Varnam Project that deals with the transliteration of Indian languages.",
+      img: imgSubin,
+      events: [{ name: "Open Source Beginner Experience: Contributing to large projects and web-torrents" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://subinsb.com/",
+        twitter: "",
+        youtube: "",
+      },
+     },
+     {
+      name: "Nanda Kishor M Pai",
+      description: "As a Machine Learning Engineer with a strong background in Natural Language Processing and Data Science, Nanda Kishor aims to research on model architecture and implement them to automate and accomplish production level accuracy in real-world problems. Being a student at College of Engineering, Trivandrum, Nanda Kishor has already made publications of Machine Learning articles in his Paperspace blog. Being young, aspiring yet so accomplished in his field makes him an integral speaker of our event.",
+      img: imgNand,
+      events: [{ name: "Hackathons and Importance of Documentation" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://nmpai.tech/",
+        twitter: "",
+        youtube: "",
+      },
+     },
+     {
+      name: "Arya Kiran",
+      description: "Libre Software enthusiast and teenage wunderkind, FOSSMeet'23's youngest speaker, Arya Kiran is a school student from Chennai. From free-software and technology to History and Biology his interests are wide and varied. He has worked on multiple tilde projects including Vern, as a system administrator. He has also developed Sedtrix, a sed-bot and is currently the admin of Project Segfault, which concerns itself with open source development and hosting services.",
+      img: imgArya,
+      events: [{ name: "Free Software, Decentralization, Self-Hosting and Free Service Hosts" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://aryak.vern.cc",
+        twitter: "",
+        youtube: "",
+      },
+     },
+     
   ];
 
   return (
