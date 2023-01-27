@@ -19,6 +19,7 @@ import {
   BsLinkedin,
   BsTwitter,
   BsYoutube,
+  BsGithub,
 } from "react-icons/bs";
 
 function Speakers() {
@@ -62,7 +63,7 @@ function Speakers() {
         facebook: "",
         instagram: "",
         web: "https://asd.learnlearn.in/about/",
-        twitter: "",
+        twitter: "https://twitter.com/asdofindia",
         youtube: "",
       },
     },
@@ -74,9 +75,10 @@ function Speakers() {
       links: {
         facebook: "",
         instagram: "",
-        web: "https://github.com/GopikrishnanSasikumar",
+        github: "https://github.com/GopikrishnanSasikumar",
         twitter: "",
         youtube: "",
+        linkedin: "https://linkedin.com/in/gopikrishnan-sasikumar",
       },
      },
      {
@@ -90,6 +92,7 @@ function Speakers() {
         web: "https://subinsb.com/",
         twitter: "",
         youtube: "",
+        github: "https://github.com/subins2000",
       },
      },
      {
@@ -101,7 +104,8 @@ function Speakers() {
         facebook: "",
         instagram: "",
         web: "https://nmpai.tech/",
-        twitter: "",
+        github: "https://github.com/nandakishormpai",
+        // twitter: "https://twitter.com/nm22by7",
         youtube: "",
       },
      },
@@ -211,14 +215,6 @@ function Speaker(speaker_data){
         <div>
             <summary className={styles['summary-name']}>
               <h3>{speaker.name}</h3>
-              <img
-                width={20}
-                height={20}
-                onClick={revealDescription}
-                id={`${key}`}
-                className={`${styles["description-drop-icon"]} ${
-                  open ? styles["up-down"] : ""}`}
-                src="/images/assets/chevron-down.svg"/>
             </summary>
           <h3 className={ `${styles.talk} ${styles.name}` } >Talk</h3>
           
@@ -236,7 +232,12 @@ function Speaker(speaker_data){
         <div className={styles.links}>
           {speaker.links.web && (
             <a href={speaker.links.web} className={styles.link} target="_blank" rel="noopener noreferrer">
-              <BsGlobe size={20} sizes="(max-width: 820px) 10px, 20vw" />
+              <BsGlobe size={25} className={styles['link-icon']} />
+            </a>
+          )}
+          {speaker.links.github && (
+            <a href={speaker.links.github} className={styles.link} target="_blank" rel="noopener noreferrer">
+              <BsGithub size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.facebook && (
@@ -246,7 +247,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsFacebook size={20} />
+              <BsFacebook size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.instagram && (
@@ -256,7 +257,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsInstagram size={20} />
+              <BsInstagram size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.twitter && (
@@ -266,7 +267,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsTwitter size={20} />
+              <BsTwitter size={25}  className={styles['link-icon']}/>
             </a>
           )}
           {speaker.links.youtube && (
@@ -276,7 +277,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsYoutube size={20} />
+              <BsYoutube size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.linkedin && (
@@ -286,9 +287,17 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsLinkedin size={20} />
+              <BsLinkedin size={25} className={styles['link-icon']}/>
             </a>
           )}
+          <img
+                width={20}
+                height={20}
+                onClick={revealDescription}
+                id={`${key}`}
+                className={`${styles["description-drop-icon"]} ${
+                  open ? styles["up-down"] : ""}`}
+                src="/images/assets/chevron-down.svg"/>
         </div>
       </div>
 
