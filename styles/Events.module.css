@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1.75rem 9rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 1px #d6d8e5 solid;
+    margin-bottom: 20px;
+    padding: .75rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+
+    gap: 15px;
+}
+
+.name{
+    align-self: flex-start;
+}
+
+.Image{
+    border-radius: 15px;
+    object-fit: cover;
+}
