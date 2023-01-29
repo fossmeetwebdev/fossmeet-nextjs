@@ -22,12 +22,15 @@ export default function Navbar() {
           <Link href="/speakers">
             <a className={styles["nav-link"]}>Speakers</a>
           </Link>
+          <Link href="/workshops">
+            <a className={styles["nav-link"]}>Workshops</a>
+          </Link>
           <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
           </Link>
-          <Link href="code-of-conduct">
+          {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
-          </Link>
+          </Link> */}
           <Link href="/contacts">
             <a className={styles["nav-link"]}>Contact Us</a>
           </Link>
@@ -61,6 +64,12 @@ export default function Navbar() {
               onClick={()=>{
               toggleButton()
               }}>Speakers</a>
+            </Link>
+            <Link href="/workshops" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Workshops</a>
             </Link>
             <Link href="/faqs" >
               <a className={styles["nav-link-mobile"]}

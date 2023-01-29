@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Speakers.module.css";
+import styles from "../styles/Speakers-Workshops.module.css";
 import imgDeepika from "../public/images/speakers/Deepika.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
