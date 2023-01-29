@@ -3,7 +3,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 1.75rem 9rem;
     padding: 2rem;
 }
 
@@ -16,14 +15,18 @@
     margin-bottom: 20px;
     padding: .75rem;
     align-items: center;
-    justify-content: space-between;
     max-width: 400px;
 
-    gap: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.098);
+    gap: 25px;
 }
 
 .name{
     align-self: flex-start;
+}
+
+.description{
+    margin-top: 5px;
 }
 
 .Image{

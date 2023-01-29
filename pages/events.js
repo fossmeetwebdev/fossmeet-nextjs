@@ -1,35 +1,34 @@
 import React from "react";
 import styles from "../styles/Events.module.css";
+
+import Image from "next/image";
 import imgArya from "../public/images/speakers/Arya.jpg"
 import imgRust from "../public/images/events/Kerala Rustaceans.webp"
-import Image from "next/image";
+import imgMic from "../public/images/events/mic.jpg"
+
 import Banner from "../components/Banner";
-import Link from "next/link";
 import { useState, useEffect } from "react";
-import {
-  BsFacebook,
-  BsGlobe,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-  BsYoutube,
-  BsGithub,
-} from "react-icons/bs";
+
 
 function Events() {
   const eventsData = [
     {
       name: "Talks",
       description: "Several speakers across diverse fields talk about their experience with FOSS.",
-      img: imgArya,
+      img: imgMic,
     },
     {
       name: "Rust Workshop",
-      description: "Introduction to Rust conducted by Kerala Rustaceans",
+      description: "Introduction to Rust conducted by Kerala Rustaceans. Kerala Rustaceans is a group of people who are keen on teaching people about Rust. They are active on several social medias like Twitter and Telegram. They conduct several workshops and seminars for people.",
       img: imgRust,
     },
     {
       name: "Nest Workshop",
+      description: "Several speakers across diverse fields talk about their experience with FOSS.",
+      img: imgArya,
+    },
+    {
+      name: "Panel Discussion",
       description: "Several speakers across diverse fields talk about their experience with FOSS.",
       img: imgArya,
     },
@@ -97,16 +96,16 @@ function Event(eventData){
           className={styles.Image}
         />
       </div>
-      <h2 className={styles.name}>{event.name}</h2>
-      <div className={styles.details}>
-        <div className={styles.description}>
-          <p className={styles.description}>{event.description}</p>
-        </div>
+
+      <div className={styles['description-container']}>
+        <h2 className={styles.name}>{event.name}</h2>
+        <p className={styles.description}>{event.description}</p>
+      </div>
 
           
           {/* {open &&  <p className={styles.description}>{speaker.description}</p>} */}
         
-      </div>
+
 
       {/* Mobile description */}
       {/* <p id={`description-${key}`} className={styles['description-mob']}>{event.description}</p> */}
