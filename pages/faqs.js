@@ -12,6 +12,11 @@ const questions = [
       "Registrations are scheduled to start in the last week of January. Registration link will be available in this website. Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us. The registration fee will be ₹849 for students and ₹999 for professionals.",
   },
   {
+    question: "When does the registrations for FOSSMeet'23 closes?",
+    answer:
+      "Registrations for FOSSMeet'23 will be open till 5th of February."
+      },
+  {
     question: "Will accommodation be provided?",
     answer:
       "Yes, different accomodation facilities are available for the students and professionals. Working professionals will have to pay an add-on fee of ₹250 for availing accommodation. Accommodation fee is covered for students in their registration fee.",
