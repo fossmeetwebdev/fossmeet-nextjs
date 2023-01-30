@@ -3,6 +3,7 @@ import styles from "../styles/Speakers-Workshops.module.css";
 import imgDeepika from "../public/images/speakers/Deepika.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
+import imgPrab from "../public/images/speakers/prabhanshu.webp"
 import imgGopi from "../public/images/speakers/Gopi.jpg"
 import imgNand from "../public/images/speakers/Nandakishor.png"
 import imgSubin from "../public/images/speakers/Subin.png"
@@ -65,6 +66,22 @@ function Speakers() {
         web: "https://asd.learnlearn.in/about/",
         twitter: "https://twitter.com/asdofindia",
         youtube: "",
+      },
+    },
+    {
+      name: "Prabhanshu Gupta",
+      description: "Prabhanshu Gupta works as a developer for simple.org. Empowering over 9000 public healthcare organisations, it is a free and open-source application that provides a simple and contextual digital platform to help record patient data enabling the effective treatment of patients with hypertension. He is also a software engineer for Nilenso software and co-founded StreetHack, a company that turns innovative hackathon ideas into products.",
+      img: imgPrab,
+      events: [
+        { name: "Building web apps in the open " }
+      ],
+      links: {
+        facebook: "",
+        instagram: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/prabhanshuguptagit",
+        linkedin: "https://www.linkedin.com/in/prabhanshu-gupta",
       },
     },
      {
