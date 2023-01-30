@@ -16,7 +16,7 @@ export default function Footer() {
           <Link href="https://fosscell.org/">
             <a className={styles["nav-link-logo"]}>
               <Image
-                src={"/fosscell-logo.jpg"}
+                src={"/images/logos/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}
                 width="100%"
                 height="40%"
@@ -49,7 +49,7 @@ export default function Footer() {
           <Link href="http://www.nitc.ac.in">
             <a className={styles["nav-link-logo"]}>
               <Image
-                src={"/nitc-logo.png"}
+                src={"/images/logos/nitc-logo.png"}
                 alt={"NITC logo"}
                 width="40%"
                 height="40%"
@@ -69,6 +69,9 @@ export default function Footer() {
             <Link href="/speakers" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Speakers</a>
             </Link>
+            <Link href="/wrokshops" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Workshops</a>
+            </Link>
             <Link href="/faqs" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>FAQ</a>
             </Link>
@@ -86,7 +89,7 @@ export default function Footer() {
       </div>
       <div className={`${styles["flex-row"]}`}>
         <p>
-          FOSSMeet’23 - an event conducted by FOSSCell of National
+          FOSSMeet&apos;23 - an event conducted by FOSSCell of National
           Institute of Technology Calicut
         </p>
         <div className={styles["flex-row"]}>

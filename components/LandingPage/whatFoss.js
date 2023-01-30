@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from '../../styles/LandingPage/What.module.css'
 import Image from 'next/image'
-import img from '../../public/images/foss-meet-expo-final.svg'
+import img from '../../public/images/assets/foss-meet-expo-final.svg'
 
 export default function whatFoss() {
   return (
     <div className={styles.what_container}>
       <div className={styles.what_heading}>
         <h1>
-          What is FossMeet? 
+          What is FOSSMeet? 
         </h1>
         <p>
            An annual gathering to celebrate the freedom in FOSS 

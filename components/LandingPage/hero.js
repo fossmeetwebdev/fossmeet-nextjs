@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles/LandingPage/Hero.module.css'
 import Image from 'next/image'
-import logo from '../../public/images/landing-page-illustration-1.svg'
+import logo from '../../public/images/assets/landing-page-illustration-1.svg'
 function Hero() {
   return (
     <div className={styles.container}>

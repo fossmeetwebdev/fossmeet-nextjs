@@ -22,14 +22,17 @@ export default function Navbar() {
           <Link href="/speakers">
             <a className={styles["nav-link"]}>Speakers</a>
           </Link>
+          <Link href="/workshops">
+            <a className={styles["nav-link"]}>Workshops</a>
+          </Link>
           <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
           </Link>
-          <Link href="code-of-conduct">
+          {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
-          </Link>
+          </Link> */}
           <Link href="/contacts">
-            <a className={styles["nav-link"]}>Contact US</a>
+            <a className={styles["nav-link"]}>Contact Us</a>
           </Link>
         </div>
         <div className={styles["flex-row"]}>
@@ -62,6 +65,12 @@ export default function Navbar() {
               toggleButton()
               }}>Speakers</a>
             </Link>
+            <Link href="/workshops" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Workshops</a>
+            </Link>
             <Link href="/faqs" >
               <a className={styles["nav-link-mobile"]}
               onClick={()=>{
@@ -93,7 +102,7 @@ export default function Navbar() {
             toggleButton()
             }}>
               <Image
-                src={"/fosscell-logo.jpg"}
+                src={"/images/logos/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}
                 width="150%"
                 height="90%"

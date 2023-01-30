@@ -1,9 +1,13 @@
 import React from "react";
-import styles from "../styles/Speakers.module.css";
-import imgDeepika from "../public/images/Deepika.jpg";
-import imgPrasad from "../public/images/Prasad.jpg";
-import imgASD from "../public/images/asd.jpg"
-import imgGopi from "../public/images/Gopi.jpg"
+import styles from "../styles/Speakers-Workshops.module.css";
+import imgDeepika from "../public/images/speakers/Deepika.jpg";
+import imgPrasad from "../public/images/speakers/Prasad.jpg";
+import imgASD from "../public/images/speakers/asd.jpg"
+import imgGopi from "../public/images/speakers/Gopi.jpg"
+import imgNand from "../public/images/speakers/Nandakishor.png"
+import imgSubin from "../public/images/speakers/Subin.png"
+import imgArya from "../public/images/speakers/Arya.jpg"
+
 import Image from "next/image";
 import Banner from "../components/Banner";
 import Link from "next/link";
@@ -15,6 +19,7 @@ import {
   BsLinkedin,
   BsTwitter,
   BsYoutube,
+  BsGithub,
 } from "react-icons/bs";
 
 function Speakers() {
@@ -58,23 +63,66 @@ function Speakers() {
         facebook: "",
         instagram: "",
         web: "https://asd.learnlearn.in/about/",
-        twitter: "",
+        twitter: "https://twitter.com/asdofindia",
         youtube: "",
       },
     },
-    // {
-    //   name: "Gopikrishna Sashikumar",
-    //   description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
-    //   img: imgGopi,
-    //   events: [{ name: "AI / ML" }],
-    //   links: {
-    //     facebook: "",
-    //     instagram: "",
-    //     web: "https://rvce.edu.in/mca-faculty-dk",
-    //     twitter: "",
-    //     youtube: "",
-    //   },
-    // },
+     {
+      name: "Gopikrishna Sashikumar",
+      description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
+      img: imgGopi,
+      events: [{ name: "AI for solving regional problems" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        github: "https://github.com/GopikrishnanSasikumar",
+        twitter: "",
+        youtube: "",
+        linkedin: "https://linkedin.com/in/gopikrishnan-sasikumar",
+      },
+     },
+     {
+      name: "Subin Siby",
+      description: "Subin Siby is a tech lead at Big Binary, a company that has a track record of building high-quality web and mobile software with proven results. His foray into the world of programming started at a very young age. The first project that he worked on, a social network called Open was also his first encounter with open source software. A curious learner by nature who is also very passionate about sharing the knowledge he's acquired, Subin runs a blog with over 300 tutorials that shed light on topics that aren't covered extensively on the internet. He also plays an instrumental role in the Varnam Project that deals with the transliteration of Indian languages.",
+      img: imgSubin,
+      events: [{ name: "Open Source Beginner Experience: Contributing to large projects and web-torrents" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://subinsb.com/",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/subins2000",
+      },
+     },
+     {
+      name: "Nanda Kishor M Pai",
+      description: "As a Machine Learning Engineer with a strong background in Natural Language Processing and Data Science, Nanda Kishor aims to research on model architecture and implement them to automate and accomplish production level accuracy in real-world problems. Being a student at College of Engineering, Trivandrum, Nanda Kishor has already made publications of Machine Learning articles in his Paperspace blog. Being young, aspiring yet so accomplished in his field makes him an integral speaker of our event.",
+      img: imgNand,
+      events: [{ name: "Hackathons and Importance of Documentation" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://nmpai.tech/",
+        github: "https://github.com/nandakishormpai",
+        // twitter: "https://twitter.com/nm22by7",
+        youtube: "",
+      },
+     },
+     {
+      name: "Arya Kiran",
+      description: "Libre Software enthusiast and teenage wunderkind, FOSSMeet'23's youngest speaker, Arya Kiran is a school student from Chennai. From free-software and technology to History and Biology his interests are wide and varied. He has worked on multiple tilde projects including Vern, as a system administrator. He has also developed Sedtrix, a sed-bot and is currently the admin of Project Segfault, which concerns itself with open source development and hosting services.",
+      img: imgArya,
+      events: [{ name: "Free Software, Decentralization, Self-Hosting and Free Service Hosts" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://aryak.vern.cc",
+        twitter: "",
+        youtube: "",
+      },
+     },
+     
   ];
 
   return (
@@ -84,7 +132,7 @@ function Speakers() {
         {speakersData &&
           speakersData.map((speaker, index) => {
             return (
-              <Speaker key={index} data={speaker} />
+              <Speaker data={speaker} key={index} id={index} />
             );
           })}
 
@@ -98,10 +146,8 @@ function Speakers() {
 
 function Speaker(speaker_data){
 
-  
   let speaker = speaker_data.data
-  
-
+  let key = speaker_data.id
   // let [width, setWidth] = useState(0)
   let [open, setOpen] = useState(false);
   
@@ -120,9 +166,21 @@ function Speaker(speaker_data){
   //   console.log(width);
   // },[width])
 
-  function rotateIcon(e){
-    let icon = document.getElementById('accordion');
-    console.log(icon)
+  function revealDescription(e){ 
+    let key = e.target.id
+
+    let icon = document.getElementById(key);
+    let description = document.getElementById(`description-${key}`);
+    let display = window.getComputedStyle(description).display;
+    console.log("Key: ",key)
+    console.log(`description-${key}`)
+    console.log('description:', description)
+    console.log(display)
+    if(display === 'none')
+      description.style.display = 'block';
+    else
+      description.style.display = 'none';
+
     if (open) {
       icon.classList.remove('up-down')
       setOpen(false)
@@ -144,19 +202,6 @@ function Speaker(speaker_data){
         />
       </div>
       <div className={styles.details}>
-        <div className={styles['personal-info-mob']}>
-          <details>
-            <summary className={styles['summary-name']} onClick={rotateIcon}>
-              <h3>{speaker.name}</h3>
-              <img
-                id="accordion"
-                className={`${styles["description-drop-icon"]} ${
-                  open ? styles["up-down"] : ""}`}
-                src="/icons/chevron-down.svg"/>
-            </summary>
-            <p className={styles.description}>{speaker.description}</p>
-          </details> 
-        </div>
 
         <div className={styles['personal-info-web']}>
           <h2 className={styles.name}>{speaker.name}</h2>
@@ -168,7 +213,12 @@ function Speaker(speaker_data){
       </div>
       <div className={styles.events}>
         <div>
-          <h3 className={styles.name}>Talk</h3>
+            <summary className={styles['summary-name']}>
+              <h3>{speaker.name}</h3>
+            </summary>
+          <h3 className={ `${styles.talk} ${styles.name}` } >Talk</h3>
+          
+          {/* Events */}
           <ul>
             {speaker.events.map((speakerEvent) => {
               return (
@@ -177,10 +227,17 @@ function Speaker(speaker_data){
             })}
           </ul>
         </div>
+
+        {/* Links */}
         <div className={styles.links}>
           {speaker.links.web && (
             <a href={speaker.links.web} className={styles.link} target="_blank" rel="noopener noreferrer">
-              <BsGlobe size={20} />
+              <BsGlobe size={25} className={styles['link-icon']} />
+            </a>
+          )}
+          {speaker.links.github && (
+            <a href={speaker.links.github} className={styles.link} target="_blank" rel="noopener noreferrer">
+              <BsGithub size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.facebook && (
@@ -190,7 +247,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsFacebook size={20} />
+              <BsFacebook size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.instagram && (
@@ -200,7 +257,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsInstagram size={20} />
+              <BsInstagram size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.twitter && (
@@ -210,7 +267,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsTwitter size={20} />
+              <BsTwitter size={25}  className={styles['link-icon']}/>
             </a>
           )}
           {speaker.links.youtube && (
@@ -220,7 +277,7 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsYoutube size={20} />
+              <BsYoutube size={25} className={styles['link-icon']} />
             </a>
           )}
           {speaker.links.linkedin && (
@@ -230,11 +287,22 @@ function Speaker(speaker_data){
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsLinkedin size={20} />
+              <BsLinkedin size={25} className={styles['link-icon']}/>
             </a>
           )}
+          <img
+                width={20}
+                height={20}
+                onClick={revealDescription}
+                id={`${key}`}
+                className={`${styles["description-drop-icon"]} ${
+                  open ? styles["up-down"] : ""}`}
+                src="/images/assets/chevron-down.svg"/>
         </div>
       </div>
+
+      {/* Mobile description */}
+      <p id={`description-${key}`} className={styles['description-mob']}>{speaker.description}</p>
     </div>
   )
 }
