@@ -49,7 +49,8 @@ const Schedule = () => {
       />
       <div className="margin">
         <div className={styles["tabs"]}>
-          {[1, 2, 3].map((dayIterator) => {
+          {/* [3, 2, 1] and row-reverse instead of [1, 2, 3] becuase checked={day == dayIterator} was not working properly. Replace this with a better method if possible. */}
+          {[3, 2, 1].map((dayIterator) => {
             return (
               <>
                 <input
@@ -61,6 +62,7 @@ const Schedule = () => {
                   onChange={(e) => {
                     setDay(e.target.value);
                   }}
+                  checked={day == dayIterator}
                 ></input>
                 <label
                   htmlFor={`tab${dayIterator}`}
@@ -85,8 +87,15 @@ const Schedule = () => {
                 <div>
                   {eventsSameStartTime.events.map((event, i) => {
                     return (
-                      <Link href={`/events/${event.id}`} key={event.id}>
-                        <div className={styles["event"]}>{event.title}</div>
+                      <Link href="#" key={event.id}>
+                        <div className={styles["event"]}>
+                          <p>{event.title}</p>
+                          {event.speaker && (
+                            <p className={styles["speaker"]}>
+                              - {event.speaker}
+                            </p>
+                          )}
+                        </div>
                       </Link>
                     );
                   })}

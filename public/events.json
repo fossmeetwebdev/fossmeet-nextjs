@@ -2,82 +2,145 @@
   {
     "id": 1,
     "date": "2023-02-10",
-    "start_time": "09:00 AM",
-    "end_time": "12:00 PM",
-    "title": "Introduction to Machine Learning",
-    "speaker": "John Smith",
-    "venue": "Conference Room A"
+    "start_time": "06:00 AM",
+    "end_time": "07:00 AM",
+    "title": "Inauguration & Opening Note",
+    "speaker": "Dr. Sasi Kumar",
+    "venue": ""
   },
   {
     "id": 2,
     "date": "2023-02-10",
-    "start_time": "12:00 PM",
-    "end_time": "1:00 AM",
-    "title": "Advanced Machine Learning Techniques",
-    "speaker": "Jane Doe",
-    "venue": "Conference Room B"
+    "start_time": "07:00 AM",
+    "end_time": "08:30 AM",
+    "title": "Panel Discussion",
+    "speaker": "Devdutt",
+    "venue": ""
   },
   {
     "id": 3,
     "date": "2023-02-10",
-    "start_time": "12:00 PM",
-    "end_time": "1:00 AM",
-    "title": "Advanced Machine Learning Techniques",
-    "speaker": "Jane Doe",
-    "venue": "Conference Room B"
+    "start_time": "09:30 AM",
+    "end_time": "1:45 PM",
+    "title": "Open Lab Session (for competition)",
+    "speaker": "",
+    "venue": ""
   },
   {
     "id": 4,
-    "date": "2023-02-10",
-    "start_time": "12:00 PM",
-    "end_time": "1:00 AM",
-    "title": "Advanced Machine Learning Techniques",
-    "speaker": "Jane Doe",
-    "venue": "Conference Room B"
+    "date": "2023-02-11",
+    "start_time": "09:00 AM",
+    "end_time": "09:45 AM",
+    "title": "Speaker 2",
+    "speaker": "Deepika K",
+    "venue": ""
   },
   {
     "id": 5,
-    "date": "2023-02-10",
-    "start_time": "02:00 PM",
-    "end_time": "4:00 PM",
-    "title": "Deep Learning for Computer Vision",
-    "speaker": "Bob Johnson",
-    "venue": "Conference Room C"
+    "date": "2023-02-11",
+    "start_time": "10:00 AM",
+    "end_time": "10:45 AM",
+    "title": "Speaker 3",
+    "speaker": "Prasad K",
+    "venue": ""
   },
   {
     "id": 6,
-    "date": "2023-02-10",
-    "start_time": "02:00 PM",
-    "end_time": "4:00 PM",
-    "title": "Deep Learning for Computer Vision",
-    "speaker": "Bob Johnson",
-    "venue": "Conference Room C"
+    "date": "2023-02-11",
+    "start_time": "11:00 AM",
+    "end_time": "11:45 PM",
+    "title": "Speaker 4",
+    "speaker": "ASD",
+    "venue": ""
   },
   {
     "id": 7,
     "date": "2023-02-11",
-    "start_time": "10:00 AM",
-    "end_time": "4:00 PM",
-    "title": "Deep Learning for Computer Vision",
-    "speaker": "Bob Johnson",
-    "venue": "Conference Room C"
+    "start_time": "11:45 PM",
+    "end_time": "12:45 PM",
+    "title": "Competition Presentation",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 12,
+    "date": "2023-02-11",
+    "start_time": "02:00 PM",
+    "end_time": "02:45 PM",
+    "title": "Speaker 5",
+    "speaker": "Atharva Raykar (Nilenso)",
+    "venue": ""
   },
   {
     "id": 8,
-    "date": "2023-02-12",
-    "start_time": "11:00 AM",
-    "end_time": "4:00 PM",
-    "title": "Deep Learning for Computer Vision",
-    "speaker": "Bob Johnson",
-    "venue": "Conference Room C"
+    "date": "2023-02-11",
+    "start_time": "02:15 PM",
+    "end_time": "03:45 PM",
+    "title": "Rust Workshop Session 1",
+    "speaker": "",
+    "venue": ""
   },
   {
     "id": 9,
-    "date": "2023-02-12",
-    "start_time": "02:00 PM",
-    "end_time": "4:00 PM",
-    "title": "Deep Learning for Computer Vision",
-    "speaker": "Bob Johnson",
-    "venue": "Conference Room C"
+    "date": "2023-02-11",
+    "start_time": "02:15 PM",
+    "end_time": "03:45 PM",
+    "title": "Nest Workshop Session 1",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 13,
+    "date": "2023-02-11",
+    "start_time": "03:00 PM",
+    "end_time": "03:45 PM",
+    "title": "Speaker 6",
+    "speaker": "Prabhanshu Gupta (Nilenso)",
+    "venue": ""
+  },
+  {
+    "id": 10,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:45 PM",
+    "title": "Rust Workshop Session 2",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 11,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:45 PM",
+    "title": "Nest Workshop Session 2",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 14,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:00 PM",
+    "title": "Speaker 7",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 15,
+    "date": "2023-02-11",
+    "start_time": "06:30 PM",
+    "end_time": "07:45 PM",
+    "title": "Entertainment",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 16,
+    "date": "2023-02-11",
+    "start_time": "09:30 PM",
+    "end_time": "11:45 PM",
+    "title": "Open Lab Session (for competition)",
+    "speaker": "",
+    "venue": ""
   }
 ]
