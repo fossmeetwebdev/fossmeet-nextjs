@@ -75,13 +75,19 @@ const Schedule = () => {
           })}
         </div>
         {eventsSorted &&
-          eventsSorted.map((eventsSameStartTime) => {
+          eventsSorted.map((eventsSameStartTime, i) => {
             return (
               <div
                 key={eventsSameStartTime.start_time}
                 className={styles["events"]}
               >
-                <div className={styles["time"]}>
+                <div
+                  className={
+                    styles[
+                      eventsSorted.length - 1 === i ? "time" : "time-border"
+                    ]
+                  }
+                >
                   <h4>{eventsSameStartTime.start_time}</h4>
                 </div>
                 <div>

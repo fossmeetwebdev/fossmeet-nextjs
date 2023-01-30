@@ -21,15 +21,19 @@
   color: darkslategray;
   font-size: medium;
 }
+.time-border {
+  width: 15vw;
+  text-align: right;
+  padding-right: 5vw;
+  transform: translateY(20px);
+  border-right: var(--orange) solid;
+}
 .time {
   width: 15vw;
   text-align: right;
   padding-right: 5vw;
-  border-right: var(--orange) solid;
   transform: translateY(20px);
-}
-.time:last-of-type {
-  border: red solid;
+  border-right: white solid;
 }
 
 .event:last-of-type {
@@ -38,10 +42,11 @@
 .events:last-child {
   padding-bottom: 20px;
 }
+.time-border > h4,
 .time > h4 {
   transform: translateY(-10px);
 }
-
+.time-border::after,
 .time::after {
   content: "";
   position: absolute;
@@ -114,9 +119,11 @@
 }
 
 @media (max-width: 768px) {
+  .time-border,
   .time {
     width: 75px;
   }
+  .time-border::after,
   .time::after {
     transform: translate(-6px, -45px);
   }
