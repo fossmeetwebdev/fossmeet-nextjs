@@ -29,7 +29,7 @@ function Workshops() {
       name: "Rust Workshop",
       wSpeakers: [
         "Devdutt Shenoi",
-        "Srihari Prasad",
+        "Sreehari Prasad",
         "Advaith Narayanan",
         "Alen P Varghese",
       ],
