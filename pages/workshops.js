@@ -3,6 +3,7 @@ import styles from "../styles/Speakers-Workshops.module.css";
 
 import imgRust from "../public/images/workshops/Rust.svg";
 import imgNest from "../public/images/workshops/nest.png";
+import imgServer from "../public/images/workshops/server.svg";
 
 import Image from "next/image";
 import Banner from "../components/Banner";
@@ -55,6 +56,21 @@ function Workshops() {
         youtube: "",
       },
     },
+    // {
+    //   host: "Kastubh",
+    //   description:
+    //     "",
+    //   img: imgServer,
+    //   name: "Self Hosting 101",
+    //   wSpeakers: ["Kastubh"],
+    //   links: {
+    //     facebook: "",
+    //     instagram: "",
+    //     web: "",
+    //     twitter: "",
+    //     youtube: "",
+    //   },
+    // },
   ];
 
   return (

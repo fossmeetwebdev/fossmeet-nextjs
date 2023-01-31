@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../styles/Speakers-Workshops.module.css";
+import imgSasi from "../public/images/speakers/Sasikumar.jpeg";
 import imgDeepika from "../public/images/speakers/Deepika.jpg";
+import imgAndrew from "../public/images/speakers/andrew.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
 import imgPrab from "../public/images/speakers/prabhanshu.webp"
+import imgGoku from "../public/images/speakers/Gokul.jpg"
 import imgGopi from "../public/images/speakers/Gopi.jpg"
 import imgNand from "../public/images/speakers/Nandakishor.png"
 import imgSubin from "../public/images/speakers/Subin.png"
@@ -26,8 +29,22 @@ import {
 function Speakers() {
   const speakersData = [
     {
+      name: "Dr. Sasi Kumar",
+      description: "Dr. Sasi Kumar is a Free Software activist and a member of the Board of Directors of the Free Software Foundation of India. He has conducted research in atmospheric electricity, rainfall studies and cloud physics and has wrote popular science articles. He has also published three popular science books in Malayalam. He is an educationist and has been teaching school children for about a decade.",
+      img: imgSasi,
+      events: [{ name: "Keynote Talk" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://swatantryam.wordpress.com",
+        twitter: "",
+        youtube: "",
+        linkedin: "https://www.linkedin.com/in/sasi-kumar-6770681b2",
+      },
+    },
+    {
       name: "Dr. Deepika K",
-      description: "Dr. Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Ms.Kripanithi has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
+      description: "Dr. Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Dr. Deepika has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
       img: imgDeepika,
       events: [{ name: "Oxygenate your systems with FOSS" }],
       links: {
@@ -39,6 +56,20 @@ function Speakers() {
         linkedin: "",
       },
     },
+    // {
+    //   name: "Andrew Bastin",
+    //   description: "",
+    //   img: imgAndrew,
+    //   events: [{ name: "" }],
+    //   links: {
+    //     facebook: "",
+    //     instagram: "",
+  //     web: "",
+    //     twitter: "",
+    //     youtube: "",
+    //     linkedin: "",
+    //   },
+    // },
     {
       name: "Prasad Khake",
       description: "He is the co-founder of paperd.ink, an open-source e-paper development board developed in India, that can also be programmed in Arduino IDE. Mr.Khake hails from Chennai, Tamil Nadu. After earning his B.Tech from MIT Pune, he currently works as a Marketing Manager at Inaza full-time. Furthermore, he has published some outstanding articles in the field of global economics and spectrum sensing techniques.",
@@ -84,6 +115,22 @@ function Speakers() {
         linkedin: "https://www.linkedin.com/in/prabhanshu-gupta",
       },
     },
+    // {
+    //   name: "Gokul Soumya",
+    //   description: "",
+    //   img: imgGoku,
+    //   events: [
+    //     { name: "" }
+    //   ],
+    //   links: {
+    //     facebook: "",
+    //     instagram: "",
+    //     twitter: "",
+    //     youtube: "",
+    //     github: "",
+    //     linkedin: "",
+    //   },
+    // },
      {
       name: "Gopikrishna Sashikumar",
       description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
@@ -213,8 +260,8 @@ function Speaker(speaker_data){
         <Image
           src={speaker.img}
           alt={`Photo of ${speaker.name}`}
-          width="400"
-          height="400"
+          width="350"
+          height="350"
           className={styles.Image}
         />
       </div>
