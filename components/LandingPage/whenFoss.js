@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import NITC from '/public/images/assets/rectangle.png'
+import imgNITC from '/public/images/assets/NITC.jpeg'
 import Button from "../Button";
 import styles from '../../styles/LandingPage/When.module.css'
 
@@ -16,7 +17,7 @@ function whenFoss() {
           National Institute of Technology Calicut
         </h1>
         <h4>
-          Save the date for the exciting 3 day event. See y’all there 
+          Save the date for the exciting 3 day event. See y&apos;all there 
         </h4>
         {/* <div className={styles.when_button}>
           <Button text="Get Tickets" toLink={"/"} />
@@ -24,7 +25,7 @@ function whenFoss() {
         </div> */}
       </div>
       <div className={styles.when_image}>
-        <Image src={NITC} alt="NITC" width="1500" className={styles.img}/>
+        <Image src={imgNITC} alt="NITC" width={900} height={550} className={styles.img}/>
       </div>
     </div>
   )

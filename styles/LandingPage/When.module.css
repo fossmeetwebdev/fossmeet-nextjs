@@ -36,6 +36,8 @@
 
 .when_image {
     width: 50%;
+    display: flex;
+    justify-content: end;
 }
 
 .img{
