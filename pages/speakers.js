@@ -3,7 +3,7 @@ import styles from "../styles/Speakers-Workshops.module.css";
 import imgDeepika from "../public/images/speakers/Deepika.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
-// import imgPrab from "../public/images/speakers/prabhanshu.webp"
+import imgPrab from "../public/images/speakers/prabhanshu.webp"
 import imgGopi from "../public/images/speakers/Gopi.jpg"
 import imgNand from "../public/images/speakers/Nandakishor.png"
 import imgSubin from "../public/images/speakers/Subin.png"
@@ -68,22 +68,22 @@ function Speakers() {
         youtube: "",
       },
     },
-    // {
-    //   name: "Prabhanshu Gupta",
-    //   description: "Prabhanshu Gupta works as a developer for simple.org. Empowering over 9000 public healthcare organisations, it is a free and open-source application that provides a simple and contextual digital platform to help record patient data enabling the effective treatment of patients with hypertension. He is also a software engineer for Nilenso software and co-founded StreetHack, a company that turns innovative hackathon ideas into products.",
-    //   img: imgPrab,
-    //   events: [
-    //     { name: "Building web apps in the open " }
-    //   ],
-    //   links: {
-    //     facebook: "",
-    //     instagram: "",
-    //     twitter: "",
-    //     youtube: "",
-    //     github: "https://github.com/prabhanshuguptagit",
-    //     linkedin: "https://www.linkedin.com/in/prabhanshu-gupta",
-    //   },
-    // },
+    {
+      name: "Prabhanshu Gupta",
+      description: "Prabhanshu Gupta works as a developer for simple.org. Empowering over 9000 public healthcare organisations, it is a free and open-source application that provides a simple and contextual digital platform to help record patient data enabling the effective treatment of patients with hypertension. He is also a software engineer for Nilenso software and co-founded StreetHack, a company that turns innovative hackathon ideas into products.",
+      img: imgPrab,
+      events: [
+        { name: "Building web apps in the open " }
+      ],
+      links: {
+        facebook: "",
+        instagram: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/prabhanshuguptagit",
+        linkedin: "https://www.linkedin.com/in/prabhanshu-gupta",
+      },
+    },
      {
       name: "Gopikrishna Sashikumar",
       description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
