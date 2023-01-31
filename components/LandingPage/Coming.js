@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Button from '../Button'
-import styles from '../../styles/coming_soon.module.css'
+import styles from '../../styles/Coming_soon.module.css'
 import { useRouter } from 'next/router'
 function Coming() {
     let router = useRouter();
