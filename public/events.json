@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "date": "2023-02-10",
+    "start_time": "06:00 PM",
+    "end_time": "07:00 PM",
+    "title": "Inauguration & Opening Note",
+    "speaker": "Dr. Sasi Kumar",
+    "venue": ""
+  },
+  {
+    "id": 2,
+    "date": "2023-02-10",
+    "start_time": "07:00 PM",
+    "end_time": "07:30 PM",
+    "title": "Building web apps in the open",
+    "speaker": "Prabhanshu Gupta",
+    "venue": ""
+  },
+  {
+    "id": 3,
+    "date": "2023-02-10",
+    "start_time": "07:45 PM",
+    "end_time": "08:45 PM",
+    "title": "Panel Discussion",
+    "speaker": "",
+    "venue": ""
+  },
+  {
+    "id": 4,
+    "date": "2023-02-11",
+    "start_time": "09:00 AM",
+    "end_time": "09:45 AM",
+    "title": "Oxygenate your systems with FOSS",
+    "speaker": "Dr. Deepika K",
+    "venue": ""
+  },
+  {
+    "id": 5,
+    "date": "2023-02-11",
+    "start_time": "10:00 AM",
+    "end_time": "10:45 AM",
+    "title": "Paperd.ink's Journey",
+    "speaker": "Prasad K",
+    "venue": ""
+  },
+  {
+    "id": 6,
+    "date": "2023-02-11",
+    "start_time": "11:00 AM",
+    "end_time": "11:45 PM",
+    "title": "Enough of javascript build tools. Solving real world problems collaboratively through FOSS.",
+    "speaker": "Dr. Akshay S Dinesh",
+    "venue": ""
+  },
+  {
+    "id": 12,
+    "date": "2023-02-11",
+    "start_time": "12:00 PM",
+    "end_time": "12:45 PM",
+    "title": "Git's bit: beyond the magic incantations",
+    "speaker": "Atharva Raykar",
+    "venue": ""
+  },
+  {
+    "id": 8,
+    "date": "2023-02-11",
+    "start_time": "02:15 PM",
+    "end_time": "03:45 PM",
+    "title": "Rust Workshop Session 1",
+    "speaker": "Kerala Rustaceans",
+    "venue": ""
+  },
+  {
+    "id": 9,
+    "date": "2023-02-11",
+    "start_time": "02:15 PM",
+    "end_time": "03:45 PM",
+    "title": "NeST Workshop Session 1",
+    "speaker": "NeST developers",
+    "venue": ""
+  },
+  {
+    "id": 10,
+    "date": "2023-02-11",
+    "start_time": "02:15 PM",
+    "end_time": "03:45 PM",
+    "title": "Self Hosting 101: Session 1",
+    "speaker": "Kaustubh Patil",
+    "venue": ""
+  },
+  {
+    "id": 11,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:45 PM",
+    "title": "Rust Workshop Session 2",
+    "speaker": "Kerala Rustaceans",
+    "venue": ""
+  },
+  {
+    "id": 12,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:45 PM",
+    "title": "NeST Workshop Session 2",
+    "speaker": "NeST developers",
+    "venue": ""
+  },
+  {
+    "id": 13,
+    "date": "2023-02-11",
+    "start_time": "04:15 PM",
+    "end_time": "05:45 PM",
+    "title": "Self Hosting 101: Session 2",
+    "speaker": "Kaustubh Patil",
+    "venue": ""
+  },
+  {
+    "id": 15,
+    "date": "2023-02-12",
+    "start_time": "09:00 AM",
+    "end_time": "10:30 AM",
+    "title": "Lighting Talks",
+    "speaker": "Arya Kiran, Nandakishore M Pai, Gokul Soumya",
+    "venue": ""
+  },
+  {
+    "id": 16,
+    "date": "2023-02-12",
+    "start_time": "10:45 AM",
+    "end_time": "11:30 AM",
+    "title": "AI for solving regional problems",
+    "speaker": "Gopikrisha Sashikumar",
+    "venue": ""
+  },
+  {
+    "id": 17,
+    "date": "2023-02-12",
+    "start_time": "11:45 AM",
+    "end_time": "12:30 PM",
+    "title": "Introduction to Debian GNU/Linux",
+    "speaker": "Abraham Raji",
+    "venue": ""
+  },
+  {
+    "id": 18,
+    "date": "2023-02-12",
+    "start_time": "02:15 PM",
+    "end_time": "03:00 PM",
+    "title": "Hoppscotch's journey",
+    "speaker": "Andrew Bastin",
+    "venue": ""
+  },
+  {
+    "id": 19,
+    "date": "2023-02-12",
+    "start_time": "03:15 PM",
+    "end_time": "04:00 PM",
+    "title": "Open Source Beginner Experience: Contributing to large projects like webTorrent",
+    "speaker": "Subin Siby",
+    "venue": ""
+  },
+  {
+    "id": 20,
+    "date": "2023-02-12",
+    "start_time": "04:00 PM",
+    "end_time": "04:30 PM",
+    "title": "Closing note",
+    "speaker": "FOSSMeet'23 Organizers",
+    "venue": ""
+  }
+]
