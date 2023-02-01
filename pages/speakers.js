@@ -1,8 +1,13 @@
 import React from "react";
 import styles from "../styles/Speakers-Workshops.module.css";
+import imgSasi from "../public/images/speakers/Sasikumar.jpeg";
 import imgDeepika from "../public/images/speakers/Deepika.jpg";
+import imgAndrew from "../public/images/speakers/andrew.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
+import imgPrab from "../public/images/speakers/prabhanshu.webp"
+import imgAtharva from "../public/images/speakers/Atharva.webp"
+import imgGoku from "../public/images/speakers/Gokul.jpg"
 import imgGopi from "../public/images/speakers/Gopi.jpg"
 import imgNand from "../public/images/speakers/Nandakishor.png"
 import imgSubin from "../public/images/speakers/Subin.png"
@@ -25,8 +30,22 @@ import {
 function Speakers() {
   const speakersData = [
     {
+      name: "Dr. Sasi Kumar",
+      description: "Dr. Sasi Kumar is a Free Software activist and a member of the Board of Directors of the Free Software Foundation of India. He has conducted research in atmospheric electricity, rainfall studies and cloud physics and has wrote popular science articles. He has also published three popular science books in Malayalam. He is an educationist and has been teaching school children for about a decade.",
+      img: imgSasi,
+      events: [{ name: "Keynote Talk" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://swatantryam.wordpress.com",
+        twitter: "",
+        youtube: "",
+        linkedin: "https://www.linkedin.com/in/sasi-kumar-6770681b2",
+      },
+    },
+    {
       name: "Dr. Deepika K",
-      description: "Dr. Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Ms.Kripanithi has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
+      description: "Dr. Deepika Kripanithi, a professor in the MCA department of RV College of Engineering, is a highly accomplished free software advocate and is an active member of the FOSS community. She believes in implementing FOSS wherever she can, so much so that she has inculcated FOSS into her Ph.D. thesis. Dr. Deepika has also worked on various communication technologies such as UWB, Lora, BLE, Wi-Fi, and GPS. A torchbearer for women in FOSS, she continues to mentor and motivate them to learn and contribute. She holds a global publication record, publishing over 15 papers, and 2 book chapters, and has over 150 citations to her name.",
       img: imgDeepika,
       events: [{ name: "Oxygenate your systems with FOSS" }],
       links: {
@@ -36,6 +55,21 @@ function Speakers() {
         twitter: "",
         youtube: "",
         linkedin: "",
+      },
+    },
+    {
+      name: "Andrew Bastin",
+      description: "Andrew Bastin is the co-founder and CTO of Hoppscotch. As a web-based API development suite, Hoppscotch provides an easy and accessible platform to developers with a minimalist UI. It is a completely open-source and free-to-use suite. Pursuing a Bachelor's in Computer Science at Lakehead University, Canada, Andrew is deeply committed to Open Source development. In this edition of FOSSMeet, let's join him as he recalls his journey in turning an idea into a thriving venture.",
+      img: imgAndrew,
+      events: [{ name: "Hoppscotch's Journey" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/AndrewBastin",
+        linkedin: "https://www.linkedin.com/in/andrew-bastin-7456771a8",
       },
     },
     {
@@ -67,7 +101,39 @@ function Speakers() {
         youtube: "",
       },
     },
-     {
+    {
+      name: "Prabhanshu Gupta",
+      description: "Prabhanshu Gupta works as a developer for simple.org. Empowering over 9000 public healthcare organisations, it is a free and open-source application that provides a simple and contextual digital platform to help record patient data enabling the effective treatment of patients with hypertension. He is also a software engineer for Nilenso software and co-founded StreetHack, a company that turns innovative hackathon ideas into products.",
+      img: imgPrab,
+      events: [
+        { name: "Building web apps in the open " }
+      ],
+      links: {
+        facebook: "",
+        instagram: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/prabhanshuguptagit",
+        linkedin: "https://www.linkedin.com/in/prabhanshu-gupta",
+      },
+    },
+    {
+      name: "Atharva Raykar",
+      description: "Atharva Raykar is an ardent FOSS enthusiast who is a Computer Science graduate from PES University, Bangalore. He is currently a software engineer at Nilenso and has previously worked as an intern for the Git Community as a part of the Google Summer of Code'21. Even while working as a full time engineer, he never shies away from sharing his knowledge and experience to youngsters and fellow FOSS enthusiasts, testimony to which is his initiative of an open source community by the name of Universities of FOSS, India.",
+      img: imgAtharva,
+      events: [
+        { name: "Git's bit: beyond the magic incantations" }
+      ],
+      links: {
+        facebook: "",
+        web: "http://atharvaraykar.com/",
+        instagram: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/tfidfwastaken",
+      },
+    },
+    {
       name: "Gopikrishna Sashikumar",
       description: "He is a machine learning engineer at FullContact Inc. and runs project initiatives for the TinkerHub Foundation. Hailing from Kottayam, Kerala, he has completed his B.Tech in Computer engineering from the Rajiv Gandhi Institute of Technology, Kottayam, where he founded the RIT Chapter of Tinkerhub and worked on a Computer Vision project whilst implementing the Pytorch Learning Program.  In addition, Mr.Sashikumar has several stimulating open-source projects under his belt. RITA - a virtual voice assistant, and JOJI- a project that converts text to a corresponding emoji, are a few among his impressive array of projects.",
       img: imgGopi,
@@ -80,12 +146,12 @@ function Speakers() {
         youtube: "",
         linkedin: "https://linkedin.com/in/gopikrishnan-sasikumar",
       },
-     },
-     {
+    },
+    {
       name: "Subin Siby",
       description: "Subin Siby is a tech lead at Big Binary, a company that has a track record of building high-quality web and mobile software with proven results. His foray into the world of programming started at a very young age. The first project that he worked on, a social network called Open was also his first encounter with open source software. A curious learner by nature who is also very passionate about sharing the knowledge he's acquired, Subin runs a blog with over 300 tutorials that shed light on topics that aren't covered extensively on the internet. He also plays an instrumental role in the Varnam Project that deals with the transliteration of Indian languages.",
       img: imgSubin,
-      events: [{ name: "Open Source Beginner Experience: Contributing to large projects and web-torrents" }],
+      events: [{ name: "Open Source Beginner Experience: Contributing to large projects like webTorrent" }],
       links: {
         facebook: "",
         instagram: "",
@@ -94,8 +160,24 @@ function Speakers() {
         youtube: "",
         github: "https://github.com/subins2000",
       },
-     },
-     {
+    },
+    {
+      name: "Gokul Soumya",
+      description: "Gokul is an open source developer who is currently pursuing his undergraduate in engineering at Sree Chitra Thirunal College of Engineering, Trivandrum. He is currently working on Helix - a modern text editor inspired from vim and kakoune and is a co-maintainer for the same. His other projects include an LSP for Python and a Golang based to-do manager. Being an open source enthusiast and a proficient developer he will be one of our juvenile speakers at FOSSMeet'23",
+      img: imgGoku,
+      events: [
+        { name: "The Helix text editor" }
+      ],
+      links: {
+        facebook: "",
+        instagram: "",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/sudormrfbin",
+        linkedin: "",
+      },
+    },
+    {
       name: "Nanda Kishor M Pai",
       description: "As a Machine Learning Engineer with a strong background in Natural Language Processing and Data Science, Nanda Kishor aims to research on model architecture and implement them to automate and accomplish production level accuracy in real-world problems. Being a student at College of Engineering, Trivandrum, Nanda Kishor has already made publications of Machine Learning articles in his Paperspace blog. Being young, aspiring yet so accomplished in his field makes him an integral speaker of our event.",
       img: imgNand,
@@ -108,8 +190,8 @@ function Speakers() {
         // twitter: "https://twitter.com/nm22by7",
         youtube: "",
       },
-     },
-     {
+    },
+    {
       name: "Arya Kiran",
       description: "Libre Software enthusiast and teenage wunderkind, FOSSMeet'23's youngest speaker, Arya Kiran is a school student from Chennai. From free-software and technology to History and Biology his interests are wide and varied. He has worked on multiple tilde projects including Vern, as a system administrator. He has also developed Sedtrix, a sed-bot and is currently the admin of Project Segfault, which concerns itself with open source development and hosting services.",
       img: imgArya,
@@ -121,7 +203,7 @@ function Speakers() {
         twitter: "",
         youtube: "",
       },
-     },
+    },
      
   ];
 
@@ -196,8 +278,8 @@ function Speaker(speaker_data){
         <Image
           src={speaker.img}
           alt={`Photo of ${speaker.name}`}
-          width="400"
-          height="400"
+          width="350"
+          height="350"
           className={styles.Image}
         />
       </div>
