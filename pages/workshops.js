@@ -3,7 +3,7 @@ import styles from "../styles/Speakers-Workshops.module.css";
 
 import imgRust from "../public/images/workshops/Rust.svg";
 import imgNest from "../public/images/workshops/nest.png";
-import imgServer from "../public/images/workshops/server.svg";
+import imgServer from "../public/images/workshops/server.png";
 
 import Image from "next/image";
 import Banner from "../components/Banner";
@@ -44,7 +44,7 @@ function Workshops() {
     {
       host: "NeST developers",
       description:
-        "NeST is a python3 package aiding researchers and beginners alike in emulating real-world networks.",
+        "NeST is a python3 package aiding researchers and beginners alike in emulating real-world networks. It is an Open-Source project which simplifies the process of performing networking experiments using Linux network namespaces.",
       img: imgNest,
       name: "NeST Workshop",
       wSpeakers: ["Narayan G", "Shanthanu Rai"],
@@ -56,21 +56,19 @@ function Workshops() {
         youtube: "",
       },
     },
-    // {
-    //   host: "Kastubh",
-    //   description:
-    //     "",
-    //   img: imgServer,
-    //   name: "Self Hosting 101",
-    //   wSpeakers: ["Kastubh"],
-    //   links: {
-    //     facebook: "",
-    //     instagram: "",
-    //     web: "",
-    //     twitter: "",
-    //     youtube: "",
-    //   },
-    // },
+    {
+      host: "Kaustubh Patil",
+      description: "A hands-on workshop on Cloud Self-Hosting. Set up and maintain your own cloud infrastructure using popular open-source technologies. Discover the benefits of self-hosting, such as increased privacy, flexibility, cost savings and learn to deploy and manage virtual machines.",
+      img: imgServer,
+      name: "Self Hosting 101",
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "",
+        twitter: "",
+        youtube: "",
+      },
+    },
   ];
 
   return (
@@ -83,9 +81,9 @@ function Workshops() {
             return <Speaker data={workshop} key={index} id={index} />;
           })}
 
-        <div className={styles["stay-tuned"]}>
+        {/* <div className={styles["stay-tuned"]}>
           <h3>More workshops coming soon...</h3>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -142,16 +140,16 @@ function Speaker(workshopData) {
             <h3>{workshop.name}</h3>
           </summary>
           <h3 className={`${styles.talk} ${styles.name}`}>Conducted by</h3>
-          <p style={{ paddingTop: "10px" }}>{workshop.host}</p>
+          <p>{workshop.host}</p>
         </div>
 
         {/* Workshop speakers */}
-        <div className={styles["workshop-speakers"]}>
+        {workshop.wSpeakers? <div className={styles["workshop-speakers"]}>
           <h3 className={styles.hosts}>Hosts</h3>
           {workshop["wSpeakers"].map((speaker, i) => {
             return <li key={i}>{speaker}</li>;
           })}
-        </div>
+        </div>:""}
 
         {/* Links */}
         <div className={styles.links}>
