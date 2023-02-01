@@ -85,6 +85,7 @@
   font-size: medium;
   cursor: pointer;
   width: 33.33%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .tabs__radio {

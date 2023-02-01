@@ -104,6 +104,7 @@
   display: none;
   transition: 0.25s ease all;
   margin-left: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 .description-drop-icon:hover{
   cursor: pointer;
