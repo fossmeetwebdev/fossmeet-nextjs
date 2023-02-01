@@ -14,15 +14,6 @@
     "start_time": "07:00 AM",
     "end_time": "08:30 AM",
     "title": "Panel Discussion",
-    "speaker": "Devdutt",
-    "venue": ""
-  },
-  {
-    "id": 3,
-    "date": "2023-02-10",
-    "start_time": "09:30 AM",
-    "end_time": "1:45 PM",
-    "title": "Open Lab Session (for competition)",
     "speaker": "",
     "venue": ""
   },
@@ -31,8 +22,8 @@
     "date": "2023-02-11",
     "start_time": "09:00 AM",
     "end_time": "09:45 AM",
-    "title": "Speaker 2",
-    "speaker": "Deepika K",
+    "title": "Oxygenate your systems with FOSS",
+    "speaker": "Dr. Deepika K",
     "venue": ""
   },
   {
@@ -40,7 +31,7 @@
     "date": "2023-02-11",
     "start_time": "10:00 AM",
     "end_time": "10:45 AM",
-    "title": "Speaker 3",
+    "title": "Paperd.ink's Journey",
     "speaker": "Prasad K",
     "venue": ""
   },
@@ -49,17 +40,8 @@
     "date": "2023-02-11",
     "start_time": "11:00 AM",
     "end_time": "11:45 PM",
-    "title": "Speaker 4",
-    "speaker": "ASD",
-    "venue": ""
-  },
-  {
-    "id": 7,
-    "date": "2023-02-11",
-    "start_time": "11:45 PM",
-    "end_time": "12:45 PM",
-    "title": "Competition Presentation",
-    "speaker": "",
+    "title": "Enough of javascript build tools. Solving real world problems collaboratively through FOSS.",
+    "speaker": "Dr. Akshay S Dinesh",
     "venue": ""
   },
   {
@@ -67,8 +49,8 @@
     "date": "2023-02-11",
     "start_time": "02:00 PM",
     "end_time": "02:45 PM",
-    "title": "Speaker 5",
-    "speaker": "Atharva Raykar (Nilenso)",
+    "title": "Git's bit: beyond the magic incantations",
+    "speaker": "Atharva Raykar",
     "venue": ""
   },
   {
@@ -77,7 +59,7 @@
     "start_time": "02:15 PM",
     "end_time": "03:45 PM",
     "title": "Rust Workshop Session 1",
-    "speaker": "",
+    "speaker": "Kerala Rustaceans",
     "venue": ""
   },
   {
@@ -85,8 +67,8 @@
     "date": "2023-02-11",
     "start_time": "02:15 PM",
     "end_time": "03:45 PM",
-    "title": "Nest Workshop Session 1",
-    "speaker": "",
+    "title": "NeST Workshop Session 1",
+    "speaker": "NeST developers",
     "venue": ""
   },
   {
@@ -94,8 +76,8 @@
     "date": "2023-02-11",
     "start_time": "03:00 PM",
     "end_time": "03:45 PM",
-    "title": "Speaker 6",
-    "speaker": "Prabhanshu Gupta (Nilenso)",
+    "title": "Building web apps in the open",
+    "speaker": "Prabhanshu Gupta",
     "venue": ""
   },
   {
@@ -104,7 +86,7 @@
     "start_time": "04:15 PM",
     "end_time": "05:45 PM",
     "title": "Rust Workshop Session 2",
-    "speaker": "",
+    "speaker": "Kerala Rustaceans",
     "venue": ""
   },
   {
@@ -112,17 +94,8 @@
     "date": "2023-02-11",
     "start_time": "04:15 PM",
     "end_time": "05:45 PM",
-    "title": "Nest Workshop Session 2",
-    "speaker": "",
-    "venue": ""
-  },
-  {
-    "id": 14,
-    "date": "2023-02-11",
-    "start_time": "04:15 PM",
-    "end_time": "05:00 PM",
-    "title": "Speaker 7",
-    "speaker": "",
+    "title": "NeST Workshop Session 2",
+    "speaker": "NeST developers",
     "venue": ""
   },
   {
@@ -136,11 +109,56 @@
   },
   {
     "id": 16,
-    "date": "2023-02-11",
-    "start_time": "09:30 PM",
-    "end_time": "11:45 PM",
-    "title": "Open Lab Session (for competition)",
-    "speaker": "",
+    "date": "2023-02-12",
+    "start_time": "09:00 AM",
+    "end_time": "10:30 AM",
+    "title": "Lighting Talks",
+    "speaker": "Arya Kiran, Nandakishore M Pai, Gokul Soumya",
+    "venue": ""
+  },
+  {
+    "id": 17,
+    "date": "2023-02-12",
+    "start_time": "10:45 AM",
+    "end_time": "11:30 AM",
+    "title": "AI for solving regional problems",
+    "speaker": "Gopikrisha Sashikumar",
+    "venue": ""
+  },
+  {
+    "id": 18,
+    "date": "2023-02-12",
+    "start_time": "11:45 AM",
+    "end_time": "12:30 PM",
+    "title": "Introduction to Debian GNU/Linux",
+    "speaker": "Abraham Raji",
+    "venue": ""
+  },
+  {
+    "id": 19,
+    "date": "2023-02-12",
+    "start_time": "02:15 PM",
+    "end_time": "03:00 PM",
+    "title": "Hoppscotsch's journey",
+    "speaker": "Andrew Bastin",
+    "venue": ""
+  },
+  {
+    "id": 20,
+    "date": "2023-02-12",
+    "start_time": "03:15 PM",
+    "end_time": "04:00 PM",
+    "title": "Open Source Beginner Experience: Contributing to large projects like webTorrent",
+    "speaker": "Subin Siby",
+    "venue": ""
+  },
+  {
+    "id": 20,
+    "date": "2023-02-12",
+    "start_time": "04:00 PM",
+    "end_time": "04:30 PM",
+    "title": "Closing note",
+    "speaker": "FOSSMeet'23 Organizers",
     "venue": ""
   }
 ]
