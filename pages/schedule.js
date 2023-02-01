@@ -41,11 +41,11 @@ const Schedule = () => {
   }, [day]);
 
   return (
-    <div>
+    <div className={styles.container}>
       <Banner
         image="scedule.png"
         title="Schedule"
-        subtitle="Workshops, Seminars and Competitons"
+        subtitle="Lectures, workshops and more..."
       />
       <div className="margin">
         <div className={styles["tabs"]}>

@@ -1,3 +1,6 @@
+.container{
+  min-height: 85vh;
+}
 .event {
   padding: 12px 24px;
   background-color: var(--gray);
@@ -67,7 +70,7 @@
 .tabs {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 500px;
   border-radius: 16px;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -78,9 +81,10 @@
 }
 
 .tabs__label {
-  padding: 20px 48px;
+  padding: 1rem;
   font-size: medium;
   cursor: pointer;
+  width: 33.33%;
 }
 
 .tabs__radio {
