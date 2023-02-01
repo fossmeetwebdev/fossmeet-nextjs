@@ -218,9 +218,9 @@ function Speakers() {
             );
           })}
 
-        <div className={styles['stay-tuned']}>
+        {/* <div className={styles['stay-tuned']}>
           <h3>More speakers coming soon...</h3>
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -230,23 +230,7 @@ function Speaker(speaker_data){
 
   let speaker = speaker_data.data
   let key = speaker_data.id
-  // let [width, setWidth] = useState(0)
   let [open, setOpen] = useState(false);
-  
-  // Something wrong here, needs fixing
-  // const handleWindowResize = () => {
-  //   setWidth(window.innerWidth);
-  //   width < 660 ? setOpen(true): setOpen(false);
-  // }
-  
-  // useEffect(() => {
-  // component is mounted and window is available
-  //   setWidth(window.innerWidth)
-  // }, []);
-
-  // useEffect(()=>{
-  //   console.log(width);
-  // },[width])
 
   function revealDescription(e){ 
     let key = e.target.id
