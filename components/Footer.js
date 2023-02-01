@@ -66,6 +66,9 @@ export default function Footer() {
             <Link href="/events" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Events</a>
             </Link> */}
+            <Link href="/schedule" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Schedule</a>
+            </Link>
             <Link href="/speakers" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Speakers</a>
             </Link>

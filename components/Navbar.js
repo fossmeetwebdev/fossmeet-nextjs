@@ -19,6 +19,9 @@ export default function Navbar() {
           <a className={styles["nav-logo"]}>FOSSMeet&apos;23</a>
         </Link>
         <div className={styles["nav-menu"]}>
+          <Link href="/schedule">
+            <a className={styles["nav-link"]}>Schedule</a>
+          </Link>
           <Link href="/speakers">
             <a className={styles["nav-link"]}>Speakers</a>
           </Link>
@@ -59,6 +62,12 @@ export default function Navbar() {
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
+            <Link href="/schedule" >
+              <a className={styles["nav-link-mobile"]}
+              onClick={()=>{
+              toggleButton()
+              }}>Schedule</a>
+            </Link>
             <Link href="/speakers" >
               <a className={styles["nav-link-mobile"]}
               onClick={()=>{
