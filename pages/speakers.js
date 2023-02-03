@@ -5,6 +5,7 @@ import imgDeepika from "../public/images/speakers/Deepika.jpg";
 import imgAndrew from "../public/images/speakers/andrew.jpg";
 import imgPrasad from "../public/images/speakers/Prasad.jpg";
 import imgASD from "../public/images/speakers/asd.jpg"
+import imgAbraham from "../public/images/speakers/abraham.jpeg"
 import imgPrab from "../public/images/speakers/prabhanshu.webp"
 import imgAtharva from "../public/images/speakers/Atharva.webp"
 import imgGoku from "../public/images/speakers/Gokul.jpg"
@@ -99,6 +100,20 @@ function Speakers() {
         web: "https://asd.learnlearn.in/about/",
         twitter: "https://twitter.com/asdofindia",
         youtube: "",
+      },
+    },
+    {
+      name: "Abraham Raji",
+      description: "Abraham Raji is an open-source developer and a contributor to and code reviewer for the free software community KDE and famous Linux distros like Debian. Hailing from Kottayam, Kerala, he completed his B.Tech degree in Applied Electronics at APJ Abdul Kalam Technological University. He is currently working at Big Binary as a full-stack engineer. During college, as an open design advocate he was a speaker at various conferences and events, namely the DebConf 2020, DevConf 2019 and MEC Conf 2019. As a free software enthusiast, he received several awards, including the Best Electronics and Instrumentation Design Project Award 2019 and was also the Finalist in Smart India Hackathon 2018. He led a team of designers to produce various assets for the Pehlia Summit 2020 and was the state-level event coordinator for the NASA Space Apps Challenge 2019.",
+      img: imgAbraham,
+      events: [{ name: "Introduction to Debian GNU/Linux" }],
+      links: {
+        facebook: "",
+        instagram: "",
+        web: "https://abrahamraji.in/",
+        twitter: "",
+        youtube: "",
+        github: "https://github.com/abrahamparayil",
       },
     },
     {
