@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Button from "./Button";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
+import Typed from 'typed.js';
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
@@ -12,11 +13,32 @@ export default function Navbar() {
     setToggle(!toggle);
   };
 
+  var options = {
+    strings: ['FOSSMeet&apos;23', 'Feb 10-12','5 Days to go'],
+    typeSpeed: 80,
+    backSpeed: 60,
+    backDelay: 6000,
+    loop: true,
+    showCursor: false
+  };
+
+  let typed
+  useEffect(() => {
+    typed = new Typed('.typed', options);
+
+    return () => {
+      typed.destroy();
+    };
+
+  },[])
+
   return (
     <header className={styles["header"]}>
       <nav className={styles["navbar"]}>
         <Link href="/">
-          <a className={styles["nav-logo"]}>FOSSMeet&apos;23</a>
+          <a className={styles["nav-logo"]}>
+            <span className="typed"></span>
+          </a>
         </Link>
         <div className={styles["nav-menu"]}>
           <Link href="/schedule">
