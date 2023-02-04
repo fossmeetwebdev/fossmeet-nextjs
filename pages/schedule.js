@@ -3,6 +3,7 @@ import styles from "../styles/Schedule.module.css";
 import Banner from "../components/Banner";
 import Link from "next/link";
 import events from "../public/events.json";
+import { FiDownload } from "react-icons/fi";
 
 const Schedule = () => {
   const convertDateToDay = (eventDate) => {
@@ -40,12 +41,26 @@ const Schedule = () => {
     );
   }, [day]);
 
+  const downloadPDF = () => {
+    fetch("schedule.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "FOSSMeet'23 Schedule.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div className={styles.container}>
       <Banner
         image="scedule.png"
         title="Schedule"
         subtitle="Lectures, workshops and more..."
+        button={FiDownload}
+        buttonOnClick={downloadPDF}
       />
       <div className="margin">
         <div className={styles["tabs"]}>
