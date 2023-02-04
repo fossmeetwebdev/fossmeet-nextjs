@@ -147,12 +147,13 @@
     },
     {
       "name": "Mujeeb Rahman K",
-      "description": "The man behind a newspaper organisation in Kerala, Janayugom, completely switching their work flow to FOSS including pre-press works and accountings. They use a Kubuntu based custom distro Janayugom GNU/ Linux as their main OS and Scribus for layouting purpose. Moving from proprietary software to foss for their other needs, Mujeeb shares the journey of migration, the challenges and the results and the possibilites of DTP firms to use FOSS.",
+      "description": "Co founder of Alphafork technologies, foss enthusiast and tech youtuber who makes videos on Linux and FOSS. He is a Member of smc.org.in, fsci.in, wikimedians of kerala, OSM Kerala and recently developed poorna.smc.org.in for SMC.",
       "img": "/images/speakers/Mujeeb Rahman K.jpg",
       "events": [
         { "name": "Desktop publishing and FOSS, A success story." }
       ],
       "links": {
+        "web": "https://ibcomputing.com ",
         "twitter": "https://twitter.com/mujeebcpy",
         "youtube": "",
         "github": "",
