@@ -32,7 +32,7 @@ function WhyFoss() {
           </div >
           <div className={styles.why_quotes2}>
             <p>
-              Creativity can be a social contribution, but only in so far as socitey
+              Creativity can be a social contribution, but only in so far as society
                is free to use the results.
             </p>
             <h4>
