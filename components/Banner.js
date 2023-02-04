@@ -16,7 +16,7 @@ export default function Banner(props) {
       </div>
       {props.button && (
         <button className={styles["button"]} onClick={props.buttonOnClick}>
-          <props.button size="30" />
+          <props.button size="30" className={styles['button-icon']}/>
         </button>
       )}
     </div>

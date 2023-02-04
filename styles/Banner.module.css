@@ -60,4 +60,10 @@
   .title {
     font-size: 2rem;
   }
+  .button{
+    height: 40px;
+    width: 40px;
+  }.button-icon{
+    width: 25px;
+  }
 }
