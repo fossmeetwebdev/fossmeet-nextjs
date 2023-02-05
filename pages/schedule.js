@@ -61,6 +61,7 @@ const Schedule = () => {
         subtitle="Lectures, workshops and more..."
         button={FiDownload}
         buttonOnClick={downloadPDF}
+        buttonText="Download schedule here"
       />
       <div className="margin">
         <div className={styles["tabs"]}>
