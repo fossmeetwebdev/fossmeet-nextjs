@@ -1,23 +1,8 @@
 import React from "react";
 import styles from "../styles/Speakers-Workshops.module.css";
-// import imgSasi from "../public/images/speakers/Sasikumar.jpeg";
-// import imgDeepika from "../public/images/speakers/Deepika.jpg";
-// import imgAndrew from "../public/images/speakers/andrew.jpg";
-// import imgPrasad from "../public/images/speakers/Prasad.jpg";
-// import imgASD from "../public/images/speakers/asd.jpg"
-// import imgAbraham from "../public/images/speakers/abraham.jpeg"
-// import imgPrab from "../public/images/speakers/prabhanshu.webp"
-// import imgAtharva from "../public/images/speakers/Atharva.webp"
-// import imgMujeeb from "../public/images/speakers/Mujeeb Rahman K.jpg"
-// import imgGoku from "../public/images/speakers/Gokul.jpg"
-// import imgGopi from "../public/images/speakers/Gopi.jpg"
-// import imgNand from "../public/images/speakers/Nandakishor.png"
-// import imgSubin from "../public/images/speakers/Subin.png"
-// import imgArya from "../public/images/speakers/Arya.jpg"
 
 import Image from "next/image";
 import Banner from "../components/Banner";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import {
   BsFacebook,
