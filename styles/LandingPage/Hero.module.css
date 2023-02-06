@@ -9,6 +9,26 @@
     overflow: hidden;
 }
 
+.notification{
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    position: fixed;
+    padding: 1.25rem;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    top: 0rem;
+
+    font-weight: bold;
+    transition: all 750ms ease-in-out;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(5rem);
+}
+
 .heading{
     display:flex;
     flex-direction: column;
@@ -73,6 +93,12 @@
     .container{
         padding-top: 125px;
         justify-content: flex-start;
+    }
+    .notification{
+        padding: 1rem;
+        font-size: 0.75rem;
+    }.show{
+        transform: translateY(4.5rem);
     }
     .heading h1{
         font-size: 40px;
