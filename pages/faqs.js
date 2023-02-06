@@ -2,8 +2,8 @@ import { useState } from "react";
 import Button from "../components/Button";
 import styles from "../styles/Faqs.module.css";
 import Banner from "../components/Banner";
-import Head from 'next/head'
-import Coming from '../components/LandingPage/Coming'
+import Head from "next/head";
+import Coming from "../components/LandingPage/Coming";
 
 const questions = [
   {
@@ -13,14 +13,13 @@ const questions = [
   },
   {
     question: "When does the registration for FOSSMeet'23 close?",
-    answer:
-      "Registrations for FOSSMeet'23 will be open till 5th of February."
-      },
+    answer: "Registrations for FOSSMeet'23 will be open till 5th of February.",
+  },
   {
     question: "Will accommodation be provided?",
     answer:
       "Yes, different accomodation facilities are available for the students and professionals. Working professionals will have to pay an add-on fee of ₹250 for availing accommodation. Accommodation fee is covered for students in their registration fee.",
-},
+  },
   {
     question: "Is food provided during the event?",
     answer:
@@ -28,8 +27,7 @@ const questions = [
   },
   {
     question: "Are there any separate fees for talks/workshops?",
-    answer:
-      "No separate fee for talks/workshops.",
+    answer: "No separate fee for talks/workshops.",
   },
   {
     question: "Can I register for specific workshops/talks?",
@@ -43,8 +41,7 @@ const questions = [
   },
   {
     question: "Do we get T-shirts for FOSSMeet'23?",
-    answer:
-      "Yes, all participants of FOSSMeet'23 get free T-shirts! :)",
+    answer: "Yes, all participants of FOSSMeet'23 get free T-shirts! :)",
   },
   {
     question: "Do you provide participation certificates?",
@@ -54,7 +51,7 @@ const questions = [
   {
     question: "How do I reach NIT Calicut?",
     answer:
-      "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station(CLT). The Kozhikode International Airport(CCJ) provides daily flights to and from major cities in India. From Airport: Take a cab directly to NIT Calicut. From Railway Station: Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
+      "NITC is well connected by railway, air and road facilities. All major stations in India have trains to Kozhikode Railway station (CLT). The Kozhikode International Airport (CCJ) provides daily flights to and from major cities in India. From Airport: Take a cab directly to NIT Calicut. From Railway Station: Take a cab directly to NIT Calicut or take a bus (towards Mukkam or REC/NIT) from Palayam bus stand, Kozhikode.",
   },
   // {
   //   question: "What is your refund policy?",
@@ -66,12 +63,7 @@ const questions = [
 export default function faqs() {
   return (
     <div>
-      {/* <Coming/> */}
-      <Banner
-        // image="question.png"
-        title="Frequently Asked Questions"
-        subtitle="Quick Support"
-      />
+      <Banner title="Frequently Asked Questions" subtitle="Quick Support" />
       <div className="margin">
         <div className={styles["content-wrapper"]}>
           <HaveAnyQuestions />
