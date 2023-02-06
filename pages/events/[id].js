@@ -43,7 +43,8 @@ const Event = () => {
     },[id])
 
     // console.log(event)
-    if(event.Error){
+
+    if(event.Error || id ==0 ){
         return(<Error />)
     }
 
