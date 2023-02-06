@@ -109,12 +109,12 @@ const Schedule = () => {
                 <div>
                   {eventsSameStartTime.events.map((event, i) => {
                     return (
-                      <Link href="#" key={i}>
+                      <Link href={`/events/${event.id}`} key={i}>
                         <div className={styles["event"]}>
                           <p>{event.title}</p>
-                          {event.speaker && (
+                          {event.by && (
                             <p className={styles["speaker"]}>
-                              - {event.speaker}
+                              - {event.by}
                             </p>
                           )}
                         </div>
