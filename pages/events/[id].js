@@ -25,6 +25,7 @@ const Event = () => {
         for(i ; i < events.length; i++){
             if(events[i].id == id){
                 setEvent(events[i])
+                router.push(`/events/${id}`, undefined, { shallow: true })
                 break
             }
         }if(i == events.length)
@@ -34,12 +35,10 @@ const Event = () => {
     useEffect(()=> {
         if(!router.isReady) return
         setId(Number(router.query.id))
-        router.push(`/events/${id}`, undefined, { shallow: true })
     },[router.isReady])
 
     useEffect(() => {
         findEvent()
-        console.log("pushed")
     },[id])
 
     // console.log(event)
