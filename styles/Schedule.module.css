@@ -36,7 +36,7 @@
   text-align: right;
   padding-right: 5vw;
   transform: translateY(20px);
-  border-right: white solid;
+  border-right: white 3px solid;
 }
 
 .event:last-of-type {
