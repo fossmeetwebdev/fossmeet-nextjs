@@ -41,18 +41,6 @@ const Schedule = () => {
     );
   }, [day]);
 
-  const downloadPDF = () => {
-    fetch("schedule.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "FOSSMeet'23 Schedule.pdf";
-        alink.click();
-      });
-    });
-  };
-
   return (
     <div className={styles.container}>
       <Banner
@@ -60,8 +48,8 @@ const Schedule = () => {
         title="Schedule"
         subtitle="Lectures, workshops and more..."
         button={FiDownload}
-        buttonOnClick={downloadPDF}
         buttonText="Download schedule here"
+        filename="FOSSMeet '23 Schedule.pdf"
       />
       <div className="margin">
         <div className={styles["tabs"]}>

@@ -6,6 +6,7 @@ Banner.defaultProps = {
   button: false,
   buttonText: "",
   buttonOnClick: false,
+  filename: "",
 };
 
 export default function Banner(props) {
@@ -16,10 +17,10 @@ export default function Banner(props) {
         <div className={styles["title"]}>{props.title}</div>
       </div>
       {props.button && (
-        <div className={styles['button-container']}>
-          <button className={styles["button"]} onClick={props.buttonOnClick}>
-            <props.button size="30" className={styles['button-icon']}/>
-          </button>
+        <div className={styles["button-container"]}>
+          <a className={styles["button"]} href={`${props.filename}`} download>
+            <props.button size="30" className={styles["button-icon"]} />
+          </a>
           <p>{props.buttonText}</p>
         </div>
       )}

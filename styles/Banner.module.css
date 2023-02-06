@@ -32,6 +32,9 @@
   transition: 0.25s ease all;
   cursor: pointer;
   transition: 0.25s ease all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover,
@@ -45,14 +48,14 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
 }
 
-.button-container{
+.button-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px
+  gap: 10px;
 }
 
-.button-container p{
+.button-container p {
   text-align: center;
   width: 130px;
   color: white;
@@ -75,13 +78,14 @@
   .title {
     font-size: 2rem;
   }
-  .button{
+  .button {
     height: 40px;
     width: 40px;
-  }.button-icon{
+  }
+  .button-icon {
     width: 25px;
   }
-  .button-container p{
+  .button-container p {
     display: none;
   }
 }
