@@ -38,12 +38,15 @@ const Event = () => {
     },[router.isReady])
 
     useEffect(() => {
-        findEvent()
+        if(id!=0)
+            findEvent()
     },[id])
 
     // console.log(event)
-    if(event.Error)
+    if(event.Error){
         return(<Error />)
+    }
+
     else
         return(
             <div>
