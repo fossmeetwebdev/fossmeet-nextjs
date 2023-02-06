@@ -58,6 +58,7 @@ const Event = () => {
                 {/* workshop description */}
                     {/* <div className={styles["description-container"]}> */}
                         <Description
+                        title={event.title}
                         about={event.about}
                         prereqs={event.prereqs}
                         />

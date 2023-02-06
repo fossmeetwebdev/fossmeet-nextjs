@@ -24,6 +24,17 @@
   font-weight: bolder;
 }
 
+.title{
+  /* display: inline; */
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
 .about {
   font-weight: light;
 }
