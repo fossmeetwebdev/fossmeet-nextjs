@@ -9,11 +9,11 @@ const questions = [
   {
     question: "How do I register for FOSSMeet'23?",
     answer:
-      "Registrations are scheduled to start in the last week of January. Registration link will be available in this website. Participants will be required to fill up a form gathering basic information regarding the participant. Due to limited seats, these requests will undergo a screening based on the information collected through the form. Accepted participants will receive an email with a link to a payment portal through which the registration fees can be paid within a stipulated time period. After validation from our end, the participants who have successfully completed payment will recieve a final confirmation email from us. The registration fee will be ₹849 for students and ₹999 for professionals.",
+      "Click on register button in the website to register. Participants will be required to fill up a form gathering basic information regarding the participant. The participants who have successfully completed payment will recieve a final confirmation email from us. The registration fee is ₹849 for students and ₹999 for professionals.",
   },
   {
     question: "When does the registration for FOSSMeet'23 close?",
-    answer: "Registrations for FOSSMeet'23 will be open till 5th of February.",
+    answer: "Registrations for FOSSMeet'23 will be open till 7th of February 11 PM.",
   },
   {
     question: "Will accommodation be provided?",
