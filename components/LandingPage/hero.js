@@ -12,7 +12,7 @@ function Hero() {
 
   return (
     <div className={styles.container}>
-      <Notification message={"Registration ends today 11 PM"} />
+      {/* <Notification message={"Registration ends today 11 PM"} /> */}
       {/* <div className={styles.notification} id="notif">
         <p>
           Registration ends Feb. 7<sup>th</sup> 11 PM
