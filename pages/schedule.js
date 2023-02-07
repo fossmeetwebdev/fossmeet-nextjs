@@ -49,7 +49,7 @@ const Schedule = () => {
         subtitle="Lectures, workshops and more..."
         button={FiDownload}
         buttonText="Download schedule here"
-        filename="FOSSMeet '23 Schedule.pdf"
+        filename="FOSSMeet'23 Schedule.pdf"
       />
       <div className="margin">
         <div className={styles["tabs"]}>
