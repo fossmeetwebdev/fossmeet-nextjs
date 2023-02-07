@@ -5,15 +5,17 @@ export default function Notification(props){
 
     function show() {
         let notif = document.getElementById("notif");
-        notif.classList.add(styles.show);
-        setTimeout(() => notif.classList.remove(styles.show), 4000);
+        setTimeout(() => notif.classList.add(styles.show), 500);
+        setTimeout(() => notif.classList.remove(styles.show), 5000);
     }
 
     useEffect(() => show, [])
 
     return(
-        <div className={styles.notification} id="notif">
-            <p>{props.message}</p>
+        <div className={styles.container} id="notif">
+            <div className={styles.notification}>
+                <p>{props.message}</p>
+            </div>
         </div>
     )
 }
