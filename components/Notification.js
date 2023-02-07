@@ -9,7 +9,7 @@ export default function Notification(props){
         setTimeout(() => notif.classList.remove(styles.show), 5000);
     }
 
-    useEffect(() => show, [])
+    useEffect(() => show(), [])
 
     return(
         <div className={styles.container} id="notif">
