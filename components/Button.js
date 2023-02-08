@@ -11,7 +11,6 @@ export default function Button({ type, text, toLink, onClickFunction }) {
           if (onClickFunction) {
             onClickFunction();
           }
-          console.log(onClickFunction);
         }}
       >
         {text}

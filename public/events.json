@@ -1,5 +1,14 @@
 [
   {
+    "id": 0,
+    "date": "2023-02-10",
+    "start_time": "04:30 PM",
+    "end_time": "06:00 PM",
+    "title": "Registration and verification",
+    "speaker": "",
+    "venue": ""
+  },
+  {
     "id": 1,
     "date": "2023-02-10",
     "start_time": "06:00 PM",

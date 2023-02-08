@@ -1,11 +1,11 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Button from "./Button";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
-import Typed from 'typed.js';
+import Typed from "typed.js";
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
@@ -14,23 +14,22 @@ export default function Navbar() {
   };
 
   var options = {
-    strings: ['FOSSMeet&apos;23', 'Feb 10-12','4 days to go'],
+    strings: ["FOSSMeet&apos;23", "Feb 10-12", "2 days to go"],
     typeSpeed: 80,
     backSpeed: 60,
     backDelay: 6000,
     loop: true,
-    showCursor: false
+    showCursor: false,
   };
 
-  let typed
+  let typed;
   useEffect(() => {
-    typed = new Typed('.typed', options);
+    typed = new Typed(".typed", options);
 
     return () => {
       typed.destroy();
     };
-
-  },[])
+  }, []);
 
   return (
     <header className={styles["header"]}>
@@ -61,7 +60,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles["flex-row"]}>
-          <Button text="Register" toLink={"/register"} />
+          <Button text="Register" toLink={"register"} />
           <div className={styles["hamburger"]}>
             {toggle ? (
               <IoMdClose
@@ -84,54 +83,84 @@ export default function Navbar() {
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
-            <Link href="/schedule" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Schedule</a>
+            <Link href="/schedule">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Schedule
+              </a>
             </Link>
-            <Link href="/speakers" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Speakers</a>
+            <Link href="/speakers">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Speakers
+              </a>
             </Link>
-            <Link href="/workshops" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Workshops</a>
+            <Link href="/workshops">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Workshops
+              </a>
             </Link>
-            <Link href="/faqs" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>FAQ</a>
+            <Link href="/faqs">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                FAQ
+              </a>
             </Link>
-            <Link href="/media" >
-              <a className={styles["nav-link-mobile"]} 
-              onClick={()=>{
-              toggleButton()
-              }}>Media</a>
+            <Link href="/media">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Media
+              </a>
             </Link>
-            <Link href="code-of-conduct" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Code of Conduct</a>
+            <Link href="code-of-conduct">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Code of Conduct
+              </a>
             </Link>
-            <Link href="/contacts" >
-              <a className={styles["nav-link-mobile"]}
-              onClick={()=>{
-              toggleButton()
-              }}>Contact Us</a>
+            <Link href="/contacts">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Contact Us
+              </a>
             </Link>
           </div>
-          <Link href="https://fosscell.org/" >
-            <a className={styles["nav-link-logo"]}
-            onClick={()=>{
-            toggleButton()
-            }}>
+          <Link href="https://fosscell.org/">
+            <a
+              className={styles["nav-link-logo"]}
+              onClick={() => {
+                toggleButton();
+              }}
+            >
               <Image
                 src={"/images/logos/fosscell-logo.jpg"}
                 alt={"FOSSCell logo"}

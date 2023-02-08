@@ -58,7 +58,8 @@ function Workshops() {
     },
     {
       host: "Kaustubh Patil",
-      description: "A hands-on workshop on Cloud Self-Hosting. Set up and maintain your own cloud infrastructure using popular open-source technologies. Discover the benefits of self-hosting, such as increased privacy, flexibility, cost savings and learn to deploy and manage virtual machines.",
+      description:
+        "A hands-on workshop on Cloud Self-Hosting. Set up and maintain your own cloud infrastructure using popular open-source technologies. Discover the benefits of self-hosting, such as increased privacy, flexibility, cost savings and learn to deploy and manage virtual machines.",
       img: imgServer,
       name: "Self Hosting 101",
       links: {
@@ -101,10 +102,6 @@ function Speaker(workshopData) {
     let icon = document.getElementById(key);
     let description = document.getElementById(`description-${key}`);
     let display = window.getComputedStyle(description).display;
-    console.log("Key: ", key);
-    console.log(`description-${key}`);
-    console.log("description:", description);
-    console.log(display);
     if (display === "none") description.style.display = "block";
     else description.style.display = "none";
 
@@ -144,12 +141,16 @@ function Speaker(workshopData) {
         </div>
 
         {/* Workshop speakers */}
-        {workshop.wSpeakers? <div className={styles["workshop-speakers"]}>
-          <h3 className={styles.hosts}>Hosts</h3>
-          {workshop["wSpeakers"].map((speaker, i) => {
-            return <li key={i}>{speaker}</li>;
-          })}
-        </div>:""}
+        {workshop.wSpeakers ? (
+          <div className={styles["workshop-speakers"]}>
+            <h3 className={styles.hosts}>Hosts</h3>
+            {workshop["wSpeakers"].map((speaker, i) => {
+              return <li key={i}>{speaker}</li>;
+            })}
+          </div>
+        ) : (
+          ""
+        )}
 
         {/* Links */}
         <div className={styles.links}>
