@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   var options = {
-    strings: ["FOSSMeet&apos;23", "Feb 10-12", "3 days to go"],
+    strings: ["FOSSMeet&apos;23", "Feb 10-12", "2 days to go"],
     typeSpeed: 80,
     backSpeed: 60,
     backDelay: 6000,
