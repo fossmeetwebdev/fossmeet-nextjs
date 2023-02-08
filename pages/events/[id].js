@@ -46,31 +46,7 @@ const Event = () => {
                 {/* <Coming /> */}
                 {/* bannner */}
                 <Banner title="Event Details" subtitle="More about" />
-                <div className={`${styles['event-details-container']} margin`}>
-                {/* workshop description */}
-                    {/* <div className={styles["description-container"]}> */}
-                        <Description
-                        title={event.title}
-                        about={event.about}
-                        prereqs={event.prereqs}
-                        />
-                    {/* </div> */}
-
-                    {/* workshop info */}
-                    {/* <div className={styles["info-container"]}> */}
-                        <Info
-                        date={event.date}
-                        timing={event['start_time']}
-                        venue={event.venue}
-                        // cby={}
-                        speaker={event.by}
-                        speakerNames={event.speakers}
-                        speakerImages={event.images}
-                        // contact={}
-                        />
-
-                    {/* </div> */}
-                    <div className={styles['event-navigation']}>
+                <div className={styles['event-navigation']}>
                         {(id>1) ? <div className={styles['nav-button']} onClick={prevEvent} >
                             <img
                                 className={styles.left}
@@ -89,6 +65,29 @@ const Event = () => {
                             />
                         </div>: ""}
                     </div>
+                <div className={`${styles['event-details-container']} margin`}>
+                {/* workshop description */}
+                    {/* <div className={styles["description-container"]}> */}
+                        <Description
+                        title={event.title}
+                        about={event.about}
+                        learn={event.learn}
+                        prereqs={event.prereqs}
+                        />
+                    {/* </div> */}
+
+                    {/* workshop info */}
+                    {/* <div className={styles["info-container"]}> */}
+                        <Info
+                        date={event.date}
+                        timing={event['start_time']}
+                        venue={event.venue}
+                        // cby={}
+                        speaker={event.by}
+                        speakerNames={event.speakers}
+                        speakerImages={event.images}
+                        // contact={}
+                        />
                 </div>
             </div>
         );

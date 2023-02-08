@@ -11,9 +11,11 @@
   text-align: left;
 }
 
-.prereqContainer {
+.learnContainer,.prereqContainer {
   margin-top: 0.75rem;
 }
+
+
 
 .heading {
   padding: 0.5rem 0;
@@ -43,9 +45,9 @@
 @media (max-width: 450px) {
   .container {
     min-width: unset;
-    align-items: center;
   }
   .title{
+    align-self: center;
     font-size: 1.15rem;
     text-align: center;
   }
