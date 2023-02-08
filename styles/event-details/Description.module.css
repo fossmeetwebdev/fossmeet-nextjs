@@ -43,5 +43,10 @@
 @media (max-width: 450px) {
   .container {
     min-width: unset;
+    align-items: center;
+  }
+  .title{
+    font-size: 1.15rem;
+    text-align: center;
   }
 }
