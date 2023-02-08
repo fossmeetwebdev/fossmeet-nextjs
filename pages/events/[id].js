@@ -20,26 +20,18 @@ const Event = () => {
         setId(id-1)
     }
 
-    function findEvent() {
-        let i = 0;
-        for(i ; i < events.length; i++){
-            if(events[i].id == id){
-                setEvent(events[i])
-                router.push(`/events/${id}`, undefined, { shallow: true })
-                break
-            }
-        }if(i == events.length)
-            setEvent({"Error": 404})
-    }
-    
     useEffect(()=> {
         if(!router.isReady) return
         setId(Number(router.query.id))
     },[router.isReady])
 
     useEffect(() => {
-        if(id!=0)
-            findEvent()
+        if(id > 0 && id <= events.length){
+            setEvent(events[id - 1])
+            router.push(`/events/${id}`, undefined, { shallow: true })
+        }
+        else
+            setEvent({"Error": 404})
     },[id])
 
     // console.log(event)
