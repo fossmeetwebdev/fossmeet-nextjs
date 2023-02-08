@@ -5,8 +5,9 @@
     "start_time": "04:30 PM",
     "end_time": "06:00 PM",
     "title": "Registration and verification",
+    "about": "Participants can present the registration ID received via mail and acquire their FOSSMeet'23 ID card.",
     "speaker": "",
-    "venue": ""
+    "venue": "TBD"
   },
   {
     "id": 1,
@@ -18,7 +19,7 @@
     "by": "Dr. Sasi Kumar",
     "speakers": ["Dr. Sasi Kumar"],
     "images": ["/images/speakers/Sasikumar.jpeg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 2,
@@ -30,7 +31,7 @@
     "by": "Prabhanshu Gupta",
     "speakers": ["Prabhanshu Gupta"],
     "images": ["/images/speakers/prabhanshu.webp"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 3,
@@ -41,7 +42,7 @@
     "by": "Andrew Bastin, Devdutt Shenoi, Gokul Soumya, Abraham Raji",
     "speakers": ["Andrew Bastin","Devdutt Shenoi", "Gokul Soumya", "Abraham Raji"],
     "images": ["/images/speakers/andrew.jpg","/images/workshops/Devdutt.jpg","/images/speakers/Gokul.jpg","/images/speakers/abraham.jpeg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 4,
@@ -53,7 +54,7 @@
     "by": "Dr. Deepika K",
     "speakers": ["Dr. Deepika K"],
     "images": ["/images/speakers/Deepika.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 5,
@@ -65,7 +66,7 @@
     "by": "Prasad K",
     "speakers": ["Prasad K"],
     "images": ["/images/speakers/Prasad.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 6,
@@ -77,7 +78,7 @@
     "by": "Dr. Akshay S Dinesh",
     "speakers": ["Dr. Akshay S Dinesh"],
     "images": ["/images/speakers/asd.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 7,
@@ -89,7 +90,7 @@
     "by": "Atharva Raykar",
     "speakers": ["Atharva Raykar"],
     "images": ["/images/speakers/Atharva.webp"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 8,
@@ -101,9 +102,9 @@
     "learn":["Variables and functions in Rust", "Primitive types such as floating point, bool, array, slice, tuples, etc.", "If and loop expressions, addendum, strings, structures, and enum", "Error handling in Rust"],
     "prereqs": ["1. Basic understanding of programming", "2. Follow setup instructions for the workshop from <b><a style='color:#ff7700' href='https://drive.google.com/file/d/1vR7cmg8tM3yXFhsppr6obVteAkLQEA9p/view?usp=sharing.' target='__blank' rel='noreferrer'>this link</a></b>"],
     "by": "Kerala Rustaceans",
-    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen"],
+    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen P Varghese"],
     "images": ["/images/workshops/Advaith.jpg","/images/workshops/Sreehari.jpg","/images/workshops/Devdutt.jpg","/images/workshops/rust.png"],
-    "venue": "SSL"
+    "venue": "TBD"
   },
   {
     "id": 9,
@@ -116,8 +117,8 @@
     "prereqs": ["Before attending the workshop, participants are required to install NeST, which can be done from the <a style='color: #ff7700' href='https://nest.nitk.ac.in/#/' target='__blank' rel='noreferrer' ><b>website</b></a>"],
     "by": "NeST developers",
     "speakers": ["Narayan G","Shanthanu Rai"],
-    "images": ["/images/workshops/Narayan G.jpeg","/images/workshops/Shanthanu.jpg"],
-    "venue": "NSL"
+    "images": ["/images/workshops/Narayan G.jpg","/images/workshops/Shanthanu.jpg"],
+    "venue": "TBD"
   },
   {
     "id": 10,
@@ -131,7 +132,7 @@
     "by": "Kaustubh Patil",
     "speakers": ["Kaustubh Patil"],
     "images": ["/images/workshops/Kaustubh.jpeg"],
-    "venue": ""
+    "venue": "TBD"
   },
   {
     "id": 11,
@@ -143,9 +144,9 @@
     "learn":["Variables and functions in Rust", "Primitive types such as floating point, bool, array, slice, tuples, etc.", "If and loop expressions, addendum, strings, structures, and enum", "Error handling in Rust"],
     "prereqs": ["1. Basic understanding of programming", "2. Follow setup instructions for the workshop from <b><a style='color:#ff7700' href='https://drive.google.com/file/d/1vR7cmg8tM3yXFhsppr6obVteAkLQEA9p/view?usp=sharing.' target='__blank' rel='noreferrer'>this link</a></b>"],
     "by": "Kerala Rustaceans",
-    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen"],
+    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen P Varghese"],
     "images": ["/images/workshops/Advaith.jpg","/images/workshops/Sreehari.jpg","/images/workshops/Devdutt.jpg","/images/workshops/rust.png"],
-    "venue": "SSL"
+    "venue": "TBD"
   },
   {
     "id": 12,
@@ -158,8 +159,8 @@
     "prereqs": ["Before attending the workshop, participants are required to install NeST, which can be done from the <a style='color: #ff7700' href='https://nest.nitk.ac.in/#/' target='__blank' rel='noreferrer' ><b>website</b></a>"],
     "by": "NeST developers",
     "speakers": ["Narayan G","Shanthanu Rai"],
-    "images": ["/images/workshops/Narayan G.jpeg","/images/workshops/Shanthanu.jpg"],
-    "venue": "NSL"
+    "images": ["/images/workshops/Narayan G.jpg","/images/workshops/Shanthanu.jpg"],
+    "venue": "TBD"
   },
   {
     "id": 13,
@@ -173,7 +174,7 @@
     "by": "Kaustubh Patil",
     "speakers": ["Kaustubh Patil"],
     "images": ["/images/workshops/Kaustubh.jpeg"],
-    "venue": ""
+    "venue": "TBD"
   },
   {
     "id": 14,
@@ -181,10 +182,12 @@
     "start_time": "09:00 AM",
     "end_time": "10:30 AM",
     "title": "Lightning Talks",
+    "about": "Lightning Talks gives you the opportunity to gain insight into the latest trends in technology and open-source software in an instant. Delivered by young FOSS enthusiasts, these talks will help bring you up to speed on various topics. Lightning talks on the following topics have been scheduled for FOSSMeet'23:",
     "by": "Arya Kiran, Nandakishore M Pai, Gokul Soumya",
     "speakers": ["Nandakishore M Pai", "Arya Kiran", "Gokul Soumya", "Mujeeb Rahman"],
+    "topics": ["Hackathons and the importance of documentation - Nanda Kishor M Pai", "Free Software, Decentralization, Self-Hosting and Free Service Hosts - Arya Kiran", "The Helix text editor - Gokul Soumya", "Desktop publishing and FOSS, A success story  - Mujeeb Rahman K"],
     "images": ["/images/speakers/Nandakishor.png","/images/speakers/Arya.jpg","/images/speakers/Gokul.jpg", "/images/speakers/Mujeeb Rahman K.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 15,
@@ -196,7 +199,7 @@
     "by": "Gopikrisha Sasikumar",
     "speakers": ["Gopikrisha Sasikumar"],
     "images": ["/images/speakers/Gopi.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 16,
@@ -208,7 +211,7 @@
     "by": "Abraham Raji",
     "speakers": ["Abraham Raji"],
     "images": ["/images/speakers/abraham.jpeg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 17,
@@ -220,7 +223,7 @@
     "by": "Andrew Bastin",
     "speakers": ["Andrew Bastin"],
     "images": ["/images/speakers/andrew.jpg"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 18,
@@ -232,7 +235,7 @@
     "by": "Subin Siby",
     "speakers": ["Subin Siby"],
     "images": ["/images/speakers/Subin.png"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   },
   {
     "id": 19,
@@ -244,6 +247,6 @@
     "by": "FOSSMeet'23 Organizers",
     "speakers": ["FOSSMeet'23 Organizers"],
     "images": ["/fossmeet favicon.png"],
-    "venue": "Aryabhatta"
+    "venue": "TBD"
   }
 ]

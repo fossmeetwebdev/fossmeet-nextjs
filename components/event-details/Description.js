@@ -9,14 +9,25 @@ export default function Description(props) {
   return (
     <div className={styles.container}>
 
-      <h3 className={styles.title}>{props.title}</h3>
-
       <div className={styles.aboutContainer}>
         <div className={styles.heading}>
           <h3>About</h3>
         </div>
         <p className={styles.about}>{props.about}</p>
       </div>
+
+      {props.topics? <div>
+        <div className={styles.topics}>
+          {/* map learnings */}
+          <ul>
+            {props.topics.map((t, i) => (
+              <li key={i}>
+                {i+1}. {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>: ""}
 
       {props.learn? <div className={styles.learnContainer}>
         <div className={styles.heading}>

@@ -11,7 +11,7 @@ import Link from "next/link";
 const Event = () => {
     const router = useRouter()
 
-    let [id, setId] = useState(0)
+    let [id, setId] = useState(-1)
     let [event, setEvent] = useState({})
     function nextEvent(){
         setId(id+1)
@@ -26,8 +26,8 @@ const Event = () => {
     },[router.isReady])
 
     useEffect(() => {
-        if(id > 0 && id <= events.length){
-            setEvent(events[id - 1])
+        if(id >= 0 && id <= events.length){
+            setEvent(events[id])
             router.push(`/events/${id}`, undefined, { shallow: true })
         }
         else
@@ -36,7 +36,7 @@ const Event = () => {
 
     // console.log(event)
 
-    if(event.Error || id ==0 ){
+    if(event.Error){
         return(<Error />)
     }
 
@@ -47,7 +47,7 @@ const Event = () => {
                 {/* bannner */}
                 <Banner title="Event Details" subtitle="More about" />
                 <div className={styles['event-navigation']}>
-                        {(id>1) ? <div className={styles['nav-button']} onClick={prevEvent} >
+                        {(id>0) ? <div className={styles['nav-button']} onClick={prevEvent} >
                             <img
                                 className={styles.left}
                                 src="/images/assets/chevron-down.svg"
@@ -57,7 +57,7 @@ const Event = () => {
                         <div className={styles['nav-button']}>
                             <Link href="/schedule">Back to schedule</Link>
                         </div>
-                        {(id < events.length) ? <div className={styles['nav-button']} onClick={nextEvent}>
+                        {(id < events.length - 1) ? <div className={styles['nav-button']} onClick={nextEvent}>
                             {/* <p>Next event</p> */}
                             <img
                             className={styles.right}
@@ -66,11 +66,14 @@ const Event = () => {
                         </div>: ""}
                     </div>
                 <div className={`${styles['event-details-container']} margin`}>
+
+                    <h3 className={styles.title}>{event.title}</h3>
                 {/* workshop description */}
-                    {/* <div className={styles["description-container"]}> */}
+                    <div className={styles["event-details"]}>
                         <Description
                         title={event.title}
                         about={event.about}
+                        topics={event.topics}
                         learn={event.learn}
                         prereqs={event.prereqs}
                         />
@@ -88,6 +91,7 @@ const Event = () => {
                         speakerImages={event.images}
                         // contact={}
                         />
+                    </div>
                 </div>
             </div>
         );

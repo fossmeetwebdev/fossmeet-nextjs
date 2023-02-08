@@ -11,7 +11,7 @@
   text-align: left;
 }
 
-.learnContainer,.prereqContainer {
+.topics,.learnContainer,.prereqContainer {
   margin-top: 0.75rem;
 }
 
@@ -35,6 +35,10 @@
   margin-bottom: 1.5rem;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.event-details{
+  display: flex;
 }
 
 .about {

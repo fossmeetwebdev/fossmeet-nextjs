@@ -1,10 +1,7 @@
 .event-details-container{
     padding-bottom: 4rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 50px;
-
+    flex-direction: column;   
 }
 
 .event-navigation{
@@ -40,12 +37,35 @@
     transform: rotate(-90deg);
 }
 
+.title{
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.event-details{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
 @media(max-width: 450px){
     .event-details-container{
         padding: 2rem;
     }
+    .event-details{
+        flex-direction: column-reverse;
+    }
     .event-navigation{
         gap:10px;
+    }.title{
+        align-self: center;
     }
     .nav-button{
         font-size: 0.75rem;
