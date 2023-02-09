@@ -15,6 +15,7 @@
   border: 1px #d6d8e5 solid;
   margin-bottom: 20px;
   padding: .75rem;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
 
   justify-content: space-between;
   width: 100%;
@@ -37,6 +38,14 @@
   justify-content: center;
 }
 
+.workshop-anchor{
+  width: 100%;
+  cursor: pointer;
+}
+
+.workshop-anchor:hover{
+  transform: translateY(-2px);
+}
 
 .details {
   display: flex;

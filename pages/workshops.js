@@ -18,6 +18,7 @@ import {
   BsYoutube,
   BsGithub,
 } from "react-icons/bs";
+import Link from "next/link";
 
 function Workshops() {
   const workshopsData = [
@@ -40,6 +41,7 @@ function Workshops() {
         twitter: "https://twitter.com/keralars",
         youtube: "",
       },
+      redirect:"/events/8"
     },
     {
       host: "NeST developers",
@@ -55,6 +57,7 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
+      redirect:"/events/9"
     },
     {
       host: "Kaustubh Patil",
@@ -69,8 +72,9 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
+      redirect:"/events/10"
     },
-  ];
+];
 
   return (
     <div>
@@ -79,7 +83,15 @@ function Workshops() {
       <div className={styles.container}>
         {workshopsData &&
           workshopsData.map((workshop, index) => {
-            return <Speaker data={workshop} key={index} id={index} />;
+            return(
+              <div className={styles['workshop-anchor']}  key={index}>
+                <Link href={workshop.redirect}>
+                  <a>
+                    <Workshop data={workshop} id={index} />
+                  </a>
+                </Link>
+              </div>
+            );
           })}
 
         {/* <div className={styles["stay-tuned"]}>
@@ -90,13 +102,14 @@ function Workshops() {
   );
 }
 
-function Speaker(workshopData) {
+function Workshop(workshopData) {
   let workshop = workshopData.data;
   let key = workshopData.id;
 
   let [open, setOpen] = useState(false);
 
   function revealDescription(e) {
+    e.preventDefault()
     let key = e.target.id;
 
     let icon = document.getElementById(key);
