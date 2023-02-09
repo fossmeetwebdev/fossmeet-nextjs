@@ -13,7 +13,8 @@ const questions = [
   },
   {
     question: "When does the registration for FOSSMeet'23 close?",
-    answer: "Registrations for FOSSMeet'23 will be open till 7th of February 11 PM.",
+    answer:
+      "Registrations for FOSSMeet'23 will be open till 7th of February 11 PM.",
   },
   {
     question: "Will accommodation be provided?",
@@ -85,7 +86,7 @@ function HaveAnyQuestions() {
       <p>
         Feel free to reach out to us and we will get back to you immediately
       </p>
-      <Button text="Contact Us" toLink="/contacts" />
+      <Button text="Contact Us" toLink="contacts" />
     </div>
   );
 }
