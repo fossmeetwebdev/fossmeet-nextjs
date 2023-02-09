@@ -8,7 +8,7 @@ function Info(props){
             <div className={styles.info}>Day {day}</div>
             <div className={styles.info}>Time: {props.timing}</div>
             <div className={styles.info}>Venue: {props.venue}</div>
-            {props.speakerNames && <div className={styles.info}>Conducted by:</div>}
+            {props.speakerNames && <div className={styles.info}>By:</div>}
             <div className={styles.speakers}>
                 {/* {console.log(props.speakers)} */}
                 {props.speakerImages && props.speakerImages.map((speaker, k) => {

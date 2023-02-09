@@ -39,6 +39,7 @@
     "start_time": "07:45 PM",
     "end_time": "08:45 PM",
     "title": "Panel Discussion: Future of FOSS, Apocalypse or Utopia?",
+    "about": "There is a lot of discussion and conjecture about the future of open-source software. On the one hand, some people see it as a paradise where community development, creativity, and cooperation lead to the production of trustworthy and high-quality applications. On the other hand, open-source struggles because of too many competing projects, lack of financing, and security issues. However, some data points to a promising future for accessible sources. The development of cutting-edge technology like artificial intelligence, cloud computing, and other technologies has given open-source software additional opportunities to prosper. FOSS initiatives concentrating on these fields are expected to get more attention and funding as these technologies develop. As a whole, open source software's future is a complicated and diverse topic. This panel discussion will focus on discussing the current state of open-source software while exploring possible directions of growth and challenges that will have to be overcome.",
     "by": "Andrew Bastin, Devdutt Shenoi, Gokul Soumya, Abraham Raji",
     "speakers": ["Andrew Bastin","Devdutt Shenoi", "Gokul Soumya", "Abraham Raji"],
     "images": ["/images/speakers/andrew.jpg","/images/workshops/Devdutt.jpg","/images/speakers/Gokul.jpg","/images/speakers/abraham.jpeg"],
@@ -102,7 +103,7 @@
     "learn":["Variables and functions in Rust", "Primitive types such as floating point, bool, array, slice, tuples, etc.", "If and loop expressions, addendum, strings, structures, and enum", "Error handling in Rust"],
     "prereqs": ["1. Basic understanding of programming", "2. Follow setup instructions for the workshop from <b><a style='color:#ff7700' href='https://drive.google.com/file/d/1vR7cmg8tM3yXFhsppr6obVteAkLQEA9p/view?usp=sharing.' target='__blank' rel='noreferrer'>this link</a></b>"],
     "by": "Kerala Rustaceans",
-    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen P Varghese"],
+    "speakers": ["Advaith Narayanan" ,"Sreehari Prasad" , "Devdutt Shenoi", "Alen P Varghese"],
     "images": ["/images/workshops/Advaith.jpg","/images/workshops/Sreehari.jpg","/images/workshops/Devdutt.jpg","/images/workshops/rust.png"],
     "venue": "TBD"
   },
@@ -144,7 +145,7 @@
     "learn":["Variables and functions in Rust", "Primitive types such as floating point, bool, array, slice, tuples, etc.", "If and loop expressions, addendum, strings, structures, and enum", "Error handling in Rust"],
     "prereqs": ["1. Basic understanding of programming", "2. Follow setup instructions for the workshop from <b><a style='color:#ff7700' href='https://drive.google.com/file/d/1vR7cmg8tM3yXFhsppr6obVteAkLQEA9p/view?usp=sharing.' target='__blank' rel='noreferrer'>this link</a></b>"],
     "by": "Kerala Rustaceans",
-    "speakers": ["Advaith" ,"Sreehari" , "Devdutt", "Alen P Varghese"],
+    "speakers": ["Advaith Narayanan" ,"Sreehari Prasad" , "Devdutt Shenoi", "Alen P Varghese"],
     "images": ["/images/workshops/Advaith.jpg","/images/workshops/Sreehari.jpg","/images/workshops/Devdutt.jpg","/images/workshops/rust.png"],
     "venue": "TBD"
   },
@@ -246,7 +247,7 @@
     "about": "Until next time, see you all again very soon!",
     "by": "FOSSMeet'23 Organizers",
     "speakers": ["FOSSMeet'23 Organizers"],
-    "images": ["/fossmeet favicon.png"],
+    "images": ["/images/assets/fossmeet logo.jpg"],
     "venue": "TBD"
   }
 ]
