@@ -14,9 +14,10 @@ function register() {
 
   return (
     <div className={styles.container}>
-      <Notification message={"Registrations closed"} />
+      <h1>Registrations closed</h1>
+      {/* <Notification message={"Registrations closed"} /> */}
       {/* <Coming/> */}
-      <iframe onLoad={preventRedirection} className={styles.iframe} id="ts-iframe" src="https://www.townscript.com/v2/widget/FOSSMeet23/booking"></iframe> <link rel="stylesheet" href = "https://www.townscript.com/static/Bookingflow/css/ts-iframe.style.css" />
+      {/* <iframe onLoad={preventRedirection} className={styles.iframe} id="ts-iframe" src="https://www.townscript.com/v2/widget/FOSSMeet23/booking"></iframe> <link rel="stylesheet" href = "https://www.townscript.com/static/Bookingflow/css/ts-iframe.style.css" /> */}
       {/* <script id='script'>
         {preventRedirection()}
       </script> */}

@@ -60,7 +60,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className={styles["flex-row"]}>
-          <Button text="Register" toLink={"register"} />
+          {/* <Button text="Register" toLink={"register"} /> */}
           <div className={styles["hamburger"]}>
             {toggle ? (
               <IoMdClose
