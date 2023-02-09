@@ -41,6 +41,7 @@
 .workshop-anchor{
   width: 100%;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .workshop-anchor:hover{
@@ -183,7 +184,7 @@
     object-fit: cover;
   }
   .links{
-    margin: 15px 0 0;
+    margin: unset;
   }
   .link-icon{
     width: 20px;

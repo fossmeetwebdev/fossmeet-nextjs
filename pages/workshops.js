@@ -148,6 +148,16 @@ function Workshop(workshopData) {
         <div>
           <summary className={styles["summary-name"]}>
             <h3>{workshop.name}</h3>
+            <img
+            width={20}
+            height={20}
+            onClick={revealDescription}
+            id={`${key}`}
+            className={`${styles["description-drop-icon"]} ${
+              open ? styles["up-down"] : ""
+            }`}
+            src="/images/assets/chevron-down.svg"
+          />
           </summary>
           <h3 className={`${styles.talk} ${styles.name}`}>Conducted by</h3>
           <p>{workshop.host}</p>
@@ -237,16 +247,7 @@ function Workshop(workshopData) {
               <BsLinkedin size={25} className={styles["link-icon"]} />
             </a>
           )}
-          <img
-            width={20}
-            height={20}
-            onClick={revealDescription}
-            id={`${key}`}
-            className={`${styles["description-drop-icon"]} ${
-              open ? styles["up-down"] : ""
-            }`}
-            src="/images/assets/chevron-down.svg"
-          />
+          
         </div>
       </div>
 
