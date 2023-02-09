@@ -133,7 +133,7 @@ export default function Navbar() {
                 Media
               </a>
             </Link>
-            <Link href="code-of-conduct">
+            <Link href="/code-of-conduct">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {

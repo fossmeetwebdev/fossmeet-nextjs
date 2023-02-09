@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../styles/Speakers-Workshops.module.css";
-
 import Image from "next/image";
 import Banner from "../components/Banner";
 import { useState, useEffect } from "react";
@@ -25,10 +24,6 @@ function Speakers() {
           speakersData.map((speaker, index) => {
             return <Speaker data={speaker} key={index} id={index} />;
           })}
-
-        {/* <div className={styles['stay-tuned']}>
-          <h3>More speakers coming soon...</h3>
-        </div> */}
       </div>
     </div>
   );

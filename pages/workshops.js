@@ -41,7 +41,7 @@ function Workshops() {
         // twitter: "https://twitter.com/keralars",
         youtube: "",
       },
-      redirect:"/events/8"
+      redirect: "/events/8",
     },
     {
       host: "NeST developers",
@@ -57,7 +57,7 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
-      redirect:"/events/9"
+      redirect: "/events/9",
     },
     {
       host: "Kaustubh Patil",
@@ -72,9 +72,9 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
-      redirect:"/events/10"
+      redirect: "/events/10",
     },
-];
+  ];
 
   return (
     <div>
@@ -83,8 +83,8 @@ function Workshops() {
       <div className={styles.container}>
         {workshopsData &&
           workshopsData.map((workshop, index) => {
-            return(
-              <div className={styles['workshop-anchor']}  key={index}>
+            return (
+              <div className={styles["workshop-anchor"]} key={index}>
                 <Link href={workshop.redirect}>
                   <a>
                     <Workshop data={workshop} id={index} />
@@ -93,10 +93,6 @@ function Workshops() {
               </div>
             );
           })}
-
-        {/* <div className={styles["stay-tuned"]}>
-          <h3>More workshops coming soon...</h3>
-        </div> */}
       </div>
     </div>
   );
@@ -109,7 +105,7 @@ function Workshop(workshopData) {
   let [open, setOpen] = useState(false);
 
   function revealDescription(e) {
-    e.preventDefault()
+    e.preventDefault();
     let key = e.target.id;
 
     let icon = document.getElementById(key);
@@ -149,15 +145,15 @@ function Workshop(workshopData) {
           <summary className={styles["summary-name"]}>
             <h3>{workshop.name}</h3>
             <img
-            width={20}
-            height={20}
-            onClick={revealDescription}
-            id={`${key}`}
-            className={`${styles["description-drop-icon"]} ${
-              open ? styles["up-down"] : ""
-            }`}
-            src="/images/assets/chevron-down.svg"
-          />
+              width={20}
+              height={20}
+              onClick={revealDescription}
+              id={`${key}`}
+              className={`${styles["description-drop-icon"]} ${
+                open ? styles["up-down"] : ""
+              }`}
+              src="/images/assets/chevron-down.svg"
+            />
           </summary>
           <h3 className={`${styles.talk} ${styles.name}`}>Conducted by</h3>
           <p>{workshop.host}</p>
@@ -247,7 +243,6 @@ function Workshop(workshopData) {
               <BsLinkedin size={25} className={styles["link-icon"]} />
             </a>
           )}
-          
         </div>
       </div>
 

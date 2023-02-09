@@ -21,7 +21,7 @@ export default function Footer() {
                 width="100%"
                 height="40%"
                 objectFit="contain"
-                />
+              />
             </a>
           </Link>
           <Link href="/">
@@ -32,7 +32,7 @@ export default function Footer() {
                 width="40"
                 height="40"
                 objectFit="contain"
-                />
+              />
             </a>
           </Link>
           {/* <Link href="https://minerva.nitc.ac.in/?q=activities/computer-science-and-engineering-association">
@@ -81,7 +81,7 @@ export default function Footer() {
             <Link href="/media" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Media</a>
             </Link>
-            <Link href="code-of-conduct" className={styles["nav-item"]}>
+            <Link href="/code-of-conduct" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Code of Conduct</a>
             </Link>
             <Link href="/contacts" className={styles["nav-item"]}>
@@ -116,5 +116,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-

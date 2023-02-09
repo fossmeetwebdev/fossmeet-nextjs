@@ -1,9 +1,8 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 1.75rem 9rem;
 }
 
@@ -14,37 +13,36 @@
   border-radius: 15px;
   border: 1px #d6d8e5 solid;
   margin-bottom: 20px;
-  padding: .75rem;
+  padding: 0.75rem;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
-
   justify-content: space-between;
   width: 100%;
 }
 
-.name{
- font-size: 1.9rem; 
+.name {
+  font-size: 1.9rem;
 }
 
-.hosts{
+.hosts {
   font-size: 1.9rem;
   margin-top: 10px;
 }
 
 .image_container,
-.wImageContainer{
+.wImageContainer {
   margin: 10px;
   /* width: 25%; */
   display: flex;
   justify-content: center;
 }
 
-.workshop-anchor{
+.workshop-anchor {
   width: 100%;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
-.workshop-anchor:hover{
+.workshop-anchor:hover {
   transform: translateY(-2px);
 }
 
@@ -77,14 +75,14 @@
   display: none;
 }
 
-.description{
+.description {
   padding-top: 10px;
 }
 
-.personal-info{
+.personal-info {
   margin: 25px;
 }
-.links{
+.links {
   display: flex;
   gap: 10px;
 }
@@ -102,10 +100,10 @@
   object-fit: cover;
 }
 
-.stay-tuned{
+.stay-tuned {
   margin: 20px 0;
 }
-.stay-tuned h3{
+.stay-tuned h3 {
   color: var(--orange);
   text-align: center;
 }
@@ -116,37 +114,38 @@
   margin-left: auto;
   -webkit-tap-highlight-color: transparent;
 }
-.description-drop-icon:hover{
+.description-drop-icon:hover {
   cursor: pointer;
 }
 .up-down {
   transform: rotate(180deg);
 }
-.description-mob{
+.description-mob {
   display: none;
   border-top: 1px solid #d6d8e5;
   margin-top: 5px;
-}.link-icon{
+}
+.link-icon {
   overflow: visible;
 }
-.wImage{
+.wImage {
   object-fit: contain;
 }
 
 @media (max-width: 1450px) {
-  .container{
+  .container {
     padding: 1.75rem 5rem;
   }
   .image_container,
-  .wImageContainer{
+  .wImageContainer {
     margin: 20px;
   }
   .name,
-  .hosts{
+  .hosts {
     font-size: 1.5rem;
   }
   .details,
-  .events{
+  .events {
     font-size: 0.85rem;
   }
   .links {
@@ -156,7 +155,7 @@
 }
 
 @media (max-width: 1150px) {
-  .container{
+  .container {
     padding: 1rem;
   }
   .card {
@@ -165,7 +164,7 @@
     justify-content: center;
   }
   .image_container,
-  .wImageContainer{
+  .wImageContainer {
     margin: unset;
     padding: 0.75rem;
     width: 100%;
@@ -180,17 +179,17 @@
     padding: 0.75rem;
     text-align: left;
   }
-  .Image{
+  .Image {
     object-fit: cover;
   }
-  .links{
+  .links {
     margin: 15px 0 0;
   }
-  .link-icon{
+  .link-icon {
     width: 20px;
     height: 20px;
   }
-  .personal-info{
+  .personal-info {
     margin: unset;
     margin-bottom: 20px;
   }
@@ -202,19 +201,19 @@
   }
 }
 
-@media(max-width: 805px){
-  .container{
+@media (max-width: 805px) {
+  .container {
     padding: 1rem;
   }
-  .card{
+  .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.3rem
+    padding: 0.3rem;
   }
   .image_container,
-  .wImageContainer{
+  .wImageContainer {
     padding: 0.1rem;
     min-height: unset;
     width: 23%;
@@ -223,10 +222,10 @@
 
     align-self: center;
   }
-  .wImageContainer{
+  .wImageContainer {
     align-self: flex-start;
   }
-  .summary-name{
+  .summary-name {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,45 +233,45 @@
     font-weight: bold;
   }
   .personal-info-web,
-  .details{
+  .details {
     display: none;
   }
-  .links{
+  .links {
     gap: 2px;
   }
-  .link-icon{
+  .link-icon {
     height: 15px;
   }
-  .events{
-    padding: .4rem 0.5rem;
+  .events {
+    padding: 0.4rem 0.5rem;
     border: 0;
-    width:77%;
+    width: 77%;
     font-size: 0.75rem;
-  }.events > div > p{
+  }
+  .events > div > p {
     padding: unset;
   }
-  .events .talk{
+  .events .talk {
     display: none;
   }
-  .description-mob{
+  .description-mob {
     padding: 0.3rem;
     font-size: 0.8rem;
     text-align: justify;
   }
-  .events > div > ul > li{
+  .events > div > ul > li {
     padding-top: 5px;
   }
-  .description-drop-icon{
+  .description-drop-icon {
     display: block;
   }
-  .hosts{
+  .hosts {
     font-size: 1rem;
   }
-
 }
 
-@media(min-width: 805px){
-  .personal-info-mob{
+@media (min-width: 805px) {
+  .personal-info-mob {
     display: none;
   }
 }
