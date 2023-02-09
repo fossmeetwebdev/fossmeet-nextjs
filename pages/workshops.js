@@ -37,8 +37,8 @@ function Workshops() {
       links: {
         facebook: "",
         instagram: "",
-        web: "https://community.mozilla.org/en/groups/kerala-rustaceans/",
-        twitter: "https://twitter.com/keralars",
+        // web: "https://community.mozilla.org/en/groups/kerala-rustaceans/",
+        // twitter: "https://twitter.com/keralars",
         youtube: "",
       },
       redirect:"/events/8"
@@ -53,7 +53,7 @@ function Workshops() {
       links: {
         facebook: "",
         instagram: "",
-        web: "https://nest.nitk.ac.in/",
+        // web: "https://nest.nitk.ac.in/",
         twitter: "",
         youtube: "",
       },
