@@ -184,7 +184,7 @@
     "end_time": "10:30 AM",
     "title": "Lightning Talks",
     "about": "Lightning Talks gives you the opportunity to gain insight into the latest trends in technology and open-source software in an instant. Delivered by young FOSS enthusiasts, these talks will help bring you up to speed on various topics. Lightning talks on the following topics have been scheduled for FOSSMeet'23:",
-    "by": "Arya Kiran, Nandakishore M Pai, Gokul Soumya",
+    "by": "Arya Kiran, Nandakishore M Pai, Gokul Soumya, Mujeeb Rahman",
     "speakers": ["Nandakishore M Pai", "Arya Kiran", "Gokul Soumya", "Mujeeb Rahman"],
     "topics": ["Hackathons and the importance of documentation - Nanda Kishor M Pai", "Free Software, Decentralization, Self-Hosting and Free Service Hosts - Arya Kiran", "The Helix text editor - Gokul Soumya", "Desktop publishing and FOSS, A success story  - Mujeeb Rahman K"],
     "images": ["/images/speakers/Nandakishor.png","/images/speakers/Arya.jpg","/images/speakers/Gokul.jpg", "/images/speakers/Mujeeb Rahman K.jpg"],
