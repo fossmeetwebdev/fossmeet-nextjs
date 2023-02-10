@@ -41,7 +41,7 @@ function Workshops() {
         // twitter: "https://twitter.com/keralars",
         youtube: "",
       },
-      redirect: "/events/8",
+      redirect: "/events/9",
     },
     {
       host: "NeST developers",
@@ -57,7 +57,7 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
-      redirect: "/events/9",
+      redirect: "/events/10",
     },
     {
       host: "Kaustubh Patil",
@@ -72,7 +72,7 @@ function Workshops() {
         twitter: "",
         youtube: "",
       },
-      redirect: "/events/10",
+      redirect: "/events/11",
     },
   ];
 
