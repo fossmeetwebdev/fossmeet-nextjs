@@ -43,7 +43,7 @@
     "by": "Andrew Bastin, Devdutt Shenoi, Gokul Soumya, Abraham Raji",
     "speakers": ["Andrew Bastin","Devdutt Shenoi", "Gokul Soumya", "Abraham Raji"],
     "images": ["/images/speakers/andrew.jpg","/images/workshops/Devdutt.jpg","/images/speakers/Gokul.jpg","/images/speakers/abraham.jpeg"],
-    "venue": "TBD"
+    "venue": "Aryabhatta"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "title": "Open Lab Session - place.git",
     "about": "This edition of FOSSMeet presents a live contribution project. Participants are tasked with writing python turtle code to draw any art of their choice or they can take up the challenge of completing specific art tasks with collaborators. These open lab sessions will serve as a great place to meet people with similar interests and learn to collaborate on a live project. Join us at place.git as we code a live canvas of art sourced entirely from participants of FOSSMeet.",
     "prereqs": ["Follow <b><a style='color:#ff7700' href='https://github.com/fossmeet/place' target='__blank' rel='noreferrer'>this link</a></b> to participate. Find the canvas <b><a style='color:#ff7700' href='https://place.fossmeet.net/' target='__blank' rel='noreferrer'>here</a></b>"],
-    "venue": "SSL"
+    "venue": "SSL & NSL"
   },
   {
     "id": 5,
