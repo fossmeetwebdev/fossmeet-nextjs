@@ -65,7 +65,7 @@ const Event = (event) => {
             speaker={event.by}
             speakerNames={event.speakers}
             speakerImages={event.images}
-            // contact={}
+            // contact={event.contact}
           />
         </div>
       </div>

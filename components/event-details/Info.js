@@ -26,8 +26,10 @@ function Info(props){
                     )
                 })}
             </div>
-            {/* <hr />
-            <div className={styles.contact}>To know more about this event, please contact <br /><br /> {props.contact} </div> */}
+            {/* {props.contact && <div>
+                <hr />
+                <div className={styles.contact}>To know more about this event, please contact <br /> {props.contact} </div>
+            </div>} */}
         </div>
     )
 }
@@ -38,7 +40,7 @@ Info.defaultProps = {
     venue: "SSL",
     // speakerNames: ["Akshay", "Deepika"],
     // speakerImages:["/images/speakers/asd.jpg","/images/speakers/Deepika.jpg"],
-    contact: "John Doe: johndoe@doemail.doe"
+    // contact: "John Doe: johndoe@doemail.doe"
 }
 
 export default Info;
