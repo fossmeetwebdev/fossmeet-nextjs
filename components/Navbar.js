@@ -13,30 +13,30 @@ export default function Navbar() {
     setToggle(!toggle);
   };
 
-  var options = {
-    strings: ["FOSSMeet&apos;23", "Feb 10-12", "1 day to go"],
-    typeSpeed: 80,
-    backSpeed: 60,
-    backDelay: 6000,
-    loop: true,
-    showCursor: false,
-  };
+  // var options = {
+  //   strings: ["FOSSMeet&apos;23", "Feb 10-12", "1 day to go"],
+  //   typeSpeed: 80,
+  //   backSpeed: 60,
+  //   backDelay: 6000,
+  //   loop: true,
+  //   showCursor: false,
+  // };
 
-  let typed;
-  useEffect(() => {
-    typed = new Typed(".typed", options);
+  // let typed;
+  // useEffect(() => {
+  //   typed = new Typed(".typed", options);
 
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
 
   return (
     <header className={styles["header"]}>
       <nav className={styles["navbar"]}>
         <Link href="/">
           <a className={styles["nav-logo"]}>
-            <span className="typed"></span>
+            <span className="typed">FOSSMeet&apos;23</span>
           </a>
         </Link>
         <div className={styles["nav-menu"]}>
