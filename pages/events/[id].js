@@ -58,7 +58,8 @@ const Event = (event) => {
           {/* workshop info */}
           <Info
             date={event.date}
-            timing={event["start_time"]}
+            startTime={event["start_time"]}
+            endTime={event["end_time"]}
             venue={event.venue}
             // cby={}
             speaker={event.by}

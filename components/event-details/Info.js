@@ -6,7 +6,7 @@ function Info(props){
         <div className={styles['info-container']}>
             <h2 className={styles['info-heading']}>Event Info</h2>
             <div className={styles.info}>Day {day}</div>
-            <div className={styles.info}>Time: {props.timing}</div>
+            <div className={styles.info}>Time: {props.startTime} - {props.endTime}</div>
             <div className={styles.info}>Venue: {props.venue}</div>
             {props.speakerNames && <div className={styles.info}>By:</div>}
             <div className={styles.speakers}>
@@ -35,7 +35,7 @@ function Info(props){
 Info.defaultProps = {
     date: "25 December",
     timing: "3 Am IST",
-    venue: "SSL Lab",
+    venue: "SSL",
     // speakerNames: ["Akshay", "Deepika"],
     // speakerImages:["/images/speakers/asd.jpg","/images/speakers/Deepika.jpg"],
     contact: "John Doe: johndoe@doemail.doe"
