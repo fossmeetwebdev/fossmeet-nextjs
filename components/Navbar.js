@@ -123,7 +123,7 @@ export default function Navbar() {
                 FAQ
               </a> 
               </Link> */}
-            <Link href="/media">
+            {/* <Link href="/media">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -132,7 +132,7 @@ export default function Navbar() {
               >
                 Media
               </a>
-            </Link>
+            </Link> */}
             {/* <Link href="/code-of-conduct">
               <a
                 className={styles["nav-link-mobile"]}
