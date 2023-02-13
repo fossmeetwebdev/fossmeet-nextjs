@@ -49,14 +49,14 @@ export default function Navbar() {
           <Link href="/workshops">
             <a className={styles["nav-link"]}>Workshops</a>
           </Link>
-          <Link href="/faqs">
+          {/* <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
-          </Link>
+          </Link> */}
           {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
           </Link> */}
-          <Link href="/contacts">
-            <a className={styles["nav-link"]}>Contact Us</a>
+          <Link href="/feedback">
+            <a className={styles["nav-link"]}>Feedback</a>
           </Link>
         </div>
         <div className={styles["flex-row"]}>
@@ -113,7 +113,7 @@ export default function Navbar() {
                 Workshops
               </a>
             </Link>
-            <Link href="/faqs">
+            {/* <Link href="/faqs">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -121,8 +121,8 @@ export default function Navbar() {
                 }}
               >
                 FAQ
-              </a>
-            </Link>
+              </a> 
+              </Link> */}
             <Link href="/media">
               <a
                 className={styles["nav-link-mobile"]}
@@ -133,7 +133,7 @@ export default function Navbar() {
                 Media
               </a>
             </Link>
-            <Link href="/code-of-conduct">
+            {/* <Link href="/code-of-conduct">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -142,15 +142,15 @@ export default function Navbar() {
               >
                 Code of Conduct
               </a>
-            </Link>
-            <Link href="/contacts">
+            </Link> */}
+            <Link href="/feedback">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
                   toggleButton();
                 }}
               >
-                Contact Us
+                Feedback
               </a>
             </Link>
           </div>

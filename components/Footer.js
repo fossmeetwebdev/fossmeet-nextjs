@@ -75,17 +75,17 @@ export default function Footer() {
             <Link href="/wrokshops" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Workshops</a>
             </Link>
-            <Link href="/faqs" className={styles["nav-item"]}>
+            {/* <Link href="/faqs" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>FAQ</a>
-            </Link>
-            <Link href="/media" className={styles["nav-item"]}>
+            </Link> */}
+            {/* <Link href="/media" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Media</a>
-            </Link>
-            <Link href="/code-of-conduct" className={styles["nav-item"]}>
+            </Link> */}
+            {/* <Link href="/code-of-conduct" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Code of Conduct</a>
-            </Link>
-            <Link href="/contacts" className={styles["nav-item"]}>
-              <a className={styles["nav-link"]}>Contact Us</a>
+            </Link> */}
+            <Link href="/feedback" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Feedback</a>
             </Link>
           </div>
         </div>

@@ -12,13 +12,13 @@ function Home() {
   return (
     <div>
         <Hero/>
-        <What/>
-        <Why/>
-        <Who/>
-        <When/>
-        <Sponsors/>
-        <PrevSpeakers/>
-        <Gallery/>
+        {/* <What/> */}
+        {/* <Why/> */}
+        {/* <Who/> */}
+        {/* <When/> */}
+        {/* <Sponsors/> */}
+        {/* <PrevSpeakers/> */}
+        {/* <Gallery/> */}
     </div>
   )
 }

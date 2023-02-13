@@ -5,8 +5,13 @@
     flex-wrap: wrap;
 
     background-color: #F8F9FA;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    padding-top: 65px;
+    /* overflow: hidden; */
+}
+
+.feedback-button{
+    margin-top: 2rem;
 }
 
 .heading{
@@ -22,7 +27,7 @@
 }
 
 .heading p{
-    margin-top: 25px;
+    margin-top: 15px;
     font-size:32px;
 }
 
@@ -62,7 +67,6 @@
     }
     .heading p{
         font-size: 20px;
-        margin-top: 50px;
     }
     .image-container{
         width: 850px;

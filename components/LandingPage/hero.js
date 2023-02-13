@@ -3,6 +3,7 @@ import styles from "../../styles/LandingPage/Hero.module.css";
 import Image from "next/image";
 import logo from "../../public/images/assets/landing-page-illustration-1.svg";
 import Notification from "../Notification";
+import Button from "../Button";
 function Hero() {
   // function show() {
   //   let notif = document.getElementById("notif");
@@ -20,13 +21,18 @@ function Hero() {
       </div> */}
       <div className={styles.heading}>
         <h1>
-          It&apos;s Free
-          <br /> and Open.
+          Thank you!
+          {/* <br /> and Open. */}
         </h1>
         <p>
-          Nope, not like free beer at an open bar. It&apos;s much more than
-          that.
+          To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember.
         </p>
+        <div className={styles['feedback-button']}>
+          <Button
+            text="Give your feedback"
+            toLink="/feedback"
+          />
+        </div>
       </div>
       <div className={styles["image-container"]}>
         <Image

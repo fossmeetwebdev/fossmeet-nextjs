@@ -30,7 +30,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={sendMessage} className={styles.form}>
       <input
-        placeholder="Full Name"
+        placeholder="Name"
         type="text"
         value={fullName}
         onChange={(e) => {
@@ -62,7 +62,7 @@ const ContactForm = () => {
         className={styles["form-control"]}
       ></input>
       <textarea
-        placeholder="Your Message ..."
+        placeholder="Your feedback ..."
         value={message}
         onChange={(e) => {
           setMessage(e.target.value);

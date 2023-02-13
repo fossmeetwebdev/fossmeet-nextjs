@@ -3,13 +3,13 @@ import styles from "../styles/Contacts.module.css";
 import ContactForm from "../components/ContactForm";
 import ContactInfo from "../components/ContactInfo";
 import Head from "next/head";
-function Contacts() {
+function Feedback() {
   return (
     <div>
       <Banner
         image="contacts.webp"
-        title="Get in Touch"
-        subtitle="Send us a message"
+        subtitle="Your valuable"
+        title="Feedback"
       />
       <div className={`${styles.container}`}>
         <ContactForm />
@@ -19,4 +19,4 @@ function Contacts() {
   );
 }
 
-export default Contacts;
+export default Feedback;
