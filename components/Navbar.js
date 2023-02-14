@@ -40,6 +40,9 @@ export default function Navbar() {
           </a>
         </Link>
         <div className={styles["nav-menu"]}>
+          <Link href="/gallery">
+            <a className={styles["nav-link"]}>Gallery</a>
+          </Link>
           <Link href="/schedule">
             <a className={styles["nav-link"]}>Schedule</a>
           </Link>
@@ -83,6 +86,16 @@ export default function Navbar() {
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
+            <Link href="/gallery">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Gallery
+              </a>
+            </Link>
             <Link href="/schedule">
               <a
                 className={styles["nav-link-mobile"]}
