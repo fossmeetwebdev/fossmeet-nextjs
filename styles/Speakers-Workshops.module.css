@@ -38,13 +38,8 @@
 
 .workshop-anchor {
   width: 100%;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 }
 
-.workshop-anchor:hover {
-  transform: translateY(-2px);
-}
 
 .details {
   display: flex;

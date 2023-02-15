@@ -12,13 +12,13 @@
   font-size: large;
 
   -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 200ms ease-in;
 }
 
-.event:hover{
+/* .event:hover{
   transform: scale(1.01);
-}
+} */
 
 .events {
   display: flex;

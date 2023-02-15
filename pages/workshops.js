@@ -85,11 +85,7 @@ function Workshops() {
           workshopsData.map((workshop, index) => {
             return (
               <div className={styles["workshop-anchor"]} key={index}>
-                <Link href={workshop.redirect}>
-                  <a>
-                    <Workshop data={workshop} id={index} />
-                  </a>
-                </Link>
+                <Workshop data={workshop} id={index} />
               </div>
             );
           })}

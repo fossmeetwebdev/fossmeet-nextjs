@@ -43,17 +43,20 @@ export default function Navbar() {
           <Link href="/gallery">
             <a className={styles["nav-link"]}>Gallery</a>
           </Link>
-          <Link href="/feedback">
+          {/* <Link href="/feedback">
             <a className={styles["nav-link"]}>Feedback</a>
-          </Link>
-          <Link href="/schedule">
+          </Link> */}
+          {/* <Link href="/schedule">
             <a className={styles["nav-link"]}>Schedule</a>
-          </Link>
+          </Link> */}
           <Link href="/speakers">
             <a className={styles["nav-link"]}>Speakers</a>
           </Link>
           <Link href="/workshops">
             <a className={styles["nav-link"]}>Workshops</a>
+          </Link>
+          <Link href="/events">
+            <a className={styles["nav-link"]}>Events</a>
           </Link>
           {/* <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
@@ -96,7 +99,7 @@ export default function Navbar() {
                 Gallery
               </a>
             </Link>
-            <Link href="/feedback">
+            {/* <Link href="/feedback">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -105,8 +108,8 @@ export default function Navbar() {
               >
                 Feedback
               </a>
-            </Link>
-            <Link href="/schedule">
+            </Link> */}
+            {/* <Link href="/schedule">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -115,7 +118,7 @@ export default function Navbar() {
               >
                 Schedule
               </a>
-            </Link>
+            </Link> */}
             <Link href="/speakers">
               <a
                 className={styles["nav-link-mobile"]}
@@ -134,6 +137,16 @@ export default function Navbar() {
                 }}
               >
                 Workshops
+              </a>
+            </Link>
+            <Link href="/events">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Events
               </a>
             </Link>
             {/* <Link href="/faqs">
