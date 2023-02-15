@@ -10,9 +10,18 @@
     overflow: hidden;
 }
 
-.feedback-button{
-    margin-top: 2rem;
+.hero-buttons{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    gap: 10px
 }
+
+.hero-buttons > * {
+    width: 30%;
+    min-width: 135px;
+}
+
 
 .heading{
     display:flex;
@@ -70,6 +79,12 @@
     }
     .image-container{
         width: 850px;
+    }
+    .hero-buttons{
+        justify-content: center;
+    }
+    .hero-buttons > *{
+        width: 20%
     }
 }
 

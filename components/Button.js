@@ -1,9 +1,9 @@
 import styles from "../styles/Button.module.css";
 import Link from "next/dist/client/link";
 
-export default function Button({ type, text, toLink, onClickFunction }) {
+export default function Button({ text, toLink, onClickFunction }) {
   return (
-    <Link href={toLink && `/${toLink}`}>
+    <Link href={toLink && `${toLink}`}>
       <button
         className={styles.button}
         role="button"

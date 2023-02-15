@@ -151,7 +151,7 @@
     margin-top: 6px;
   }
   .contact-info {
-    padding: 20px;
+    padding: 3rem;
     margin-top: 20px;
   }
   .contact-info__main__info__box {
@@ -166,6 +166,9 @@
   .contact-info {
     align-items: center;
     justify-content: center;
+  }
+  .contact-info__header__title{
+    text-align: center;
   }
   .contact-info__main__picture {
     display: none;

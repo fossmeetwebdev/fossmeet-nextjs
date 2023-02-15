@@ -27,10 +27,14 @@ function Hero() {
         <p>
           To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember.
         </p>
-        <div className={styles['feedback-button']}>
+        <div className={styles['hero-buttons']}>
           <Button
-            text="Give your feedback"
+            text="Feedback"
             toLink="/feedback"
+          />
+          <Button
+            text="Certificates"
+            toLink="https://certificates.fossmeet.net"
           />
         </div>
       </div>
