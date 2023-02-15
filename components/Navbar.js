@@ -43,6 +43,9 @@ export default function Navbar() {
           <Link href="/gallery">
             <a className={styles["nav-link"]}>Gallery</a>
           </Link>
+          <Link href="/feedback">
+            <a className={styles["nav-link"]}>Feedback</a>
+          </Link>
           <Link href="/schedule">
             <a className={styles["nav-link"]}>Schedule</a>
           </Link>
@@ -58,9 +61,6 @@ export default function Navbar() {
           {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
           </Link> */}
-          <Link href="/feedback">
-            <a className={styles["nav-link"]}>Feedback</a>
-          </Link>
         </div>
         <div className={styles["flex-row"]}>
           {/* <Button text="Register" toLink={"register"} /> */}
@@ -94,6 +94,16 @@ export default function Navbar() {
                 }}
               >
                 Gallery
+              </a>
+            </Link>
+            <Link href="/feedback">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Feedback
               </a>
             </Link>
             <Link href="/schedule">
@@ -156,16 +166,6 @@ export default function Navbar() {
                 Code of Conduct
               </a>
             </Link> */}
-            <Link href="/feedback">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Feedback
-              </a>
-            </Link>
           </div>
           <Link href="https://fosscell.org/">
             <a
